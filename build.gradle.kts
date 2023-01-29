@@ -1,19 +1,18 @@
-plugins {
-    // we define the version of plugin that is used globally. We don't apply the plugin to
-    // any module. You need to add it to each module, but without version number.
-    id("com.android.library").version("7.3.1") apply false
-    kotlin("multiplatform") version "1.7.21" apply false
-    // KMMBridge is gradle tools for publishing Xcode frameworks. Used for making iOS KMM module available to use
-    id("co.touchlab.faktory.kmmbridge") version "0.3.4" apply false
-}
-
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
+
+val kotlin_version = "1.7.21"
+val coroutines_version = "1.6.3"
+val serialization_version = "1.3.3"
+val ktor_version = "2.0.3"
 
 plugins {
-    id("com.android.library")
-    kotlin("multiplatform")
+    id("com.android.library").version("7.3.1")
+    kotlin("multiplatform") version kotlin_version 
+    kotlin("plugin.serialization") version kotlin_version
     id("maven-publish")
-    id("co.touchlab.faktory.kmmbridge")
+    // KMMBridge is gradle tools for publishing Xcode frameworks. Used for making iOS KMM module available to use
+    id("co.touchlab.faktory.kmmbridge") version "0.3.4"
 }
 
 val packageName = "earth.levi"
@@ -30,6 +29,7 @@ repositories {
 }
 
 kotlin {
+    jvm()
     android {
         publishLibraryVariants("release", "debug")
     }
@@ -37,6 +37,7 @@ kotlin {
         binaries {
             framework {
                 baseName = libraryName
+                freeCompilerArgs += "-Xobjc-generics" // suggested from openapi-generator 
             }
         }
     }
@@ -46,21 +47,53 @@ kotlin {
     }
     
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:$serialization_version")
+
+                api("io.ktor:ktor-client-core:$ktor_version")
+                api("io.ktor:ktor-client-serialization:$ktor_version")
+                api("io.ktor:ktor-client-content-negotiation:$ktor_version")
+                api("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+                implementation("io.ktor:ktor-client-mock:$ktor_version")
             }
         }
 
         val androidMain by getting
         val androidTest by getting
 
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                api("io.ktor:ktor-client-ios:$ktor_version")
+            }
+        }
         val iosTest by getting
 
-        val jsMain by getting
+        val jsMain by getting {
+            dependencies {
+                api("io.ktor:ktor-client-js:$ktor_version")
+            }
+        }
         val jsTest by getting
+
+        val jvmMain by getting {
+            dependencies {
+                implementation(kotlin("stdlib-jdk7"))
+                implementation("io.ktor:ktor-client-cio-jvm:$ktor_version")
+            }
+        }
+
+        val jvmTest by getting {
+            dependencies {
+                implementation(kotlin("test-junit"))
+            }
+        }
     }
 }
 

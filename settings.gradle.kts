@@ -13,4 +13,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "dropbox"
-include("shared")
+include("src")
