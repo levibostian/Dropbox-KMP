@@ -36,11 +36,10 @@ open class FilePropertiesApi(
     /**
      * properties/add
      * [properties/add](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-add)  scope: &#x60;files.metadata.write&#x60;  Add property groups to a Dropbox file. See &#x60;templates/add_for_user&#x60; or &#x60;templates/add_for_team&#x60; to create new templates.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesAddPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesPropertiesAddPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -48,7 +47,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -69,11 +67,10 @@ open class FilePropertiesApi(
     /**
      * properties/overwrite
      * [properties/overwrite](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-overwrite)  scope: &#x60;files.metadata.write&#x60;  Overwrite property groups associated with a file. This endpoint should be used instead of &#x60;properties/update&#x60; when property groups are being updated via a \&quot;snapshot\&quot; instead of via a \&quot;delta\&quot;. In other words, this endpoint will delete all omitted fields from a property group, whereas &#x60;properties/update&#x60; will only delete fields that are explicitly marked for deletion.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesOverwritePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesPropertiesOverwritePost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -81,7 +78,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -102,11 +98,10 @@ open class FilePropertiesApi(
     /**
      * properties/remove
      * [properties/remove](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-remove)  scope: &#x60;files.metadata.write&#x60;  Permanently removes the specified property group from the file. To remove specific property field key value pairs, see &#x60;properties/update&#x60;. To update a template, see &#x60;templates/update_for_user&#x60; or &#x60;templates/update_for_team&#x60;. To remove a template, see &#x60;templates/remove_for_user&#x60; or &#x60;templates/remove_for_team&#x60;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesRemovePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesPropertiesRemovePost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -114,7 +109,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -135,12 +129,11 @@ open class FilePropertiesApi(
     /**
      * properties/search/continue
      * [properties/search/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;properties/search&#x60;, use this to paginate through all search results.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesPropertiesSearchContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesPropertiesSearchContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -148,7 +141,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -169,13 +161,12 @@ open class FilePropertiesApi(
     /**
      * properties/search
      * [properties/search](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search)  scope: &#x60;files.metadata.read&#x60;  Search across property templates for particular property field values.
-     * @param contentType  (optional)
      * @param authorization  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesPropertiesSearchPost(contentType: kotlin.String? = null, authorization: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesPropertiesSearchPost(authorization: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -183,7 +174,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
         authorization?.apply { localVariableHeaders["Authorization"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
@@ -205,11 +195,10 @@ open class FilePropertiesApi(
     /**
      * properties/update
      * [properties/update](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-update)  scope: &#x60;files.metadata.write&#x60;  Add, update or remove properties associated with the supplied file and templates. This endpoint should be used instead of &#x60;properties/overwrite&#x60; when property groups are being updated via a \&quot;delta\&quot; instead of via a \&quot;snapshot\&quot; . In other words, this endpoint will not delete any omitted fields from a property group, whereas &#x60;properties/overwrite&#x60; will delete any fields that are omitted from a property group.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesUpdatePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesPropertiesUpdatePost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -217,7 +206,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -238,12 +226,11 @@ open class FilePropertiesApi(
     /**
      * templates/add_for_team
      * [templates/add_for_team](https://www.dropbox.com/developers/documentation/http/teams#file_properties-templates-add_for_team)  scope: &#x60;files.team_metadata.write&#x60;  Add a template associated with a team. See &#x60;properties/add&#x60; to add properties to a file or folder. Note: this endpoint will create team-owned templates.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesAddForTeamPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesAddForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -251,7 +238,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -272,12 +258,11 @@ open class FilePropertiesApi(
     /**
      * templates/add_for_user
      * [templates/add_for_user](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-templates-add_for_user)  scope: &#x60;files.metadata.write&#x60;  Add a template associated with a user. See &#x60;properties/add&#x60; to add properties to a file. This endpoint can&#39;t be called on a team member or admin&#39;s behalf.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesAddForUserPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesAddForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -285,7 +270,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -306,12 +290,11 @@ open class FilePropertiesApi(
     /**
      * templates/get_for_team
      * [templates/get_for_team](https://www.dropbox.com/developers/documentation/http/teams#file_properties-templates-get_for_team)  scope: &#x60;files.team_metadata.write&#x60;  Get the schema for a specified template.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesGetForTeamPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesGetForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -319,7 +302,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -340,12 +322,11 @@ open class FilePropertiesApi(
     /**
      * templates/get_for_user
      * [templates/get_for_user](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-templates-get_for_user)  scope: &#x60;files.metadata.read&#x60;  Get the schema for a specified template. This endpoint can&#39;t be called on a team member or admin&#39;s behalf.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesGetForUserPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesGetForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -353,7 +334,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -436,11 +416,10 @@ open class FilePropertiesApi(
     /**
      * templates/remove_for_team
      * [templates/remove_for_team](https://www.dropbox.com/developers/documentation/http/teams#file_properties-templates-remove_for_team)  scope: &#x60;files.team_metadata.write&#x60;  Permanently removes the specified template created from &#x60;templates/add_for_user&#x60;. All properties associated with the template will also be removed. This action cannot be undone.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesTemplatesRemoveForTeamPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesTemplatesRemoveForTeamPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -448,7 +427,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -469,11 +447,10 @@ open class FilePropertiesApi(
     /**
      * templates/remove_for_user
      * [templates/remove_for_user](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-templates-remove_for_user)  scope: &#x60;files.metadata.write&#x60;  Permanently removes the specified template created from &#x60;templates/add_for_user&#x60;. All properties associated with the template will also be removed. This action cannot be undone.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesTemplatesRemoveForUserPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filePropertiesTemplatesRemoveForUserPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -481,7 +458,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -502,12 +478,11 @@ open class FilePropertiesApi(
     /**
      * templates/update_for_team
      * [templates/update_for_team](https://www.dropbox.com/developers/documentation/http/teams#file_properties-templates-update_for_team)  scope: &#x60;files.team_metadata.write&#x60;  Update a template associated with a team. This route can update the template name, the template description and add optional properties to templates.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesUpdateForTeamPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesUpdateForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -515,7 +490,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -536,12 +510,11 @@ open class FilePropertiesApi(
     /**
      * templates/update_for_user
      * [templates/update_for_user](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-templates-update_for_user)  scope: &#x60;files.metadata.write&#x60;  Update a template associated with a user. This route can update the template name, the template description and add optional properties to templates. This endpoint can&#39;t be called on a team member or admin&#39;s behalf.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesUpdateForUserPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filePropertiesTemplatesUpdateForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -549,7 +522,6 @@ open class FilePropertiesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

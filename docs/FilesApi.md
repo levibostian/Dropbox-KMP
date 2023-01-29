@@ -51,7 +51,7 @@ Method | HTTP request | Description
 
 <a name="call2filesCopyBatchCheckV2Post"></a>
 # **call2filesCopyBatchCheckV2Post**
-> kotlin.String call2filesCopyBatchCheckV2Post(contentType, body)
+> kotlin.String call2filesCopyBatchCheckV2Post(body)
 
 copy_batch/check
 
@@ -64,10 +64,9 @@ copy_batch/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCopyBatchCheckV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCopyBatchCheckV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCopyBatchCheckV2Post")
@@ -82,7 +81,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -97,12 +95,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCopyBatchV2Post"></a>
 # **call2filesCopyBatchV2Post**
-> kotlin.String call2filesCopyBatchV2Post(contentType, body)
+> kotlin.String call2filesCopyBatchV2Post(body)
 
 copy_batch
 
@@ -115,10 +113,9 @@ copy_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCopyBatchV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCopyBatchV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCopyBatchV2Post")
@@ -133,7 +130,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -148,12 +144,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCopyReferenceGetPost"></a>
 # **call2filesCopyReferenceGetPost**
-> kotlin.String call2filesCopyReferenceGetPost(contentType, body)
+> kotlin.String call2filesCopyReferenceGetPost(body)
 
 copy_reference/get
 
@@ -166,10 +162,9 @@ copy_reference/get
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCopyReferenceGetPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCopyReferenceGetPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCopyReferenceGetPost")
@@ -184,7 +179,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -199,12 +193,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCopyReferenceSavePost"></a>
 # **call2filesCopyReferenceSavePost**
-> kotlin.String call2filesCopyReferenceSavePost(contentType, body)
+> kotlin.String call2filesCopyReferenceSavePost(body)
 
 copy_reference/save
 
@@ -217,10 +211,9 @@ copy_reference/save
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCopyReferenceSavePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCopyReferenceSavePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCopyReferenceSavePost")
@@ -235,7 +228,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -250,12 +242,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCopyV2Post"></a>
 # **call2filesCopyV2Post**
-> kotlin.String call2filesCopyV2Post(contentType, body)
+> kotlin.String call2filesCopyV2Post(body)
 
 copy
 
@@ -268,10 +260,9 @@ copy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCopyV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCopyV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCopyV2Post")
@@ -286,7 +277,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -301,12 +291,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCreateFolderBatchCheckPost"></a>
 # **call2filesCreateFolderBatchCheckPost**
-> kotlin.String call2filesCreateFolderBatchCheckPost(contentType, body)
+> kotlin.String call2filesCreateFolderBatchCheckPost(body)
 
 create_folder_batch/check
 
@@ -319,10 +309,9 @@ create_folder_batch/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCreateFolderBatchCheckPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCreateFolderBatchCheckPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCreateFolderBatchCheckPost")
@@ -337,7 +326,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -352,12 +340,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCreateFolderBatchPost"></a>
 # **call2filesCreateFolderBatchPost**
-> kotlin.String call2filesCreateFolderBatchPost(contentType, body)
+> kotlin.String call2filesCreateFolderBatchPost(body)
 
 create_folder_batch
 
@@ -370,10 +358,9 @@ create_folder_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCreateFolderBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCreateFolderBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCreateFolderBatchPost")
@@ -388,7 +375,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -403,12 +389,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesCreateFolderV2Post"></a>
 # **call2filesCreateFolderV2Post**
-> kotlin.String call2filesCreateFolderV2Post(contentType, body)
+> kotlin.String call2filesCreateFolderV2Post(body)
 
 create_folder
 
@@ -421,10 +407,9 @@ create_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesCreateFolderV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesCreateFolderV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesCreateFolderV2Post")
@@ -439,7 +424,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -454,12 +438,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesDeleteBatchCheckPost"></a>
 # **call2filesDeleteBatchCheckPost**
-> kotlin.String call2filesDeleteBatchCheckPost(contentType, body)
+> kotlin.String call2filesDeleteBatchCheckPost(body)
 
 delete_batch/check
 
@@ -472,10 +456,9 @@ delete_batch/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesDeleteBatchCheckPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesDeleteBatchCheckPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesDeleteBatchCheckPost")
@@ -490,7 +473,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -505,12 +487,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesDeleteBatchPost"></a>
 # **call2filesDeleteBatchPost**
-> kotlin.String call2filesDeleteBatchPost(contentType, body)
+> kotlin.String call2filesDeleteBatchPost(body)
 
 delete_batch
 
@@ -523,10 +505,9 @@ delete_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesDeleteBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesDeleteBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesDeleteBatchPost")
@@ -541,7 +522,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -556,12 +536,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesDeleteV2Post"></a>
 # **call2filesDeleteV2Post**
-> kotlin.String call2filesDeleteV2Post(contentType, body)
+> kotlin.String call2filesDeleteV2Post(body)
 
 delete
 
@@ -574,10 +554,9 @@ delete
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesDeleteV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesDeleteV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesDeleteV2Post")
@@ -592,7 +571,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -607,7 +585,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesDownloadPost"></a>
@@ -765,7 +743,7 @@ Configure bearerAuth:
 
 <a name="call2filesGetFileLockBatchPost"></a>
 # **call2filesGetFileLockBatchPost**
-> kotlin.String call2filesGetFileLockBatchPost(contentType, body)
+> kotlin.String call2filesGetFileLockBatchPost(body)
 
 get_file_lock_batch
 
@@ -778,10 +756,9 @@ get_file_lock_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesGetFileLockBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesGetFileLockBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesGetFileLockBatchPost")
@@ -796,7 +773,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -811,12 +787,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesGetMetadataPost"></a>
 # **call2filesGetMetadataPost**
-> kotlin.String call2filesGetMetadataPost(contentType, body)
+> kotlin.String call2filesGetMetadataPost(body)
 
 get_metadata
 
@@ -829,10 +805,9 @@ get_metadata
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesGetMetadataPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesGetMetadataPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesGetMetadataPost")
@@ -847,7 +822,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -862,7 +836,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesGetPreviewPost"></a>
@@ -918,7 +892,7 @@ Configure bearerAuth:
 
 <a name="call2filesGetTemporaryLinkPost"></a>
 # **call2filesGetTemporaryLinkPost**
-> kotlin.String call2filesGetTemporaryLinkPost(contentType, body)
+> kotlin.String call2filesGetTemporaryLinkPost(body)
 
 get_temporary_link
 
@@ -931,10 +905,9 @@ get_temporary_link
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesGetTemporaryLinkPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesGetTemporaryLinkPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesGetTemporaryLinkPost")
@@ -949,7 +922,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -964,12 +936,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesGetTemporaryUploadLinkPost"></a>
 # **call2filesGetTemporaryUploadLinkPost**
-> kotlin.String call2filesGetTemporaryUploadLinkPost(contentType, body)
+> kotlin.String call2filesGetTemporaryUploadLinkPost(body)
 
 get_temporary_upload_link
 
@@ -982,10 +954,9 @@ get_temporary_upload_link
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesGetTemporaryUploadLinkPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesGetTemporaryUploadLinkPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesGetTemporaryUploadLinkPost")
@@ -1000,7 +971,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1015,12 +985,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesGetThumbnailBatchPost"></a>
 # **call2filesGetThumbnailBatchPost**
-> kotlin.String call2filesGetThumbnailBatchPost(contentType, body)
+> kotlin.String call2filesGetThumbnailBatchPost(body)
 
 get_thumbnail_batch
 
@@ -1033,10 +1003,9 @@ get_thumbnail_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesGetThumbnailBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesGetThumbnailBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesGetThumbnailBatchPost")
@@ -1051,7 +1020,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1066,7 +1034,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesGetThumbnailV2Post"></a>
@@ -1128,7 +1096,7 @@ Configure bearerAuth:
 
 <a name="call2filesListFolderContinuePost"></a>
 # **call2filesListFolderContinuePost**
-> kotlin.String call2filesListFolderContinuePost(contentType, body)
+> kotlin.String call2filesListFolderContinuePost(body)
 
 list_folder/continue
 
@@ -1141,10 +1109,9 @@ list_folder/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesListFolderContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesListFolderContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesListFolderContinuePost")
@@ -1159,7 +1126,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1174,12 +1140,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesListFolderGetLatestCursorPost"></a>
 # **call2filesListFolderGetLatestCursorPost**
-> kotlin.String call2filesListFolderGetLatestCursorPost(contentType, body)
+> kotlin.String call2filesListFolderGetLatestCursorPost(body)
 
 list_folder/get_latest_cursor
 
@@ -1192,10 +1158,9 @@ list_folder/get_latest_cursor
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesListFolderGetLatestCursorPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesListFolderGetLatestCursorPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesListFolderGetLatestCursorPost")
@@ -1210,7 +1175,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1225,12 +1189,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesListFolderLongpollPost"></a>
 # **call2filesListFolderLongpollPost**
-> kotlin.String call2filesListFolderLongpollPost(contentType, body)
+> kotlin.String call2filesListFolderLongpollPost(body)
 
 list_folder/longpoll
 
@@ -1243,10 +1207,9 @@ list_folder/longpoll
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesListFolderLongpollPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesListFolderLongpollPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesListFolderLongpollPost")
@@ -1261,7 +1224,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1276,12 +1238,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesListRevisionsPost"></a>
 # **call2filesListRevisionsPost**
-> kotlin.String call2filesListRevisionsPost(contentType, body)
+> kotlin.String call2filesListRevisionsPost(body)
 
 list_revisions
 
@@ -1294,10 +1256,9 @@ list_revisions
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesListRevisionsPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesListRevisionsPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesListRevisionsPost")
@@ -1312,7 +1273,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1327,12 +1287,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesLockFileBatchPost"></a>
 # **call2filesLockFileBatchPost**
-> kotlin.String call2filesLockFileBatchPost(contentType, body)
+> kotlin.String call2filesLockFileBatchPost(body)
 
 lock_file_batch
 
@@ -1345,10 +1305,9 @@ lock_file_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesLockFileBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesLockFileBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesLockFileBatchPost")
@@ -1363,7 +1322,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1378,12 +1336,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesMoveBatchCheckV2Post"></a>
 # **call2filesMoveBatchCheckV2Post**
-> kotlin.String call2filesMoveBatchCheckV2Post(contentType, body)
+> kotlin.String call2filesMoveBatchCheckV2Post(body)
 
 move_batch/check
 
@@ -1396,10 +1354,9 @@ move_batch/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesMoveBatchCheckV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesMoveBatchCheckV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesMoveBatchCheckV2Post")
@@ -1414,7 +1371,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1429,12 +1385,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesMoveBatchV2Post"></a>
 # **call2filesMoveBatchV2Post**
-> kotlin.String call2filesMoveBatchV2Post(contentType, body)
+> kotlin.String call2filesMoveBatchV2Post(body)
 
 move_batch
 
@@ -1447,10 +1403,9 @@ move_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesMoveBatchV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesMoveBatchV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesMoveBatchV2Post")
@@ -1465,7 +1420,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1480,12 +1434,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesMoveV2Post"></a>
 # **call2filesMoveV2Post**
-> kotlin.String call2filesMoveV2Post(contentType, body)
+> kotlin.String call2filesMoveV2Post(body)
 
 move
 
@@ -1498,10 +1452,9 @@ move
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesMoveV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesMoveV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesMoveV2Post")
@@ -1516,7 +1469,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1531,12 +1483,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesPermanentlyDeletePost"></a>
 # **call2filesPermanentlyDeletePost**
-> call2filesPermanentlyDeletePost(contentType, body)
+> call2filesPermanentlyDeletePost(body)
 
 permanently_delete
 
@@ -1549,10 +1501,9 @@ permanently_delete
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filesPermanentlyDeletePost(contentType, body)
+    apiInstance.call2filesPermanentlyDeletePost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesPermanentlyDeletePost")
     e.printStackTrace()
@@ -1566,7 +1517,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1581,12 +1531,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesRestorePost"></a>
 # **call2filesRestorePost**
-> kotlin.String call2filesRestorePost(contentType, body)
+> kotlin.String call2filesRestorePost(body)
 
 restore
 
@@ -1599,10 +1549,9 @@ restore
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesRestorePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesRestorePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesRestorePost")
@@ -1617,7 +1566,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1632,12 +1580,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesSaveUrlCheckJobStatusPost"></a>
 # **call2filesSaveUrlCheckJobStatusPost**
-> kotlin.String call2filesSaveUrlCheckJobStatusPost(contentType, body)
+> kotlin.String call2filesSaveUrlCheckJobStatusPost(body)
 
 save_url/check_job_status
 
@@ -1650,10 +1598,9 @@ save_url/check_job_status
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesSaveUrlCheckJobStatusPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesSaveUrlCheckJobStatusPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesSaveUrlCheckJobStatusPost")
@@ -1668,7 +1615,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1683,12 +1629,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesSaveUrlPost"></a>
 # **call2filesSaveUrlPost**
-> kotlin.String call2filesSaveUrlPost(contentType, body)
+> kotlin.String call2filesSaveUrlPost(body)
 
 save_url
 
@@ -1701,10 +1647,9 @@ save_url
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesSaveUrlPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesSaveUrlPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesSaveUrlPost")
@@ -1719,7 +1664,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1734,12 +1678,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesSearchContinueV2Post"></a>
 # **call2filesSearchContinueV2Post**
-> kotlin.String call2filesSearchContinueV2Post(contentType, body)
+> kotlin.String call2filesSearchContinueV2Post(body)
 
 search/continue
 
@@ -1752,10 +1696,9 @@ search/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesSearchContinueV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesSearchContinueV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesSearchContinueV2Post")
@@ -1770,7 +1713,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1785,12 +1727,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesSearchV2Post"></a>
 # **call2filesSearchV2Post**
-> kotlin.String call2filesSearchV2Post(contentType, body)
+> kotlin.String call2filesSearchV2Post(body)
 
 search
 
@@ -1803,10 +1745,9 @@ search
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesSearchV2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesSearchV2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesSearchV2Post")
@@ -1821,7 +1762,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1836,12 +1776,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesUnlockFileBatchPost"></a>
 # **call2filesUnlockFileBatchPost**
-> kotlin.String call2filesUnlockFileBatchPost(contentType, body)
+> kotlin.String call2filesUnlockFileBatchPost(body)
 
 unlock_file_batch
 
@@ -1854,10 +1794,9 @@ unlock_file_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesUnlockFileBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesUnlockFileBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesUnlockFileBatchPost")
@@ -1872,7 +1811,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1887,7 +1825,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesUploadPost"></a>
@@ -2001,7 +1939,7 @@ Configure bearerAuth:
 
 <a name="call2filesUploadSessionFinishBatchCheckPost"></a>
 # **call2filesUploadSessionFinishBatchCheckPost**
-> kotlin.String call2filesUploadSessionFinishBatchCheckPost(contentType, body)
+> kotlin.String call2filesUploadSessionFinishBatchCheckPost(body)
 
 upload_session/finish_batch/check
 
@@ -2014,10 +1952,9 @@ upload_session/finish_batch/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesUploadSessionFinishBatchCheckPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesUploadSessionFinishBatchCheckPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesUploadSessionFinishBatchCheckPost")
@@ -2032,7 +1969,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -2047,12 +1983,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesUploadSessionFinishBatchPost"></a>
 # **call2filesUploadSessionFinishBatchPost**
-> kotlin.String call2filesUploadSessionFinishBatchPost(contentType, body)
+> kotlin.String call2filesUploadSessionFinishBatchPost(body)
 
 upload_session/finish_batch
 
@@ -2065,10 +2001,9 @@ upload_session/finish_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filesUploadSessionFinishBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filesUploadSessionFinishBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilesApi#call2filesUploadSessionFinishBatchPost")
@@ -2083,7 +2018,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -2098,7 +2032,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filesUploadSessionFinishPost"></a>

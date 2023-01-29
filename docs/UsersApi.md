@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="call2usersFeaturesGetValuesPost"></a>
 # **call2usersFeaturesGetValuesPost**
-> kotlin.String call2usersFeaturesGetValuesPost(contentType, body)
+> kotlin.String call2usersFeaturesGetValuesPost(body)
 
 features/get_values
 
@@ -26,10 +26,9 @@ features/get_values
 //import earth.levi.dropbox.models.*
 
 val apiInstance = UsersApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2usersFeaturesGetValuesPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2usersFeaturesGetValuesPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#call2usersFeaturesGetValuesPost")
@@ -44,7 +43,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -59,12 +57,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2usersGetAccountBatchPost"></a>
 # **call2usersGetAccountBatchPost**
-> kotlin.String call2usersGetAccountBatchPost(contentType, body)
+> kotlin.String call2usersGetAccountBatchPost(body)
 
 get_account_batch
 
@@ -77,10 +75,9 @@ get_account_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = UsersApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2usersGetAccountBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2usersGetAccountBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#call2usersGetAccountBatchPost")
@@ -95,7 +92,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -110,12 +106,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2usersGetAccountPost"></a>
 # **call2usersGetAccountPost**
-> kotlin.String call2usersGetAccountPost(contentType, body)
+> kotlin.String call2usersGetAccountPost(body)
 
 get_account
 
@@ -128,10 +124,9 @@ get_account
 //import earth.levi.dropbox.models.*
 
 val apiInstance = UsersApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2usersGetAccountPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2usersGetAccountPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling UsersApi#call2usersGetAccountPost")
@@ -146,7 +141,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -161,7 +155,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2usersGetCurrentAccountPost"></a>

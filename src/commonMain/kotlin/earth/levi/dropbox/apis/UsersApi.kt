@@ -36,12 +36,11 @@ open class UsersApi(
     /**
      * features/get_values
      * [features/get_values](https://www.dropbox.com/developers/documentation/http/documentation#users-features-get_values)  scope: &#x60;account_info.read&#x60;  Get a list of feature values that may be configured for the current account.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersFeaturesGetValuesPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2usersFeaturesGetValuesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class UsersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class UsersApi(
     /**
      * get_account_batch
      * [get_account_batch](https://www.dropbox.com/developers/documentation/http/documentation#users-get_account_batch)  scope: &#x60;sharing.read&#x60;  Get information about multiple user accounts.  At most 300 accounts may be queried per request.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetAccountBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2usersGetAccountBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class UsersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -104,12 +100,11 @@ open class UsersApi(
     /**
      * get_account
      * [get_account](https://www.dropbox.com/developers/documentation/http/documentation#users-get_account)  scope: &#x60;sharing.read&#x60;  Get information about a user&#39;s account.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetAccountPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2usersGetAccountPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -117,7 +112,6 @@ open class UsersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

@@ -36,11 +36,10 @@ open class ContactsApi(
     /**
      * delete_manual_contacts_batch
      * [delete_manual_contacts_batch](https://www.dropbox.com/developers/documentation/http/documentation#contacts-delete_manual_contacts_batch)  scope: &#x60;contacts.write&#x60;  Removes manually added contacts from the given list.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2contactsDeleteManualContactsBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2contactsDeleteManualContactsBatchPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -48,7 +47,6 @@ open class ContactsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

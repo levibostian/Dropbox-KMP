@@ -36,11 +36,10 @@ open class TeamLinkedAppsApi(
     /**
      * linked_apps/list_member_linked_apps
      * [linked_apps/list_member_linked_apps](https://www.dropbox.com/developers/documentation/http/teams#team-linked_apps-list_member_linked_apps)  scope: &#x60;sessions.list&#x60;  List all linked applications of the team member. Note, this endpoint does not list any team-linked applications.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamLinkedAppsListMemberLinkedAppsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamLinkedAppsListMemberLinkedAppsPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -48,7 +47,6 @@ open class TeamLinkedAppsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -69,11 +67,10 @@ open class TeamLinkedAppsApi(
     /**
      * linked_apps/list_members_linked_apps
      * [linked_apps/list_members_linked_apps](https://www.dropbox.com/developers/documentation/http/teams#team-linked_apps-list_members_linked_apps)  scope: &#x60;sessions.list&#x60;  List all applications linked to the team members&#39; accounts. Note, this endpoint does not list any team-linked applications.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamLinkedAppsListMembersLinkedAppsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamLinkedAppsListMembersLinkedAppsPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -81,7 +78,6 @@ open class TeamLinkedAppsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -102,11 +98,10 @@ open class TeamLinkedAppsApi(
     /**
      * linked_apps/revoke_linked_app_batch
      * [linked_apps/revoke_linked_app_batch](https://www.dropbox.com/developers/documentation/http/teams#team-linked_apps-revoke_linked_app_batch)  scope: &#x60;sessions.modify&#x60;  Revoke a list of linked applications of the team members.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamLinkedAppsRevokeLinkedAppBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamLinkedAppsRevokeLinkedAppBatchPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -114,7 +109,6 @@ open class TeamLinkedAppsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -135,11 +129,10 @@ open class TeamLinkedAppsApi(
     /**
      * linked_apps/revoke_linked_app
      * [linked_apps/revoke_linked_app](https://www.dropbox.com/developers/documentation/http/teams#team-linked_apps-revoke_linked_app)  scope: &#x60;sessions.modify&#x60;  Revoke a linked application of the team member.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamLinkedAppsRevokeLinkedAppPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamLinkedAppsRevokeLinkedAppPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -147,7 +140,6 @@ open class TeamLinkedAppsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

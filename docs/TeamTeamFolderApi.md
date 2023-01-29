@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="call2teamTeamFolderActivatePost"></a>
 # **call2teamTeamFolderActivatePost**
-> kotlin.String call2teamTeamFolderActivatePost(contentType, body)
+> kotlin.String call2teamTeamFolderActivatePost(body)
 
 team_folder/activate
 
@@ -31,10 +31,9 @@ team_folder/activate
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderActivatePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderActivatePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderActivatePost")
@@ -49,7 +48,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -64,12 +62,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderArchiveCheckPost"></a>
 # **call2teamTeamFolderArchiveCheckPost**
-> kotlin.String call2teamTeamFolderArchiveCheckPost(contentType, body)
+> kotlin.String call2teamTeamFolderArchiveCheckPost(body)
 
 team_folder/archive/check
 
@@ -82,10 +80,9 @@ team_folder/archive/check
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderArchiveCheckPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderArchiveCheckPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderArchiveCheckPost")
@@ -100,7 +97,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -115,12 +111,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderArchivePost"></a>
 # **call2teamTeamFolderArchivePost**
-> kotlin.String call2teamTeamFolderArchivePost(contentType, body)
+> kotlin.String call2teamTeamFolderArchivePost(body)
 
 team_folder/archive
 
@@ -133,10 +129,9 @@ team_folder/archive
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderArchivePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderArchivePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderArchivePost")
@@ -151,7 +146,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -166,12 +160,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderCreatePost"></a>
 # **call2teamTeamFolderCreatePost**
-> kotlin.String call2teamTeamFolderCreatePost(contentType, body)
+> kotlin.String call2teamTeamFolderCreatePost(body)
 
 team_folder/create
 
@@ -184,10 +178,9 @@ team_folder/create
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderCreatePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderCreatePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderCreatePost")
@@ -202,7 +195,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -217,12 +209,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderGetInfoPost"></a>
 # **call2teamTeamFolderGetInfoPost**
-> call2teamTeamFolderGetInfoPost(contentType, body)
+> call2teamTeamFolderGetInfoPost(body)
 
 team_folder/get_info
 
@@ -235,10 +227,9 @@ team_folder/get_info
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamTeamFolderGetInfoPost(contentType, body)
+    apiInstance.call2teamTeamFolderGetInfoPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderGetInfoPost")
     e.printStackTrace()
@@ -252,7 +243,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -267,12 +257,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderListContinuePost"></a>
 # **call2teamTeamFolderListContinuePost**
-> kotlin.String call2teamTeamFolderListContinuePost(contentType, body)
+> kotlin.String call2teamTeamFolderListContinuePost(body)
 
 team_folder/list/continue
 
@@ -285,10 +275,9 @@ team_folder/list/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderListContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderListContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderListContinuePost")
@@ -303,7 +292,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -318,12 +306,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderListPost"></a>
 # **call2teamTeamFolderListPost**
-> kotlin.String call2teamTeamFolderListPost(contentType, body)
+> kotlin.String call2teamTeamFolderListPost(body)
 
 team_folder/list
 
@@ -336,10 +324,9 @@ team_folder/list
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderListPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderListPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderListPost")
@@ -354,7 +341,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -369,12 +355,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderPermanentlyDeletePost"></a>
 # **call2teamTeamFolderPermanentlyDeletePost**
-> call2teamTeamFolderPermanentlyDeletePost(contentType, body)
+> call2teamTeamFolderPermanentlyDeletePost(body)
 
 team_folder/permanently_delete
 
@@ -387,10 +373,9 @@ team_folder/permanently_delete
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamTeamFolderPermanentlyDeletePost(contentType, body)
+    apiInstance.call2teamTeamFolderPermanentlyDeletePost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderPermanentlyDeletePost")
     e.printStackTrace()
@@ -404,7 +389,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -419,12 +403,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderRenamePost"></a>
 # **call2teamTeamFolderRenamePost**
-> kotlin.String call2teamTeamFolderRenamePost(contentType, body)
+> kotlin.String call2teamTeamFolderRenamePost(body)
 
 team_folder/rename
 
@@ -437,10 +421,9 @@ team_folder/rename
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderRenamePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderRenamePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderRenamePost")
@@ -455,7 +438,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -470,12 +452,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamTeamFolderUpdateSyncSettingsPost"></a>
 # **call2teamTeamFolderUpdateSyncSettingsPost**
-> kotlin.String call2teamTeamFolderUpdateSyncSettingsPost(contentType, body)
+> kotlin.String call2teamTeamFolderUpdateSyncSettingsPost(body)
 
 team_folder/update_sync_settings
 
@@ -488,10 +470,9 @@ team_folder/update_sync_settings
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamTeamFolderApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamTeamFolderUpdateSyncSettingsPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamTeamFolderUpdateSyncSettingsPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamTeamFolderApi#call2teamTeamFolderUpdateSyncSettingsPost")
@@ -506,7 +487,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -521,6 +501,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

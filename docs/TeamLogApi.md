@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="call2teamLogGetEventsContinuePost"></a>
 # **call2teamLogGetEventsContinuePost**
-> kotlin.String call2teamLogGetEventsContinuePost(contentType, body)
+> kotlin.String call2teamLogGetEventsContinuePost(body)
 
 get_events/continue
 
@@ -23,10 +23,9 @@ get_events/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLogApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLogGetEventsContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLogGetEventsContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLogApi#call2teamLogGetEventsContinuePost")
@@ -41,7 +40,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -56,12 +54,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLogGetEventsPost"></a>
 # **call2teamLogGetEventsPost**
-> kotlin.String call2teamLogGetEventsPost(contentType, body)
+> kotlin.String call2teamLogGetEventsPost(body)
 
 get_events
 
@@ -74,10 +72,9 @@ get_events
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLogApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLogGetEventsPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLogGetEventsPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLogApi#call2teamLogGetEventsPost")
@@ -92,7 +89,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -107,6 +103,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 <a name="call2teamGroupsCreatePost"></a>
 # **call2teamGroupsCreatePost**
-> kotlin.String call2teamGroupsCreatePost(contentType, body)
+> kotlin.String call2teamGroupsCreatePost(body)
 
 groups/create
 
@@ -33,10 +33,9 @@ groups/create
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsCreatePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsCreatePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsCreatePost")
@@ -51,7 +50,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -66,12 +64,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsDeletePost"></a>
 # **call2teamGroupsDeletePost**
-> kotlin.String call2teamGroupsDeletePost(contentType, body)
+> kotlin.String call2teamGroupsDeletePost(body)
 
 groups/delete
 
@@ -84,10 +82,9 @@ groups/delete
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsDeletePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsDeletePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsDeletePost")
@@ -102,7 +99,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -117,12 +113,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsGetInfoPost"></a>
 # **call2teamGroupsGetInfoPost**
-> kotlin.String call2teamGroupsGetInfoPost(contentType, body)
+> kotlin.String call2teamGroupsGetInfoPost(body)
 
 groups/get_info
 
@@ -135,10 +131,9 @@ groups/get_info
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsGetInfoPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsGetInfoPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsGetInfoPost")
@@ -153,7 +148,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -168,12 +162,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsJobStatusGetPost"></a>
 # **call2teamGroupsJobStatusGetPost**
-> kotlin.String call2teamGroupsJobStatusGetPost(contentType, body)
+> kotlin.String call2teamGroupsJobStatusGetPost(body)
 
 groups/job_status/get
 
@@ -186,10 +180,9 @@ groups/job_status/get
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsJobStatusGetPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsJobStatusGetPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsJobStatusGetPost")
@@ -204,7 +197,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -219,12 +211,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsListContinuePost"></a>
 # **call2teamGroupsListContinuePost**
-> kotlin.String call2teamGroupsListContinuePost(contentType, body)
+> kotlin.String call2teamGroupsListContinuePost(body)
 
 groups/list/continue
 
@@ -237,10 +229,9 @@ groups/list/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsListContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsListContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsListContinuePost")
@@ -255,7 +246,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -270,12 +260,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsListPost"></a>
 # **call2teamGroupsListPost**
-> kotlin.String call2teamGroupsListPost(contentType, body)
+> kotlin.String call2teamGroupsListPost(body)
 
 groups/list
 
@@ -288,10 +278,9 @@ groups/list
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsListPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsListPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsListPost")
@@ -306,7 +295,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -321,12 +309,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsMembersAddPost"></a>
 # **call2teamGroupsMembersAddPost**
-> kotlin.String call2teamGroupsMembersAddPost(contentType, body)
+> kotlin.String call2teamGroupsMembersAddPost(body)
 
 groups/members/add
 
@@ -339,10 +327,9 @@ groups/members/add
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsMembersAddPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsMembersAddPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsMembersAddPost")
@@ -357,7 +344,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -372,12 +358,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsMembersListContinuePost"></a>
 # **call2teamGroupsMembersListContinuePost**
-> kotlin.String call2teamGroupsMembersListContinuePost(contentType, body)
+> kotlin.String call2teamGroupsMembersListContinuePost(body)
 
 groups/members/list/continue
 
@@ -390,10 +376,9 @@ groups/members/list/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsMembersListContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsMembersListContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsMembersListContinuePost")
@@ -408,7 +393,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -423,12 +407,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsMembersListPost"></a>
 # **call2teamGroupsMembersListPost**
-> kotlin.String call2teamGroupsMembersListPost(contentType, body)
+> kotlin.String call2teamGroupsMembersListPost(body)
 
 groups/members/list
 
@@ -441,10 +425,9 @@ groups/members/list
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsMembersListPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsMembersListPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsMembersListPost")
@@ -459,7 +442,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -474,12 +456,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsMembersRemovePost"></a>
 # **call2teamGroupsMembersRemovePost**
-> kotlin.String call2teamGroupsMembersRemovePost(contentType, body)
+> kotlin.String call2teamGroupsMembersRemovePost(body)
 
 groups/members/remove
 
@@ -492,10 +474,9 @@ groups/members/remove
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsMembersRemovePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsMembersRemovePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsMembersRemovePost")
@@ -510,7 +491,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -525,12 +505,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsMembersSetAccessTypePost"></a>
 # **call2teamGroupsMembersSetAccessTypePost**
-> kotlin.String call2teamGroupsMembersSetAccessTypePost(contentType, body)
+> kotlin.String call2teamGroupsMembersSetAccessTypePost(body)
 
 groups/members/set_access_type
 
@@ -543,10 +523,9 @@ groups/members/set_access_type
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsMembersSetAccessTypePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsMembersSetAccessTypePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsMembersSetAccessTypePost")
@@ -561,7 +540,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -576,12 +554,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGroupsUpdatePost"></a>
 # **call2teamGroupsUpdatePost**
-> kotlin.String call2teamGroupsUpdatePost(contentType, body)
+> kotlin.String call2teamGroupsUpdatePost(body)
 
 groups/update
 
@@ -594,10 +572,9 @@ groups/update
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamGroupsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamGroupsUpdatePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamGroupsUpdatePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamGroupsApi#call2teamGroupsUpdatePost")
@@ -612,7 +589,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -627,6 +603,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="call2teamNamespacesListContinuePost"></a>
 # **call2teamNamespacesListContinuePost**
-> kotlin.String call2teamNamespacesListContinuePost(contentType, body)
+> kotlin.String call2teamNamespacesListContinuePost(body)
 
 namespaces/list/continue
 
@@ -23,10 +23,9 @@ namespaces/list/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamNamespacesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamNamespacesListContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamNamespacesListContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamNamespacesApi#call2teamNamespacesListContinuePost")
@@ -41,7 +40,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -56,12 +54,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamNamespacesListPost"></a>
 # **call2teamNamespacesListPost**
-> kotlin.String call2teamNamespacesListPost(contentType, body)
+> kotlin.String call2teamNamespacesListPost(body)
 
 namespaces/list
 
@@ -74,10 +72,9 @@ namespaces/list
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamNamespacesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamNamespacesListPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamNamespacesListPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamNamespacesApi#call2teamNamespacesListPost")
@@ -92,7 +89,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -107,6 +103,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

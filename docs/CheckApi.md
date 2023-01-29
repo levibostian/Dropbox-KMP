@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="call2checkAppPost"></a>
 # **call2checkAppPost**
-> kotlin.String call2checkAppPost(contentType, body)
+> kotlin.String call2checkAppPost(body)
 
 app
 
@@ -23,10 +23,9 @@ app
 //import earth.levi.dropbox.models.*
 
 val apiInstance = CheckApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2checkAppPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2checkAppPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling CheckApi#call2checkAppPost")
@@ -41,7 +40,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -56,12 +54,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2checkUserPost"></a>
 # **call2checkUserPost**
-> kotlin.String call2checkUserPost(contentType, body)
+> kotlin.String call2checkUserPost(body)
 
 user
 
@@ -74,10 +72,9 @@ user
 //import earth.levi.dropbox.models.*
 
 val apiInstance = CheckApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2checkUserPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2checkUserPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling CheckApi#call2checkUserPost")
@@ -92,7 +89,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -107,6 +103,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

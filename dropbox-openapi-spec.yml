@@ -108,7 +108,7 @@ paths:
         Sets a user's profile photo.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -116,12 +116,7 @@ paths:
                 \n        \"base64_data\":
                 \"SW1hZ2UgZGF0YSBpbiBiYXNlNjQtZW5jb2RlZCBieXRlcy4gTm90IGEgdmFsaWQgZXhhbXBsZS4=\"\n   
                 }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -157,18 +152,13 @@ paths:
         token.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"oauth1_token\": \"qievr8hamyg6ndck\", \n   
                 \"oauth1_token_secret\": \"qomoftv0472git7\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -226,16 +216,11 @@ paths:
         app key and secret valid.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"query\": \"foo\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -274,16 +259,11 @@ paths:
         access token is valid.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"query\": \"foo\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -337,19 +317,14 @@ paths:
         Removes manually added contacts from the given list.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"email_addresses\": [\n       
                 \"contactemailaddress1@domain.com\", \n       
                 \"contactemailaddress2@domain.com\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -371,7 +346,7 @@ paths:
         `templates/add_for_team` to create new templates.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -382,12 +357,7 @@ paths:
                 Policy\", \n                    \"value\":
                 \"Confidential\"\n                }\n            ]\n       
                 }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -413,7 +383,7 @@ paths:
         for deletion.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -424,12 +394,7 @@ paths:
                 Policy\", \n                    \"value\":
                 \"Confidential\"\n                }\n            ]\n       
                 }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -454,19 +419,14 @@ paths:
         `templates/remove_for_user` or `templates/remove_for_team`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/my_awesome/word.docx\", \n   
                 \"property_template_ids\": [\n       
                 \"ptid:1a5n2i6d3OYEAAAAAAAAAYa\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -487,7 +447,7 @@ paths:
         Search across property templates for particular property field values.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -498,11 +458,6 @@ paths:
                 \"logical_operator\": \"or_operator\"\n        }\n    ], \n   
                 \"template_filter\": \"filter_none\"\n}"
       parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
         - name: Authorization
           in: header
           schema:
@@ -550,18 +505,13 @@ paths:
         paginate through all search results.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -609,7 +559,7 @@ paths:
         property group.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -621,12 +571,7 @@ paths:
                 \n                    \"value\":
                 \"Confidential\"\n                }\n            ],
                 \n            \"remove_fields\": []\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -650,7 +595,7 @@ paths:
         Note: this endpoint will create team-owned templates.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -663,12 +608,7 @@ paths:
                 \"string\"\n        }\n    ]\n}"
       security:
         - bearerAuth: []
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -704,7 +644,7 @@ paths:
         admin's behalf.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -715,12 +655,7 @@ paths:
                 policy of the file or folder described.\\nPolicies can be
                 Confidential, Public or Internal.\", \n            \"type\":
                 \"string\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -754,18 +689,13 @@ paths:
         Get the schema for a specified template.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"template_id\": \"ptid:1a5n2i6d3OYEAAAAAAAAAYa\"\n}"'
       security:
         - bearerAuth: []
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -812,16 +742,11 @@ paths:
         on a team member or admin's behalf.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"template_id\": \"ptid:1a5n2i6d3OYEAAAAAAAAAYa\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -938,18 +863,13 @@ paths:
         will also be removed. This action cannot be undone.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"template_id\": \"ptid:1a5n2i6d3OYEAAAAAAAAAYa\"\n}"'
       security:
         - bearerAuth: []
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -972,16 +892,11 @@ paths:
         will also be removed. This action cannot be undone.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"template_id\": \"ptid:1a5n2i6d3OYEAAAAAAAAAYa\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -1004,7 +919,7 @@ paths:
         templates.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1019,12 +934,7 @@ paths:
                 ]\n}"
       security:
         - bearerAuth: []
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1061,7 +971,7 @@ paths:
         behalf.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1074,12 +984,7 @@ paths:
                 described.\\nPolicies can be Confidential, Public or
                 Internal.\", \n            \"type\": \"string\"\n        }\n   
                 ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1145,7 +1050,7 @@ paths:
         Creates a file request for this user.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1154,12 +1059,7 @@ paths:
                 \"deadline\": {\n        \"deadline\": \"2020-10-12T17:00:00Z\",
                 \n        \"allow_late_uploads\": \"seven_days\"\n    }, \n   
                 \"open\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1203,18 +1103,13 @@ paths:
         Delete a batch of closed file requests.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"ids\": [\n        \"oaCAVmEyrqYnkZX9955Y\", \n       
                 \"BaZmehYoXMPtaRmfTbSG\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1333,16 +1228,11 @@ paths:
         Returns the specified file request.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"id\": \"oaCAVmEyrqYnkZX9955Y\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1388,16 +1278,11 @@ paths:
         destinations in the app folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 1000\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1462,18 +1347,13 @@ paths:
         `list:2` or `list/continue`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1536,7 +1416,7 @@ paths:
         Update a file request.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1546,12 +1426,7 @@ paths:
                 \"update\", \n        \"deadline\": \"2020-10-12T17:00:00Z\",
                 \n        \"allow_late_uploads\": \"seven_days\"\n    }, \n   
                 \"open\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1597,7 +1472,7 @@ paths:
         If the source path is a folder all its contents will be copied.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1605,12 +1480,7 @@ paths:
                 \"/Homework/algebra\", \n    \"allow_shared_folder\": false,
                 \n    \"autorename\": false, \n    \"allow_ownership_transfer\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1679,7 +1549,7 @@ paths:
         check the job status.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -1687,12 +1557,7 @@ paths:
                 \"/Homework/math\", \n            \"to_path\":
                 \"/Homework/algebra\"\n        }\n    ], \n    \"autorename\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1756,16 +1621,11 @@ paths:
         list of results for each entry.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1830,16 +1690,11 @@ paths:
         to `copy_reference/save`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"path\": \"/video.mp4\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1902,18 +1757,13 @@ paths:
         Dropbox.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"copy_reference\": \"z1X6ATl6aWtzOGq0c3g5Ng\", \n   
                 \"path\": \"/video.mp4\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -1973,18 +1823,13 @@ paths:
         Create a folder at a given path.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/Homework/math\", \n    \"autorename\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2039,18 +1884,13 @@ paths:
         `create_folder_batch/check` to check the job status.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"paths\": [\n        \"/Homework/math\"\n    ], \n   
                 \"autorename\": false, \n    \"force_async\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2102,16 +1942,11 @@ paths:
         success, it returns list of result for each entry.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2169,16 +2004,11 @@ paths:
         `DeletedMetadata` object.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"path\": \"/Homework/math/Prime_Numbers.txt\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2242,18 +2072,13 @@ paths:
         job status.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"entries\": [\n        {\n            \"path\":
                 \"/Homework/math/Prime_Numbers.txt\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2317,16 +2142,11 @@ paths:
         success, it returns list of result for each entry.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2582,18 +2402,13 @@ paths:
         Return the lock metadata for the given list of paths.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"entries\": [\n        {\n            \"path\": \"/John
                 Doe/sample/test.pdf\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2663,19 +2478,14 @@ paths:
         Note: Metadata for the root folder is unsupported.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/Homework/math\", \n   
                 \"include_media_info\": false, \n    \"include_deleted\": false,
                 \n    \"include_has_explicit_shared_members\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2810,16 +2620,11 @@ paths:
         the link is determined automatically by the file's mime type.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"path\": \"/video.mp4\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -2935,7 +2740,7 @@ paths:
         Temporary upload link has been recently consumed.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -2944,12 +2749,7 @@ paths:
                 \n        \"autorename\": true, \n        \"mute\": false,
                 \n        \"strict_conflict\": false\n    }, \n    \"duration\":
                 3600\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3059,7 +2859,7 @@ paths:
         in size won't be converted to a thumbnail.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -3067,12 +2867,7 @@ paths:
                 \"/image.jpg\", \n            \"format\": \"jpeg\",
                 \n            \"size\": \"w64h64\", \n            \"mode\":
                 \"strict\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3263,18 +3058,12 @@ paths:
         the same rules as documented for `list_folder`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
       responses:
         '200':
           description: OK
@@ -3355,7 +3144,7 @@ paths:
         already exist in Dropbox.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -3365,12 +3154,6 @@ paths:
                 \"include_has_explicit_shared_members\": false, \n   
                 \"include_mounted_folders\": true, \n   
                 \"include_non_downloadable_files\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
       responses:
         '200':
           description: OK
@@ -3410,19 +3193,14 @@ paths:
         documentation](https://www.dropbox.com/developers/reference/webhooks).
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\", \n   
                 \"timeout\": 30\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3465,18 +3243,13 @@ paths:
         retrieve revisions for a given file across moves or renames.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/root/word.docx\", \n    \"mode\": \"path\",
                 \n    \"limit\": 10\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3539,18 +3312,13 @@ paths:
         after this operation.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"entries\": [\n        {\n            \"path\": \"/John
                 Doe/sample/test.pdf\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3622,7 +3390,7 @@ paths:
         Note that we do not currently support case-only renaming.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -3630,12 +3398,7 @@ paths:
                 \"/Homework/algebra\", \n    \"allow_shared_folder\": false,
                 \n    \"autorename\": false, \n    \"allow_ownership_transfer\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3705,7 +3468,7 @@ paths:
         check the job status.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -3713,12 +3476,7 @@ paths:
                 \"/Homework/math\", \n            \"to_path\":
                 \"/Homework/algebra\"\n        }\n    ], \n    \"autorename\":
                 false, \n    \"allow_ownership_transfer\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3782,16 +3540,11 @@ paths:
         list of results for each entry.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3857,16 +3610,11 @@ paths:
         Note: This endpoint is only available for Dropbox Business apps.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"path\": \"/Homework/math/Prime_Numbers.txt\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -3887,18 +3635,13 @@ paths:
         Restore a specific revision of a file to the given path.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/root/word.docx\", \n    \"rev\":
                 \"a1c10ce0dd78\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -3962,18 +3705,13 @@ paths:
         conflict (e.g. myfile (1).txt).
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"path\": \"/a.txt\", \n    \"url\":
                 \"http://example.com/a.txt\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4032,16 +3770,11 @@ paths:
         Check the status of a `save_url` job.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4082,18 +3815,13 @@ paths:
         pages. Some results may not be returned.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"query\": \"cat\", \n    \"include_highlights\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4164,18 +3892,13 @@ paths:
         pages. Some results may not be returned.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4242,18 +3965,13 @@ paths:
         the unlocked file paths and their metadata after this operation.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"entries\": [\n        {\n            \"path\": \"/John
                 Doe/sample/test.pdf\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4548,7 +4266,7 @@ paths:
         page](https://www.dropbox.com/developers/reference/data-transport-limit).
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -4560,12 +4278,7 @@ paths:
                 \"add\", \n                \"autorename\": true,
                 \n                \"mute\": false, \n               
                 \"strict_conflict\": false\n            }\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4628,16 +4341,11 @@ paths:
         each entry.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4756,7 +4464,7 @@ paths:
         Adds specified members to a file.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -4766,12 +4474,7 @@ paths:
                 ], \n    \"custom_message\": \"This is a custom message about
                 ACME.doc\", \n    \"quiet\": false, \n    \"access_level\":
                 \"viewer\", \n    \"add_message_as_comment\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4813,7 +4516,7 @@ paths:
         folder, you will need to call `mount_folder` on their behalf.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -4828,12 +4531,7 @@ paths:
                 \n            \"access_level\": \"viewer\"\n        }\n    ],
                 \n    \"quiet\": false, \n    \"custom_message\":
                 \"Documentation for launch day\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -4854,16 +4552,11 @@ paths:
         Returns the status of an asynchronous job.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4897,16 +4590,11 @@ paths:
         Returns the status of an asynchronous job for sharing a folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -4940,16 +4628,11 @@ paths:
         Returns the status of an asynchronous job for sharing a folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5017,18 +4700,13 @@ paths:
         Returns shared file metadata.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"file\": \"id:3kmLmQFnf1AAAAAAAAAAAw\", \n   
                 \"actions\": []\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5084,19 +4762,14 @@ paths:
         Returns shared file metadata.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"files\": [\n        \"id:3kmLmQFnf1AAAAAAAAAAAw\",
                 \n        \"id:VvTaJu2VZzAAAAAAAAAADQ\"\n    ], \n   
                 \"actions\": []\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5155,18 +4828,13 @@ paths:
         Returns shared folder metadata by its folder ID.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"actions\": []\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5295,19 +4963,14 @@ paths:
         Get the shared link's metadata.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"url\":
                 \"https://www.dropbox.com/s/2sn712vy1ovegw8/Prime_Numbers.txt?dl=0\",
                 \n    \"path\": \"/Prime_Numbers.txt\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5363,18 +5026,13 @@ paths:
         inherited and uninherited members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"file\": \"id:3kmLmQFnf1AAAAAAAAAAAw\", \n   
                 \"include_inherited\": true, \n    \"limit\": 100\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5450,19 +5108,14 @@ paths:
         permissions are not returned for this endpoint.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"files\": [\n        \"id:3kmLmQFnf1AAAAAAAAAAAw\",
                 \n        \"id:VvTaJu2VZzAAAAAAAAAADQ\"\n    ], \n    \"limit\":
                 10\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5540,18 +5193,13 @@ paths:
         members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5623,18 +5271,13 @@ paths:
         paginate through all shared folder members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5703,16 +5346,11 @@ paths:
         Return the list of all shared folders the current user has access to.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100, \n    \"actions\": []\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5783,18 +5421,13 @@ paths:
         previous call to `list_folders` or `list_folders/continue`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5864,16 +5497,11 @@ paths:
         unmount.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100, \n    \"actions\": []\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -5945,18 +5573,13 @@ paths:
         `list_mountable_folders/continue`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6026,16 +5649,11 @@ paths:
          Does not include files the user has received via shared folders, and does  not include unclaimed invitations.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100, \n    \"actions\": []\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6094,18 +5712,13 @@ paths:
         Get more results with a cursor from `list_received_files`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"AzJJbGlzdF90eXBdofe9c3RPbGlzdGFyZ3NfYnlfZ2lkMRhcbric7Rdog9emfGRlc2MCRWxpbWl0BGRId\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6172,18 +5785,13 @@ paths:
         be suppressed by setting direct_only to true.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6248,7 +5856,7 @@ paths:
         requested visibility.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -6258,12 +5866,7 @@ paths:
                 \"public\", \n        \"audience\": \"public\", \n       
                 \"access\": \"viewer\"\n    }, \n    \"remove_expiration\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6321,16 +5924,11 @@ paths:
         Once mounted, the shared folder will appear in their Dropbox.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"shared_folder_id\": \"84528192421\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6399,16 +5997,11 @@ paths:
         through the parent folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"file\": \"id:3kmLmQFnf1AAAAAAAAAAAw\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -6434,18 +6027,13 @@ paths:
         if leave_a_copy is true.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"leave_a_copy\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6479,19 +6067,14 @@ paths:
         Removes a specified member from the file.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"file\": \"id:3kmLmQFnf1AAAAAAAAAAAw\", \n   
                 \"member\": {\n        \".tag\": \"email\", \n        \"email\":
                 \"justin@example.com\"\n    }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6526,19 +6109,14 @@ paths:
         folder to remove another member.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n    \"member\":
                 {\n        \".tag\": \"email\", \n        \"email\":
                 \"justin@example.com\"\n    }, \n    \"leave_a_copy\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6579,18 +6157,13 @@ paths:
         `ListSharedLinksArg.path` argument.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"url\":
                 \"https://www.dropbox.com/s/2sn712vy1ovegw8/Prime_Numbers.txt?dl=0\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -6616,18 +6189,13 @@ paths:
         for the folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"access_inheritance\": \"inherit\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6703,7 +6271,7 @@ paths:
         for the folder.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -6712,12 +6280,7 @@ paths:
                 false, \n    \"member_policy\": \"team\", \n   
                 \"shared_link_policy\": \"members\", \n   
                 \"access_inheritance\": \"inherit\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6788,19 +6351,14 @@ paths:
         perform a transfer.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"to_dropbox_id\":
                 \"dbid:AAEufNrMPSPe0dMQijRP0N_aZtBJRm26W4Q\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -6822,16 +6380,11 @@ paths:
         folder at a later time using `mount_folder`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"shared_folder_id\": \"84528192421\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -6852,16 +6405,11 @@ paths:
         Remove all members from this file. Does not remove inherited members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"file\": \"id:3kmLmQFnf1AAAAAAAAAAAw\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -6885,18 +6433,13 @@ paths:
         completed successfully.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"leave_a_copy\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6930,7 +6473,7 @@ paths:
         Changes a member's access on a shared file.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -6938,12 +6481,7 @@ paths:
                 \"member\": {\n        \".tag\": \"email\", \n        \"email\":
                 \"justin@example.com\"\n    }, \n    \"access_level\":
                 \"viewer\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -6977,7 +6515,7 @@ paths:
         permissions.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -6985,12 +6523,7 @@ paths:
                 {\n        \".tag\": \"email\", \n        \"email\":
                 \"justin@example.com\"\n    }, \n    \"access_level\":
                 \"editor\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7026,19 +6559,14 @@ paths:
         its policies.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"shared_folder_id\": \"84528192421\", \n   
                 \"member_policy\": \"team\", \n    \"acl_update_policy\":
                 \"owner\", \n    \"shared_link_policy\": \"members\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7105,7 +6633,7 @@ paths:
         List all device sessions of a team's member.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7114,12 +6642,7 @@ paths:
                 \"include_web_sessions\": true, \n   
                 \"include_desktop_clients\": true, \n   
                 \"include_mobile_clients\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -7142,16 +6665,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -7172,19 +6690,14 @@ paths:
         Revoke a device session of a team's member.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \".tag\": \"web_session\", \n    \"session_id\":
                 \"1234faaf0678bcde\", \n    \"team_member_id\":
                 \"dbmid:AAHhy7WsR0x-u4ZCqiDl5Fz5zvuL3kmspwU\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -7205,7 +6718,7 @@ paths:
         Revoke a list of device sessions of team members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7214,12 +6727,7 @@ paths:
                 \"1234faaf0678bcde\", \n            \"team_member_id\":
                 \"dbmid:AAHhy7WsR0x-u4ZCqiDl5Fz5zvuL3kmspwU\"\n        }\n   
                 ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -7242,19 +6750,14 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"group_name\": \"Europe sales\", \n   
                 \"add_creator_as_owner\": false, \n    \"group_external_id\":
                 \"group-134\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7327,18 +6830,13 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \".tag\": \"group_id\", \n    \"group_id\":
                 \"g:e2db7665347abcd600000000001a2b3c\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7376,19 +6874,14 @@ paths:
         Permission : Team Information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \".tag\": \"group_ids\", \n    \"group_ids\": [\n       
                 \"g:e2db7665347abcd600000000001a2b3c\", \n       
                 \"g:111111147abcd6000000000222222c\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7461,16 +6954,11 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7506,16 +6994,11 @@ paths:
         Permission : Team Information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7559,18 +7042,13 @@ paths:
         Permission : Team Information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7617,7 +7095,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7629,12 +7107,7 @@ paths:
                 \"dbmid:efgh5678\"\n            }, \n           
                 \"access_type\": \"member\"\n        }\n    ], \n   
                 \"return_members\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7705,19 +7178,14 @@ paths:
         Permission : Team Information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"group\": {\n        \".tag\": \"group_id\", \n       
                 \"group_id\": \"g:e2db7665347abcd600000000001a2b3c\"\n    },
                 \n    \"limit\": 100\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7756,18 +7224,13 @@ paths:
         Permission : Team information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7812,7 +7275,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7822,12 +7285,7 @@ paths:
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ], \n    \"return_members\":
                 true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7898,7 +7356,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7907,12 +7365,7 @@ paths:
                 \n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"access_type\": \"member\", \n    \"return_members\": true\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -7982,7 +7435,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -7992,12 +7445,7 @@ paths:
                 \"Europe west sales\", \n    \"new_group_external_id\":
                 \"sales-234\", \n    \"new_group_management_type\":
                 \"company_managed\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8067,7 +7515,7 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -8075,12 +7523,7 @@ paths:
                 [\n        \"dbmid:FDFSVF-DFSDF\"\n    ], \n    \"start_date\":
                 \"2016-01-01T00:00:00Z\", \n    \"end_date\":
                 \"2017-12-31T00:00:00Z\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8127,16 +7570,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"id\": \"pid_dbhid:abcd1234\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8183,16 +7621,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"id\": \"pid_dbhid:abcd1234\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8242,16 +7675,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"id\": \"pid_dbhid:abcd1234\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8301,16 +7729,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"include_released\": false\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8358,16 +7781,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"id\": \"pid_dbhid:abcd1234\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -8391,18 +7809,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"id\": \"pid_dbhid:abcd1234\", \n    \"members\":
                 [\n        \"dbmid:FDFSVF-DFSDF\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8448,18 +7861,13 @@ paths:
         Note, this endpoint does not list any team-linked applications.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"team_member_id\":
                 \"dbmid:AAFdgehTzw7WlXhZJsbGCLePe8RvQGYDr-I\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -8482,16 +7890,11 @@ paths:
         Note, this endpoint does not list any team-linked applications.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -8512,16 +7915,11 @@ paths:
         Revoke a linked application of the team member.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -8542,16 +7940,11 @@ paths:
         Revoke a list of linked applications of the team members.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -8572,19 +7965,14 @@ paths:
         Add users to member space limits excluded users list.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"users\": [\n        {\n            \".tag\":
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8619,16 +8007,11 @@ paths:
         List member space limits excluded users.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8664,18 +8047,13 @@ paths:
         Continue listing member space limits excluded users.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8711,19 +8089,14 @@ paths:
         Remove users from member space limits excluded users list.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"users\": [\n        {\n            \".tag\":
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8759,19 +8132,14 @@ paths:
         set. A maximum of 1000 members can be specified in a single call.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"users\": [\n        {\n            \".tag\":
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8806,19 +8174,14 @@ paths:
         a single call.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"users\": [\n        {\n            \".tag\":
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8853,7 +8216,7 @@ paths:
         of 1000 members can be specified in a single call.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -8862,12 +8225,7 @@ paths:
                 \n                \"team_member_id\":
                 \"dbmid:efgh5678\"\n            }, \n            \"quota_gb\":
                 30\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -8918,7 +8276,7 @@ paths:
         team member' actions taken on the user before they become 'active'.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -8930,12 +8288,7 @@ paths:
                 \"send_welcome_email\": true, \n            \"role\":
                 \"member_only\"\n        }\n    ], \n    \"force_async\":
                 false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9003,16 +8356,11 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9079,18 +8427,13 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9157,19 +8500,14 @@ paths:
         emails) that cannot be matched to a valid team member.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"members\": [\n        {\n            \".tag\":
                 \"team_member_id\", \n            \"team_member_id\":
                 \"dbmid:efgh5678\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9234,16 +8572,11 @@ paths:
         Permission : Team information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100, \n    \"include_removed\": false\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9311,18 +8644,13 @@ paths:
         Permission : Team information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9392,7 +8720,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9402,12 +8730,7 @@ paths:
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"transfer_admin_id\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9444,16 +8767,11 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9492,18 +8810,13 @@ paths:
         identify the user account.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -9543,7 +8856,7 @@ paths:
         `members/remove/job_status/get`.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9555,12 +8868,7 @@ paths:
                 {\n        \".tag\": \"team_member_id\", \n       
                 \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"keep_account\": false, \n    \"retain_team_shares\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9597,16 +8905,11 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9646,7 +8949,7 @@ paths:
         sent.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9657,12 +8960,7 @@ paths:
                 \"secondary_emails\": [\n                \"bob2@hotmail.com\",
                 \n                \"bob@inst.gov\"\n            ]\n       
                 }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9716,7 +9014,7 @@ paths:
         the secondary email and their primary email.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9727,12 +9025,7 @@ paths:
                 \"secondary_emails\": [\n                \"bob2@hotmail.com\",
                 \n                \"bob@inst.gov\"\n            ]\n       
                 }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9777,7 +9070,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9788,12 +9081,7 @@ paths:
                 \"secondary_emails\": [\n                \"bob2@hotmail.com\",
                 \n                \"bob@inst.gov\"\n            ]\n       
                 }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9841,18 +9129,13 @@ paths:
         No-op if team member is not pending.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \".tag\": \"team_member_id\", \n    \"team_member_id\":
                 \"dbmid:efgh5678\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -9875,19 +9158,14 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"new_role\": \"member_only\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -9925,7 +9203,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -9933,12 +9211,7 @@ paths:
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"new_email\": \"t.smith@domain.com\", \n    \"new_surname\":
                 \"Smith\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10002,7 +9275,7 @@ paths:
         Permission : Team member management.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -10012,12 +9285,7 @@ paths:
                 \"base64_data\":
                 \"SW1hZ2UgZGF0YSBpbiBiYXNlNjQtZW5jb2RlZCBieXRlcy4gTm90IGEgdmFsaWQgZXhhbXBsZS4=\"\n   
                 }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10084,19 +9352,14 @@ paths:
         identify the user account.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }, \n   
                 \"wipe_data\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10122,18 +9385,13 @@ paths:
         identify the user account.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"user\": {\n        \".tag\": \"team_member_id\",
                 \n        \"team_member_id\": \"dbmid:efgh5678\"\n    }\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10159,16 +9417,11 @@ paths:
         in the list.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 1\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10215,18 +9468,13 @@ paths:
         the list.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10271,16 +9519,11 @@ paths:
         Retrieves reporting data about a team's user activity.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10301,16 +9544,11 @@ paths:
         Retrieves reporting data about a team's linked devices.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10331,16 +9569,11 @@ paths:
         Retrieves reporting data about a team's membership.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10361,16 +9594,11 @@ paths:
         Retrieves reporting data about a team's storage usage.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '""'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10393,16 +9621,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"team_folder_id\": \"123456789\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10449,18 +9672,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"team_folder_id\": \"123456789\", \n   
                 \"force_async_off\": false\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10507,16 +9725,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"async_job_id\": \"34g93hh34h04y384084\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10563,18 +9776,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"name\": \"Marketing\", \n    \"sync_setting\":
                 \"not_synced\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10620,18 +9828,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"team_folder_ids\": [\n        \"947182\", \n       
                 \"5819424\", \n        \"852307532\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10654,16 +9857,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 100\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10713,18 +9911,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10773,16 +9966,11 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"team_folder_id\": \"123456789\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: Successful response
@@ -10805,18 +9993,13 @@ paths:
         Permission : Team member file access.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"team_folder_id\": \"123456789\", \n    \"name\":
                 \"Sales\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10861,7 +10044,7 @@ paths:
         endpoint requires that the team has team selective sync enabled.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
@@ -10870,12 +10053,7 @@ paths:
                 \"content_sync_settings\": [\n        {\n            \"id\":
                 \"id:a4ayc_80_OEAAAAAAAAAXw\", \n            \"sync_setting\":
                 \"not_synced\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -10923,19 +10101,14 @@ paths:
         Permission : Team information.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"features\": [\n        {\n            \".tag\":
                 \"upload_api_rate_limit\"\n        }, \n        {\n           
                 \".tag\": \"has_team_shared_dropbox\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -11097,16 +10270,11 @@ paths:
         Permission : Team Auditing.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: '"{\n    \"limit\": 50, \n    \"category\": \"groups\"\n}"'
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -11219,18 +10387,13 @@ paths:
         Permission : Team Auditing.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"cursor\":
                 \"ZtkX9_EHj3x7PMkVuFIhwKYXEpwpLwyxp9vMKomUhllil9q7eWiAu\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -11341,19 +10504,14 @@ paths:
         account.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"features\": [\n        {\n            \".tag\":
                 \"paper_as_files\"\n        }, \n        {\n           
                 \".tag\": \"file_locking\"\n        }\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -11391,18 +10549,13 @@ paths:
         Get information about a user's account.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"account_id\":
                 \"dbid:AAH4f99T0taONIb-OurWxbNQ6ywGRopQngc\"\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK
@@ -11449,19 +10602,14 @@ paths:
         be queried per request.
       requestBody:
         content:
-          '*/*':
+          application/json:
             schema:
               type: string
               example: >-
                 "{\n    \"account_ids\": [\n       
                 \"dbid:AAH4f99T0taONIb-OurWxbNQ6ywGRopQngc\", \n       
                 \"dbid:AAH1Vcz-DVoRDeixtr_OA8oUGgiqhs4XPOQ\"\n    ]\n}"
-      parameters:
-        - name: Content-Type
-          in: header
-          schema:
-            type: string
-          example: application/json
+      
       responses:
         '200':
           description: OK

@@ -36,12 +36,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/create_policy
      * [legal_holds/create_policy](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-create_policy)  scope: &#x60;team_data.member&#x60;  Creates new legal hold policy. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsCreatePolicyPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsCreatePolicyPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/get_policy
      * [legal_holds/get_policy](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-get_policy)  scope: &#x60;team_data.member&#x60;  Gets a legal hold by Id. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsGetPolicyPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsGetPolicyPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -104,12 +100,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/list_held_revisions_continue
      * [legal_holds/list_held_revisions_continue](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-list_held_revisions_continue)  scope: &#x60;team_data.member&#x60;  Continue listing the file metadata that&#39;s under the hold. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsListHeldRevisionsContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsListHeldRevisionsContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -117,7 +112,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -138,12 +132,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/list_held_revisions
      * [legal_holds/list_held_revisions](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-list_held_revisions)  scope: &#x60;team_data.member&#x60;  List the file metadata that&#39;s under the hold. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsListHeldRevisionsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsListHeldRevisionsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -151,7 +144,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -172,12 +164,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/list_policies
      * [legal_holds/list_policies](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-list_policies)  scope: &#x60;team_data.member&#x60;  Lists legal holds on a team. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsListPoliciesPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsListPoliciesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -185,7 +176,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -206,11 +196,10 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/release_policy
      * [legal_holds/release_policy](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-release_policy)  scope: &#x60;team_data.member&#x60;  Releases a legal hold by Id. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamLegalHoldsReleasePolicyPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamLegalHoldsReleasePolicyPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -218,7 +207,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -239,12 +227,11 @@ open class TeamLegalHoldsApi(
     /**
      * legal_holds/update_policy
      * [legal_holds/update_policy](https://www.dropbox.com/developers/documentation/http/teams#team-legal_holds-update_policy)  scope: &#x60;team_data.member&#x60;  Updates a legal hold. Note: Legal Holds is a paid add-on. Not all teams have the feature. Permission : Team member file access.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLegalHoldsUpdatePolicyPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLegalHoldsUpdatePolicyPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -252,7 +239,6 @@ open class TeamLegalHoldsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

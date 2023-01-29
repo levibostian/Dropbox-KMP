@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="call2contactsDeleteManualContactsBatchPost"></a>
 # **call2contactsDeleteManualContactsBatchPost**
-> call2contactsDeleteManualContactsBatchPost(contentType, body)
+> call2contactsDeleteManualContactsBatchPost(body)
 
 delete_manual_contacts_batch
 
@@ -23,10 +23,9 @@ delete_manual_contacts_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = ContactsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2contactsDeleteManualContactsBatchPost(contentType, body)
+    apiInstance.call2contactsDeleteManualContactsBatchPost(body)
 } catch (e: ClientException) {
     println("4xx response calling ContactsApi#call2contactsDeleteManualContactsBatchPost")
     e.printStackTrace()
@@ -40,7 +39,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -55,7 +53,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2contactsDeleteManualContactsPost"></a>

@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="call2teamDevicesListMemberDevicesPost"></a>
 # **call2teamDevicesListMemberDevicesPost**
-> call2teamDevicesListMemberDevicesPost(contentType, body)
+> call2teamDevicesListMemberDevicesPost(body)
 
 devices/list_member_devices
 
@@ -25,10 +25,9 @@ devices/list_member_devices
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamDevicesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamDevicesListMemberDevicesPost(contentType, body)
+    apiInstance.call2teamDevicesListMemberDevicesPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamDevicesApi#call2teamDevicesListMemberDevicesPost")
     e.printStackTrace()
@@ -42,7 +41,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -57,12 +55,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamDevicesListMembersDevicesPost"></a>
 # **call2teamDevicesListMembersDevicesPost**
-> call2teamDevicesListMembersDevicesPost(contentType, body)
+> call2teamDevicesListMembersDevicesPost(body)
 
 devices/list_members_devices
 
@@ -75,10 +73,9 @@ devices/list_members_devices
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamDevicesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamDevicesListMembersDevicesPost(contentType, body)
+    apiInstance.call2teamDevicesListMembersDevicesPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamDevicesApi#call2teamDevicesListMembersDevicesPost")
     e.printStackTrace()
@@ -92,7 +89,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -107,12 +103,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamDevicesRevokeDeviceSessionBatchPost"></a>
 # **call2teamDevicesRevokeDeviceSessionBatchPost**
-> call2teamDevicesRevokeDeviceSessionBatchPost(contentType, body)
+> call2teamDevicesRevokeDeviceSessionBatchPost(body)
 
 devices/revoke_device_session_batch
 
@@ -125,10 +121,9 @@ devices/revoke_device_session_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamDevicesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamDevicesRevokeDeviceSessionBatchPost(contentType, body)
+    apiInstance.call2teamDevicesRevokeDeviceSessionBatchPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamDevicesApi#call2teamDevicesRevokeDeviceSessionBatchPost")
     e.printStackTrace()
@@ -142,7 +137,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -157,12 +151,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamDevicesRevokeDeviceSessionPost"></a>
 # **call2teamDevicesRevokeDeviceSessionPost**
-> call2teamDevicesRevokeDeviceSessionPost(contentType, body)
+> call2teamDevicesRevokeDeviceSessionPost(body)
 
 devices/revoke_device_session
 
@@ -175,10 +169,9 @@ devices/revoke_device_session
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamDevicesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamDevicesRevokeDeviceSessionPost(contentType, body)
+    apiInstance.call2teamDevicesRevokeDeviceSessionPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamDevicesApi#call2teamDevicesRevokeDeviceSessionPost")
     e.printStackTrace()
@@ -192,7 +185,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -207,6 +199,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

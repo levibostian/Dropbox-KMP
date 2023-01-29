@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 <a name="call2filePropertiesPropertiesAddPost"></a>
 # **call2filePropertiesPropertiesAddPost**
-> call2filePropertiesPropertiesAddPost(contentType, body)
+> call2filePropertiesPropertiesAddPost(body)
 
 properties/add
 
@@ -37,10 +37,9 @@ properties/add
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesAddPost(contentType, body)
+    apiInstance.call2filePropertiesPropertiesAddPost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesAddPost")
     e.printStackTrace()
@@ -54,7 +53,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -69,12 +67,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesPropertiesOverwritePost"></a>
 # **call2filePropertiesPropertiesOverwritePost**
-> call2filePropertiesPropertiesOverwritePost(contentType, body)
+> call2filePropertiesPropertiesOverwritePost(body)
 
 properties/overwrite
 
@@ -87,10 +85,9 @@ properties/overwrite
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesOverwritePost(contentType, body)
+    apiInstance.call2filePropertiesPropertiesOverwritePost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesOverwritePost")
     e.printStackTrace()
@@ -104,7 +101,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -119,12 +115,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesPropertiesRemovePost"></a>
 # **call2filePropertiesPropertiesRemovePost**
-> call2filePropertiesPropertiesRemovePost(contentType, body)
+> call2filePropertiesPropertiesRemovePost(body)
 
 properties/remove
 
@@ -137,10 +133,9 @@ properties/remove
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesRemovePost(contentType, body)
+    apiInstance.call2filePropertiesPropertiesRemovePost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesRemovePost")
     e.printStackTrace()
@@ -154,7 +149,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -169,12 +163,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesPropertiesSearchContinuePost"></a>
 # **call2filePropertiesPropertiesSearchContinuePost**
-> kotlin.String call2filePropertiesPropertiesSearchContinuePost(contentType, body)
+> kotlin.String call2filePropertiesPropertiesSearchContinuePost(body)
 
 properties/search/continue
 
@@ -187,10 +181,9 @@ properties/search/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchContinuePost")
@@ -205,7 +198,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -220,12 +212,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesPropertiesSearchPost"></a>
 # **call2filePropertiesPropertiesSearchPost**
-> kotlin.String call2filePropertiesPropertiesSearchPost(contentType, authorization, body)
+> kotlin.String call2filePropertiesPropertiesSearchPost(authorization, body)
 
 properties/search
 
@@ -238,11 +230,10 @@ properties/search
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val authorization : kotlin.String =  Bearer IU571Pc9cGAAAAAAAAAAAQh57r-VTd7qBjZBUsVHLR6NRVTcd0FOThotVQmF9q9F // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchPost(contentType, authorization, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchPost(authorization, body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchPost")
@@ -257,7 +248,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **authorization** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
@@ -273,12 +263,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesPropertiesUpdatePost"></a>
 # **call2filePropertiesPropertiesUpdatePost**
-> call2filePropertiesPropertiesUpdatePost(contentType, body)
+> call2filePropertiesPropertiesUpdatePost(body)
 
 properties/update
 
@@ -291,10 +281,9 @@ properties/update
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesUpdatePost(contentType, body)
+    apiInstance.call2filePropertiesPropertiesUpdatePost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesUpdatePost")
     e.printStackTrace()
@@ -308,7 +297,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -323,12 +311,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesAddForTeamPost"></a>
 # **call2filePropertiesTemplatesAddForTeamPost**
-> kotlin.String call2filePropertiesTemplatesAddForTeamPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesAddForTeamPost(body)
 
 templates/add_for_team
 
@@ -341,10 +329,9 @@ templates/add_for_team
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForTeamPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForTeamPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForTeamPost")
@@ -359,7 +346,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -374,12 +360,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesAddForUserPost"></a>
 # **call2filePropertiesTemplatesAddForUserPost**
-> kotlin.String call2filePropertiesTemplatesAddForUserPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesAddForUserPost(body)
 
 templates/add_for_user
 
@@ -392,10 +378,9 @@ templates/add_for_user
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForUserPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForUserPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForUserPost")
@@ -410,7 +395,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -425,12 +409,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesGetForTeamPost"></a>
 # **call2filePropertiesTemplatesGetForTeamPost**
-> kotlin.String call2filePropertiesTemplatesGetForTeamPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesGetForTeamPost(body)
 
 templates/get_for_team
 
@@ -443,10 +427,9 @@ templates/get_for_team
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForTeamPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForTeamPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForTeamPost")
@@ -461,7 +444,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -476,12 +458,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesGetForUserPost"></a>
 # **call2filePropertiesTemplatesGetForUserPost**
-> kotlin.String call2filePropertiesTemplatesGetForUserPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesGetForUserPost(body)
 
 templates/get_for_user
 
@@ -494,10 +476,9 @@ templates/get_for_user
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForUserPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForUserPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForUserPost")
@@ -512,7 +493,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -527,7 +507,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesListForTeamPost"></a>
@@ -622,7 +602,7 @@ Configure bearerAuth:
 
 <a name="call2filePropertiesTemplatesRemoveForTeamPost"></a>
 # **call2filePropertiesTemplatesRemoveForTeamPost**
-> call2filePropertiesTemplatesRemoveForTeamPost(contentType, body)
+> call2filePropertiesTemplatesRemoveForTeamPost(body)
 
 templates/remove_for_team
 
@@ -635,10 +615,9 @@ templates/remove_for_team
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesTemplatesRemoveForTeamPost(contentType, body)
+    apiInstance.call2filePropertiesTemplatesRemoveForTeamPost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForTeamPost")
     e.printStackTrace()
@@ -652,7 +631,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -667,12 +645,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesRemoveForUserPost"></a>
 # **call2filePropertiesTemplatesRemoveForUserPost**
-> call2filePropertiesTemplatesRemoveForUserPost(contentType, body)
+> call2filePropertiesTemplatesRemoveForUserPost(body)
 
 templates/remove_for_user
 
@@ -685,10 +663,9 @@ templates/remove_for_user
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesTemplatesRemoveForUserPost(contentType, body)
+    apiInstance.call2filePropertiesTemplatesRemoveForUserPost(body)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForUserPost")
     e.printStackTrace()
@@ -702,7 +679,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -717,12 +693,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesUpdateForTeamPost"></a>
 # **call2filePropertiesTemplatesUpdateForTeamPost**
-> kotlin.String call2filePropertiesTemplatesUpdateForTeamPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesUpdateForTeamPost(body)
 
 templates/update_for_team
 
@@ -735,10 +711,9 @@ templates/update_for_team
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForTeamPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForTeamPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForTeamPost")
@@ -753,7 +728,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -768,12 +742,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2filePropertiesTemplatesUpdateForUserPost"></a>
 # **call2filePropertiesTemplatesUpdateForUserPost**
-> kotlin.String call2filePropertiesTemplatesUpdateForUserPost(contentType, body)
+> kotlin.String call2filePropertiesTemplatesUpdateForUserPost(body)
 
 templates/update_for_user
 
@@ -786,10 +760,9 @@ templates/update_for_user
 //import earth.levi.dropbox.models.*
 
 val apiInstance = FilePropertiesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForUserPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForUserPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForUserPost")
@@ -804,7 +777,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -819,6 +791,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

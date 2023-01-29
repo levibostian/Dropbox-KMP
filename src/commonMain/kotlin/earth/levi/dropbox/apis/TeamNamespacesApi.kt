@@ -36,12 +36,11 @@ open class TeamNamespacesApi(
     /**
      * namespaces/list/continue
      * [namespaces/list/continue](https://www.dropbox.com/developers/documentation/http/teams#team-namespaces-list-continue)  scope: &#x60;team_data.member&#x60;  Once a cursor has been retrieved from &#x60;namespaces/list&#x60;, use this to paginate through all team-accessible namespaces. Duplicates may occur in the list.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamNamespacesListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamNamespacesListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamNamespacesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamNamespacesApi(
     /**
      * namespaces/list
      * [namespaces/list](https://www.dropbox.com/developers/documentation/http/teams#team-namespaces-list)  scope: &#x60;team_data.member&#x60;  Returns a list of all team-accessible namespaces. This list includes team folders, shared folders containing team members, team members&#39; home namespaces, and team members&#39; app folders. Home namespaces and app folders are always owned by this team or members of the team, but shared folders may be owned by other users or other teams. Duplicates may occur in the list.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamNamespacesListPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamNamespacesListPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamNamespacesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

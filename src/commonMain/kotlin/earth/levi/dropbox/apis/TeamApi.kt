@@ -36,12 +36,11 @@ open class TeamApi(
     /**
      * features/get_values
      * [features/get_values](https://www.dropbox.com/developers/documentation/http/teams#team-features-get_values)  scope: &#x60;team_info.read&#x60;  Get the values for one or more featues. This route allows you to check your account&#39;s capability for what feature you can access or what value you have for certain features. Permission : Team information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamFeaturesGetValuesPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamFeaturesGetValuesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

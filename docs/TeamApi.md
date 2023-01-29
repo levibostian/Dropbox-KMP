@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="call2teamFeaturesGetValuesPost"></a>
 # **call2teamFeaturesGetValuesPost**
-> kotlin.String call2teamFeaturesGetValuesPost(contentType, body)
+> kotlin.String call2teamFeaturesGetValuesPost(body)
 
 features/get_values
 
@@ -24,10 +24,9 @@ features/get_values
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamFeaturesGetValuesPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamFeaturesGetValuesPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamApi#call2teamFeaturesGetValuesPost")
@@ -42,7 +41,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -57,7 +55,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamGetInfoPost"></a>

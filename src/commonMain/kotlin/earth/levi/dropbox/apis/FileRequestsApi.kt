@@ -67,12 +67,11 @@ open class FileRequestsApi(
     /**
      * create
      * [create](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-create)  scope: &#x60;file_requests.write&#x60;  Creates a file request for this user.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsCreatePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsCreatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -80,7 +79,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -132,12 +130,11 @@ open class FileRequestsApi(
     /**
      * delete
      * [delete](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-delete)  scope: &#x60;file_requests.write&#x60;  Delete a batch of closed file requests.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsDeletePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsDeletePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -145,7 +142,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -166,12 +162,11 @@ open class FileRequestsApi(
     /**
      * get
      * [get](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-get)  scope: &#x60;file_requests.read&#x60;  Returns the specified file request.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsGetPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -179,7 +174,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -200,12 +194,11 @@ open class FileRequestsApi(
     /**
      * list/continue
      * [list/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list-continue)  scope: &#x60;file_requests.read&#x60;  Once a cursor has been retrieved from &#x60;list:2&#x60;, use this to paginate through all file requests. The cursor must come from a previous call to &#x60;list:2&#x60; or &#x60;list/continue&#x60;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -213,7 +206,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -234,12 +226,11 @@ open class FileRequestsApi(
     /**
      * list
      * [list](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list)  scope: &#x60;file_requests.read&#x60;  Returns a list of file requests owned by this user. For apps with the app folder permission, this will only return file requests with destinations in the app folder.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsListV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsListV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -247,7 +238,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -268,12 +258,11 @@ open class FileRequestsApi(
     /**
      * update
      * [update](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-update)  scope: &#x60;file_requests.write&#x60;  Update a file request.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsUpdatePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2fileRequestsUpdatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -281,7 +270,6 @@ open class FileRequestsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

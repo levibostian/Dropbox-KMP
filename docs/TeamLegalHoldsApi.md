@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 <a name="call2teamLegalHoldsCreatePolicyPost"></a>
 # **call2teamLegalHoldsCreatePolicyPost**
-> kotlin.String call2teamLegalHoldsCreatePolicyPost(contentType, body)
+> kotlin.String call2teamLegalHoldsCreatePolicyPost(body)
 
 legal_holds/create_policy
 
@@ -28,10 +28,9 @@ legal_holds/create_policy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsCreatePolicyPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsCreatePolicyPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsCreatePolicyPost")
@@ -46,7 +45,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -61,12 +59,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsGetPolicyPost"></a>
 # **call2teamLegalHoldsGetPolicyPost**
-> kotlin.String call2teamLegalHoldsGetPolicyPost(contentType, body)
+> kotlin.String call2teamLegalHoldsGetPolicyPost(body)
 
 legal_holds/get_policy
 
@@ -79,10 +77,9 @@ legal_holds/get_policy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsGetPolicyPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsGetPolicyPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsGetPolicyPost")
@@ -97,7 +94,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -112,12 +108,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsListHeldRevisionsContinuePost"></a>
 # **call2teamLegalHoldsListHeldRevisionsContinuePost**
-> kotlin.String call2teamLegalHoldsListHeldRevisionsContinuePost(contentType, body)
+> kotlin.String call2teamLegalHoldsListHeldRevisionsContinuePost(body)
 
 legal_holds/list_held_revisions_continue
 
@@ -130,10 +126,9 @@ legal_holds/list_held_revisions_continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsListHeldRevisionsContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsListHeldRevisionsContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsListHeldRevisionsContinuePost")
@@ -148,7 +143,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -163,12 +157,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsListHeldRevisionsPost"></a>
 # **call2teamLegalHoldsListHeldRevisionsPost**
-> kotlin.String call2teamLegalHoldsListHeldRevisionsPost(contentType, body)
+> kotlin.String call2teamLegalHoldsListHeldRevisionsPost(body)
 
 legal_holds/list_held_revisions
 
@@ -181,10 +175,9 @@ legal_holds/list_held_revisions
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsListHeldRevisionsPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsListHeldRevisionsPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsListHeldRevisionsPost")
@@ -199,7 +192,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -214,12 +206,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsListPoliciesPost"></a>
 # **call2teamLegalHoldsListPoliciesPost**
-> kotlin.String call2teamLegalHoldsListPoliciesPost(contentType, body)
+> kotlin.String call2teamLegalHoldsListPoliciesPost(body)
 
 legal_holds/list_policies
 
@@ -232,10 +224,9 @@ legal_holds/list_policies
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsListPoliciesPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsListPoliciesPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsListPoliciesPost")
@@ -250,7 +241,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -265,12 +255,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsReleasePolicyPost"></a>
 # **call2teamLegalHoldsReleasePolicyPost**
-> call2teamLegalHoldsReleasePolicyPost(contentType, body)
+> call2teamLegalHoldsReleasePolicyPost(body)
 
 legal_holds/release_policy
 
@@ -283,10 +273,9 @@ legal_holds/release_policy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamLegalHoldsReleasePolicyPost(contentType, body)
+    apiInstance.call2teamLegalHoldsReleasePolicyPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsReleasePolicyPost")
     e.printStackTrace()
@@ -300,7 +289,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -315,12 +303,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLegalHoldsUpdatePolicyPost"></a>
 # **call2teamLegalHoldsUpdatePolicyPost**
-> kotlin.String call2teamLegalHoldsUpdatePolicyPost(contentType, body)
+> kotlin.String call2teamLegalHoldsUpdatePolicyPost(body)
 
 legal_holds/update_policy
 
@@ -333,10 +321,9 @@ legal_holds/update_policy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLegalHoldsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamLegalHoldsUpdatePolicyPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamLegalHoldsUpdatePolicyPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamLegalHoldsApi#call2teamLegalHoldsUpdatePolicyPost")
@@ -351,7 +338,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -366,6 +352,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

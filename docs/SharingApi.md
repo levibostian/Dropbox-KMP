@@ -45,7 +45,7 @@ Method | HTTP request | Description
 
 <a name="call2sharingAddFileMemberPost"></a>
 # **call2sharingAddFileMemberPost**
-> kotlin.String call2sharingAddFileMemberPost(contentType, body)
+> kotlin.String call2sharingAddFileMemberPost(body)
 
 add_file_member
 
@@ -58,10 +58,9 @@ add_file_member
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingAddFileMemberPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingAddFileMemberPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingAddFileMemberPost")
@@ -76,7 +75,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -91,12 +89,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingAddFolderMemberPost"></a>
 # **call2sharingAddFolderMemberPost**
-> call2sharingAddFolderMemberPost(contentType, body)
+> call2sharingAddFolderMemberPost(body)
 
 add_folder_member
 
@@ -109,10 +107,9 @@ add_folder_member
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingAddFolderMemberPost(contentType, body)
+    apiInstance.call2sharingAddFolderMemberPost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingAddFolderMemberPost")
     e.printStackTrace()
@@ -126,7 +123,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -141,12 +137,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingCheckJobStatusPost"></a>
 # **call2sharingCheckJobStatusPost**
-> kotlin.String call2sharingCheckJobStatusPost(contentType, body)
+> kotlin.String call2sharingCheckJobStatusPost(body)
 
 check_job_status
 
@@ -159,10 +155,9 @@ check_job_status
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckJobStatusPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingCheckJobStatusPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingCheckJobStatusPost")
@@ -177,7 +172,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -192,12 +186,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingCheckRemoveMemberJobStatusPost"></a>
 # **call2sharingCheckRemoveMemberJobStatusPost**
-> kotlin.String call2sharingCheckRemoveMemberJobStatusPost(contentType, body)
+> kotlin.String call2sharingCheckRemoveMemberJobStatusPost(body)
 
 check_remove_member_job_status
 
@@ -210,10 +204,9 @@ check_remove_member_job_status
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckRemoveMemberJobStatusPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingCheckRemoveMemberJobStatusPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingCheckRemoveMemberJobStatusPost")
@@ -228,7 +221,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -243,12 +235,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingCheckShareJobStatusPost"></a>
 # **call2sharingCheckShareJobStatusPost**
-> kotlin.String call2sharingCheckShareJobStatusPost(contentType, body)
+> kotlin.String call2sharingCheckShareJobStatusPost(body)
 
 check_share_job_status
 
@@ -261,10 +253,9 @@ check_share_job_status
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckShareJobStatusPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingCheckShareJobStatusPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingCheckShareJobStatusPost")
@@ -279,7 +270,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -294,12 +284,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingGetFileMetadataBatchPost"></a>
 # **call2sharingGetFileMetadataBatchPost**
-> kotlin.String call2sharingGetFileMetadataBatchPost(contentType, body)
+> kotlin.String call2sharingGetFileMetadataBatchPost(body)
 
 get_file_metadata/batch
 
@@ -312,10 +302,9 @@ get_file_metadata/batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingGetFileMetadataBatchPost")
@@ -330,7 +319,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -345,12 +333,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingGetFileMetadataPost"></a>
 # **call2sharingGetFileMetadataPost**
-> kotlin.String call2sharingGetFileMetadataPost(contentType, body)
+> kotlin.String call2sharingGetFileMetadataPost(body)
 
 get_file_metadata
 
@@ -363,10 +351,9 @@ get_file_metadata
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingGetFileMetadataPost")
@@ -381,7 +368,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -396,12 +382,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingGetFolderMetadataPost"></a>
 # **call2sharingGetFolderMetadataPost**
-> kotlin.String call2sharingGetFolderMetadataPost(contentType, body)
+> kotlin.String call2sharingGetFolderMetadataPost(body)
 
 get_folder_metadata
 
@@ -414,10 +400,9 @@ get_folder_metadata
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetFolderMetadataPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingGetFolderMetadataPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingGetFolderMetadataPost")
@@ -432,7 +417,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -447,7 +431,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingGetSharedLinkFilePost"></a>
@@ -504,7 +488,7 @@ Configure bearerAuth:
 
 <a name="call2sharingGetSharedLinkMetadataPost"></a>
 # **call2sharingGetSharedLinkMetadataPost**
-> kotlin.String call2sharingGetSharedLinkMetadataPost(contentType, body)
+> kotlin.String call2sharingGetSharedLinkMetadataPost(body)
 
 get_shared_link_metadata
 
@@ -517,10 +501,9 @@ get_shared_link_metadata
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetSharedLinkMetadataPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingGetSharedLinkMetadataPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingGetSharedLinkMetadataPost")
@@ -535,7 +518,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -550,12 +532,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFileMembersBatchPost"></a>
 # **call2sharingListFileMembersBatchPost**
-> kotlin.String call2sharingListFileMembersBatchPost(contentType, body)
+> kotlin.String call2sharingListFileMembersBatchPost(body)
 
 list_file_members/batch
 
@@ -568,10 +550,9 @@ list_file_members/batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersBatchPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFileMembersBatchPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFileMembersBatchPost")
@@ -586,7 +567,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -601,12 +581,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFileMembersContinuePost"></a>
 # **call2sharingListFileMembersContinuePost**
-> kotlin.String call2sharingListFileMembersContinuePost(contentType, body)
+> kotlin.String call2sharingListFileMembersContinuePost(body)
 
 list_file_members/continue
 
@@ -619,10 +599,9 @@ list_file_members/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFileMembersContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFileMembersContinuePost")
@@ -637,7 +616,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -652,12 +630,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFileMembersPost"></a>
 # **call2sharingListFileMembersPost**
-> kotlin.String call2sharingListFileMembersPost(contentType, body)
+> kotlin.String call2sharingListFileMembersPost(body)
 
 list_file_members
 
@@ -670,10 +648,9 @@ list_file_members
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFileMembersPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFileMembersPost")
@@ -688,7 +665,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -703,12 +679,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFolderMembersContinuePost"></a>
 # **call2sharingListFolderMembersContinuePost**
-> kotlin.String call2sharingListFolderMembersContinuePost(contentType, body)
+> kotlin.String call2sharingListFolderMembersContinuePost(body)
 
 list_folder_members/continue
 
@@ -721,10 +697,9 @@ list_folder_members/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFolderMembersContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFolderMembersContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFolderMembersContinuePost")
@@ -739,7 +714,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -754,12 +728,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFoldersContinuePost"></a>
 # **call2sharingListFoldersContinuePost**
-> kotlin.String call2sharingListFoldersContinuePost(contentType, body)
+> kotlin.String call2sharingListFoldersContinuePost(body)
 
 list_folders/continue
 
@@ -772,10 +746,9 @@ list_folders/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFoldersContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFoldersContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFoldersContinuePost")
@@ -790,7 +763,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -805,12 +777,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListFoldersPost"></a>
 # **call2sharingListFoldersPost**
-> kotlin.String call2sharingListFoldersPost(contentType, body)
+> kotlin.String call2sharingListFoldersPost(body)
 
 list_folders
 
@@ -823,10 +795,9 @@ list_folders
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFoldersPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListFoldersPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListFoldersPost")
@@ -841,7 +812,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -856,12 +826,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListMountableFoldersContinuePost"></a>
 # **call2sharingListMountableFoldersContinuePost**
-> kotlin.String call2sharingListMountableFoldersContinuePost(contentType, body)
+> kotlin.String call2sharingListMountableFoldersContinuePost(body)
 
 list_mountable_folders/continue
 
@@ -874,10 +844,9 @@ list_mountable_folders/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListMountableFoldersContinuePost")
@@ -892,7 +861,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -907,12 +875,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListMountableFoldersPost"></a>
 # **call2sharingListMountableFoldersPost**
-> kotlin.String call2sharingListMountableFoldersPost(contentType, body)
+> kotlin.String call2sharingListMountableFoldersPost(body)
 
 list_mountable_folders
 
@@ -925,10 +893,9 @@ list_mountable_folders
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListMountableFoldersPost")
@@ -943,7 +910,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -958,12 +924,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListReceivedFilesContinuePost"></a>
 # **call2sharingListReceivedFilesContinuePost**
-> kotlin.String call2sharingListReceivedFilesContinuePost(contentType, body)
+> kotlin.String call2sharingListReceivedFilesContinuePost(body)
 
 list_received_files/continue
 
@@ -976,10 +942,9 @@ list_received_files/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListReceivedFilesContinuePost")
@@ -994,7 +959,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1009,12 +973,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListReceivedFilesPost"></a>
 # **call2sharingListReceivedFilesPost**
-> kotlin.String call2sharingListReceivedFilesPost(contentType, body)
+> kotlin.String call2sharingListReceivedFilesPost(body)
 
 list_received_files
 
@@ -1027,10 +991,9 @@ list_received_files
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListReceivedFilesPost")
@@ -1045,7 +1008,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1060,12 +1022,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingListSharedLinksPost"></a>
 # **call2sharingListSharedLinksPost**
-> kotlin.String call2sharingListSharedLinksPost(contentType, body)
+> kotlin.String call2sharingListSharedLinksPost(body)
 
 list_shared_links
 
@@ -1078,10 +1040,9 @@ list_shared_links
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListSharedLinksPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingListSharedLinksPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingListSharedLinksPost")
@@ -1096,7 +1057,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1111,12 +1071,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingModifySharedLinkSettingsPost"></a>
 # **call2sharingModifySharedLinkSettingsPost**
-> kotlin.String call2sharingModifySharedLinkSettingsPost(contentType, body)
+> kotlin.String call2sharingModifySharedLinkSettingsPost(body)
 
 modify_shared_link_settings
 
@@ -1129,10 +1089,9 @@ modify_shared_link_settings
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingModifySharedLinkSettingsPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingModifySharedLinkSettingsPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingModifySharedLinkSettingsPost")
@@ -1147,7 +1106,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1162,12 +1120,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingMountFolderPost"></a>
 # **call2sharingMountFolderPost**
-> kotlin.String call2sharingMountFolderPost(contentType, body)
+> kotlin.String call2sharingMountFolderPost(body)
 
 mount_folder
 
@@ -1180,10 +1138,9 @@ mount_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingMountFolderPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingMountFolderPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingMountFolderPost")
@@ -1198,7 +1155,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1213,12 +1169,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingRelinquishFileMembershipPost"></a>
 # **call2sharingRelinquishFileMembershipPost**
-> call2sharingRelinquishFileMembershipPost(contentType, body)
+> call2sharingRelinquishFileMembershipPost(body)
 
 relinquish_file_membership
 
@@ -1231,10 +1187,9 @@ relinquish_file_membership
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingRelinquishFileMembershipPost(contentType, body)
+    apiInstance.call2sharingRelinquishFileMembershipPost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingRelinquishFileMembershipPost")
     e.printStackTrace()
@@ -1248,7 +1203,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1263,12 +1217,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingRelinquishFolderMembershipPost"></a>
 # **call2sharingRelinquishFolderMembershipPost**
-> kotlin.String call2sharingRelinquishFolderMembershipPost(contentType, body)
+> kotlin.String call2sharingRelinquishFolderMembershipPost(body)
 
 relinquish_folder_membership
 
@@ -1281,10 +1235,9 @@ relinquish_folder_membership
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRelinquishFolderMembershipPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingRelinquishFolderMembershipPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingRelinquishFolderMembershipPost")
@@ -1299,7 +1252,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1314,12 +1266,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingRemoveFileMember2Post"></a>
 # **call2sharingRemoveFileMember2Post**
-> kotlin.String call2sharingRemoveFileMember2Post(contentType, body)
+> kotlin.String call2sharingRemoveFileMember2Post(body)
 
 remove_file_member_2
 
@@ -1332,10 +1284,9 @@ remove_file_member_2
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRemoveFileMember2Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingRemoveFileMember2Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingRemoveFileMember2Post")
@@ -1350,7 +1301,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1365,12 +1315,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingRemoveFolderMemberPost"></a>
 # **call2sharingRemoveFolderMemberPost**
-> kotlin.String call2sharingRemoveFolderMemberPost(contentType, body)
+> kotlin.String call2sharingRemoveFolderMemberPost(body)
 
 remove_folder_member
 
@@ -1383,10 +1333,9 @@ remove_folder_member
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRemoveFolderMemberPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingRemoveFolderMemberPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingRemoveFolderMemberPost")
@@ -1401,7 +1350,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1416,12 +1364,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingRevokeSharedLinkPost"></a>
 # **call2sharingRevokeSharedLinkPost**
-> call2sharingRevokeSharedLinkPost(contentType, body)
+> call2sharingRevokeSharedLinkPost(body)
 
 revoke_shared_link
 
@@ -1434,10 +1382,9 @@ revoke_shared_link
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingRevokeSharedLinkPost(contentType, body)
+    apiInstance.call2sharingRevokeSharedLinkPost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingRevokeSharedLinkPost")
     e.printStackTrace()
@@ -1451,7 +1398,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1466,12 +1412,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingSetAccessInheritancePost"></a>
 # **call2sharingSetAccessInheritancePost**
-> kotlin.String call2sharingSetAccessInheritancePost(contentType, body)
+> kotlin.String call2sharingSetAccessInheritancePost(body)
 
 set_access_inheritance
 
@@ -1484,10 +1430,9 @@ set_access_inheritance
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingSetAccessInheritancePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingSetAccessInheritancePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingSetAccessInheritancePost")
@@ -1502,7 +1447,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1517,12 +1461,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingShareFolderPost"></a>
 # **call2sharingShareFolderPost**
-> kotlin.String call2sharingShareFolderPost(contentType, body)
+> kotlin.String call2sharingShareFolderPost(body)
 
 share_folder
 
@@ -1535,10 +1479,9 @@ share_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingShareFolderPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingShareFolderPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingShareFolderPost")
@@ -1553,7 +1496,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1568,12 +1510,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingTransferFolderPost"></a>
 # **call2sharingTransferFolderPost**
-> call2sharingTransferFolderPost(contentType, body)
+> call2sharingTransferFolderPost(body)
 
 transfer_folder
 
@@ -1586,10 +1528,9 @@ transfer_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingTransferFolderPost(contentType, body)
+    apiInstance.call2sharingTransferFolderPost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingTransferFolderPost")
     e.printStackTrace()
@@ -1603,7 +1544,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1618,12 +1558,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUnmountFolderPost"></a>
 # **call2sharingUnmountFolderPost**
-> call2sharingUnmountFolderPost(contentType, body)
+> call2sharingUnmountFolderPost(body)
 
 unmount_folder
 
@@ -1636,10 +1576,9 @@ unmount_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingUnmountFolderPost(contentType, body)
+    apiInstance.call2sharingUnmountFolderPost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUnmountFolderPost")
     e.printStackTrace()
@@ -1653,7 +1592,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1668,12 +1606,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUnshareFilePost"></a>
 # **call2sharingUnshareFilePost**
-> call2sharingUnshareFilePost(contentType, body)
+> call2sharingUnshareFilePost(body)
 
 unshare_file
 
@@ -1686,10 +1624,9 @@ unshare_file
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingUnshareFilePost(contentType, body)
+    apiInstance.call2sharingUnshareFilePost(body)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUnshareFilePost")
     e.printStackTrace()
@@ -1703,7 +1640,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1718,12 +1654,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUnshareFolderPost"></a>
 # **call2sharingUnshareFolderPost**
-> kotlin.String call2sharingUnshareFolderPost(contentType, body)
+> kotlin.String call2sharingUnshareFolderPost(body)
 
 unshare_folder
 
@@ -1736,10 +1672,9 @@ unshare_folder
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUnshareFolderPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingUnshareFolderPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUnshareFolderPost")
@@ -1754,7 +1689,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1769,12 +1703,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUpdateFileMemberPost"></a>
 # **call2sharingUpdateFileMemberPost**
-> kotlin.String call2sharingUpdateFileMemberPost(contentType, body)
+> kotlin.String call2sharingUpdateFileMemberPost(body)
 
 update_file_member
 
@@ -1787,10 +1721,9 @@ update_file_member
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFileMemberPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingUpdateFileMemberPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUpdateFileMemberPost")
@@ -1805,7 +1738,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1820,12 +1752,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUpdateFolderMemberPost"></a>
 # **call2sharingUpdateFolderMemberPost**
-> kotlin.String call2sharingUpdateFolderMemberPost(contentType, body)
+> kotlin.String call2sharingUpdateFolderMemberPost(body)
 
 update_folder_member
 
@@ -1838,10 +1770,9 @@ update_folder_member
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFolderMemberPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingUpdateFolderMemberPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUpdateFolderMemberPost")
@@ -1856,7 +1787,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1871,12 +1801,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2sharingUpdateFolderPolicyPost"></a>
 # **call2sharingUpdateFolderPolicyPost**
-> kotlin.String call2sharingUpdateFolderPolicyPost(contentType, body)
+> kotlin.String call2sharingUpdateFolderPolicyPost(body)
 
 update_folder_policy
 
@@ -1889,10 +1819,9 @@ update_folder_policy
 //import earth.levi.dropbox.models.*
 
 val apiInstance = SharingApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFolderPolicyPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2sharingUpdateFolderPolicyPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling SharingApi#call2sharingUpdateFolderPolicyPost")
@@ -1907,7 +1836,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -1922,6 +1850,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

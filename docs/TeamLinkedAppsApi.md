@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="call2teamLinkedAppsListMemberLinkedAppsPost"></a>
 # **call2teamLinkedAppsListMemberLinkedAppsPost**
-> call2teamLinkedAppsListMemberLinkedAppsPost(contentType, body)
+> call2teamLinkedAppsListMemberLinkedAppsPost(body)
 
 linked_apps/list_member_linked_apps
 
@@ -25,10 +25,9 @@ linked_apps/list_member_linked_apps
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLinkedAppsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamLinkedAppsListMemberLinkedAppsPost(contentType, body)
+    apiInstance.call2teamLinkedAppsListMemberLinkedAppsPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamLinkedAppsApi#call2teamLinkedAppsListMemberLinkedAppsPost")
     e.printStackTrace()
@@ -42,7 +41,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -57,12 +55,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLinkedAppsListMembersLinkedAppsPost"></a>
 # **call2teamLinkedAppsListMembersLinkedAppsPost**
-> call2teamLinkedAppsListMembersLinkedAppsPost(contentType, body)
+> call2teamLinkedAppsListMembersLinkedAppsPost(body)
 
 linked_apps/list_members_linked_apps
 
@@ -75,10 +73,9 @@ linked_apps/list_members_linked_apps
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLinkedAppsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamLinkedAppsListMembersLinkedAppsPost(contentType, body)
+    apiInstance.call2teamLinkedAppsListMembersLinkedAppsPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamLinkedAppsApi#call2teamLinkedAppsListMembersLinkedAppsPost")
     e.printStackTrace()
@@ -92,7 +89,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -107,12 +103,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLinkedAppsRevokeLinkedAppBatchPost"></a>
 # **call2teamLinkedAppsRevokeLinkedAppBatchPost**
-> call2teamLinkedAppsRevokeLinkedAppBatchPost(contentType, body)
+> call2teamLinkedAppsRevokeLinkedAppBatchPost(body)
 
 linked_apps/revoke_linked_app_batch
 
@@ -125,10 +121,9 @@ linked_apps/revoke_linked_app_batch
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLinkedAppsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamLinkedAppsRevokeLinkedAppBatchPost(contentType, body)
+    apiInstance.call2teamLinkedAppsRevokeLinkedAppBatchPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamLinkedAppsApi#call2teamLinkedAppsRevokeLinkedAppBatchPost")
     e.printStackTrace()
@@ -142,7 +137,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -157,12 +151,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamLinkedAppsRevokeLinkedAppPost"></a>
 # **call2teamLinkedAppsRevokeLinkedAppPost**
-> call2teamLinkedAppsRevokeLinkedAppPost(contentType, body)
+> call2teamLinkedAppsRevokeLinkedAppPost(body)
 
 linked_apps/revoke_linked_app
 
@@ -175,10 +169,9 @@ linked_apps/revoke_linked_app
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamLinkedAppsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2teamLinkedAppsRevokeLinkedAppPost(contentType, body)
+    apiInstance.call2teamLinkedAppsRevokeLinkedAppPost(body)
 } catch (e: ClientException) {
     println("4xx response calling TeamLinkedAppsApi#call2teamLinkedAppsRevokeLinkedAppPost")
     e.printStackTrace()
@@ -192,7 +185,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -207,6 +199,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

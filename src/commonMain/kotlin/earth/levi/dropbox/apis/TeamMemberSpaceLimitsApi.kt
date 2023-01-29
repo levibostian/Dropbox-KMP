@@ -36,12 +36,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/excluded_users/add
      * [member_space_limits/excluded_users/add](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-excluded_users-add)  scope: &#x60;members.write&#x60;  Add users to member space limits excluded users list.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsExcludedUsersAddPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsExcludedUsersAddPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/excluded_users/list/continue
      * [member_space_limits/excluded_users/list/continue](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-excluded_users-list-continue)  scope: &#x60;members.read&#x60;  Continue listing member space limits excluded users.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsExcludedUsersListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsExcludedUsersListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -104,12 +100,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/excluded_users/list
      * [member_space_limits/excluded_users/list](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-excluded_users-list)  scope: &#x60;members.read&#x60;  List member space limits excluded users.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsExcludedUsersListPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsExcludedUsersListPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -117,7 +112,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -138,12 +132,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/excluded_users/remove
      * [member_space_limits/excluded_users/remove](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-excluded_users-remove)  scope: &#x60;members.write&#x60;  Remove users from member space limits excluded users list.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsExcludedUsersRemovePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsExcludedUsersRemovePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -151,7 +144,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -172,12 +164,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/get_custom_quota
      * [member_space_limits/get_custom_quota](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-get_custom_quota)  scope: &#x60;members.read&#x60;  Get users custom quota. Returns none as the custom quota if none was set. A maximum of 1000 members can be specified in a single call.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsGetCustomQuotaPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsGetCustomQuotaPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -185,7 +176,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -206,12 +196,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/remove_custom_quota
      * [member_space_limits/remove_custom_quota](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-remove_custom_quota)  scope: &#x60;members.write&#x60;  Remove users custom quota. A maximum of 1000 members can be specified in a single call.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsRemoveCustomQuotaPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsRemoveCustomQuotaPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -219,7 +208,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -240,12 +228,11 @@ open class TeamMemberSpaceLimitsApi(
     /**
      * member_space_limits/set_custom_quota
      * [member_space_limits/set_custom_quota](https://www.dropbox.com/developers/documentation/http/teams#team-member_space_limits-set_custom_quota)  scope: &#x60;members.read&#x60;  Set users custom quota. Custom quota has to be at least 15GB. A maximum of 1000 members can be specified in a single call.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMemberSpaceLimitsSetCustomQuotaPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMemberSpaceLimitsSetCustomQuotaPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -253,7 +240,6 @@ open class TeamMemberSpaceLimitsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

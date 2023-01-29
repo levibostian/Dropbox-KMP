@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 <a name="call2teamMemberSpaceLimitsExcludedUsersAddPost"></a>
 # **call2teamMemberSpaceLimitsExcludedUsersAddPost**
-> kotlin.String call2teamMemberSpaceLimitsExcludedUsersAddPost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsExcludedUsersAddPost(body)
 
 member_space_limits/excluded_users/add
 
@@ -28,10 +28,9 @@ member_space_limits/excluded_users/add
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersAddPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersAddPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsExcludedUsersAddPost")
@@ -46,7 +45,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -61,12 +59,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsExcludedUsersListContinuePost"></a>
 # **call2teamMemberSpaceLimitsExcludedUsersListContinuePost**
-> kotlin.String call2teamMemberSpaceLimitsExcludedUsersListContinuePost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsExcludedUsersListContinuePost(body)
 
 member_space_limits/excluded_users/list/continue
 
@@ -79,10 +77,9 @@ member_space_limits/excluded_users/list/continue
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersListContinuePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersListContinuePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsExcludedUsersListContinuePost")
@@ -97,7 +94,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -112,12 +108,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsExcludedUsersListPost"></a>
 # **call2teamMemberSpaceLimitsExcludedUsersListPost**
-> kotlin.String call2teamMemberSpaceLimitsExcludedUsersListPost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsExcludedUsersListPost(body)
 
 member_space_limits/excluded_users/list
 
@@ -130,10 +126,9 @@ member_space_limits/excluded_users/list
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersListPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersListPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsExcludedUsersListPost")
@@ -148,7 +143,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -163,12 +157,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsExcludedUsersRemovePost"></a>
 # **call2teamMemberSpaceLimitsExcludedUsersRemovePost**
-> kotlin.String call2teamMemberSpaceLimitsExcludedUsersRemovePost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsExcludedUsersRemovePost(body)
 
 member_space_limits/excluded_users/remove
 
@@ -181,10 +175,9 @@ member_space_limits/excluded_users/remove
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersRemovePost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsExcludedUsersRemovePost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsExcludedUsersRemovePost")
@@ -199,7 +192,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -214,12 +206,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsGetCustomQuotaPost"></a>
 # **call2teamMemberSpaceLimitsGetCustomQuotaPost**
-> kotlin.String call2teamMemberSpaceLimitsGetCustomQuotaPost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsGetCustomQuotaPost(body)
 
 member_space_limits/get_custom_quota
 
@@ -232,10 +224,9 @@ member_space_limits/get_custom_quota
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsGetCustomQuotaPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsGetCustomQuotaPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsGetCustomQuotaPost")
@@ -250,7 +241,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -265,12 +255,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsRemoveCustomQuotaPost"></a>
 # **call2teamMemberSpaceLimitsRemoveCustomQuotaPost**
-> kotlin.String call2teamMemberSpaceLimitsRemoveCustomQuotaPost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsRemoveCustomQuotaPost(body)
 
 member_space_limits/remove_custom_quota
 
@@ -283,10 +273,9 @@ member_space_limits/remove_custom_quota
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsRemoveCustomQuotaPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsRemoveCustomQuotaPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsRemoveCustomQuotaPost")
@@ -301,7 +290,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -316,12 +304,12 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2teamMemberSpaceLimitsSetCustomQuotaPost"></a>
 # **call2teamMemberSpaceLimitsSetCustomQuotaPost**
-> kotlin.String call2teamMemberSpaceLimitsSetCustomQuotaPost(contentType, body)
+> kotlin.String call2teamMemberSpaceLimitsSetCustomQuotaPost(body)
 
 member_space_limits/set_custom_quota
 
@@ -334,10 +322,9 @@ member_space_limits/set_custom_quota
 //import earth.levi.dropbox.models.*
 
 val apiInstance = TeamMemberSpaceLimitsApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsSetCustomQuotaPost(contentType, body)
+    val result : kotlin.String = apiInstance.call2teamMemberSpaceLimitsSetCustomQuotaPost(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling TeamMemberSpaceLimitsApi#call2teamMemberSpaceLimitsSetCustomQuotaPost")
@@ -352,7 +339,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -367,6 +353,6 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

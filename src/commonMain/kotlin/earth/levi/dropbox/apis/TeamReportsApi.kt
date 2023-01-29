@@ -36,11 +36,10 @@ open class TeamReportsApi(
     /**
      * reports/get_activity
      * [reports/get_activity](https://www.dropbox.com/developers/documentation/http/teams#team-reports-get_activity)  scope: &#x60;team_info.read&#x60;  Retrieves reporting data about a team&#39;s user activity.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamReportsGetActivityPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamReportsGetActivityPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -48,7 +47,6 @@ open class TeamReportsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -69,11 +67,10 @@ open class TeamReportsApi(
     /**
      * reports/get_devices
      * [reports/get_devices](https://www.dropbox.com/developers/documentation/http/teams#team-reports-get_devices)  scope: &#x60;team_info.read&#x60;  Retrieves reporting data about a team&#39;s linked devices.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamReportsGetDevicesPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamReportsGetDevicesPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -81,7 +78,6 @@ open class TeamReportsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -102,11 +98,10 @@ open class TeamReportsApi(
     /**
      * reports/get_membership
      * [reports/get_membership](https://www.dropbox.com/developers/documentation/http/teams#team-reports-get_membership)  scope: &#x60;team_info.read&#x60;  Retrieves reporting data about a team&#39;s membership.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamReportsGetMembershipPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamReportsGetMembershipPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -114,7 +109,6 @@ open class TeamReportsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -135,11 +129,10 @@ open class TeamReportsApi(
     /**
      * reports/get_storage
      * [reports/get_storage](https://www.dropbox.com/developers/documentation/http/teams#team-reports-get_storage)  scope: &#x60;team_info.read&#x60;  Retrieves reporting data about a team&#39;s storage usage.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamReportsGetStoragePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamReportsGetStoragePost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -147,7 +140,6 @@ open class TeamReportsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

@@ -36,12 +36,11 @@ open class TeamLogApi(
     /**
      * get_events/continue
      * [get_events/continue](https://www.dropbox.com/developers/documentation/http/teams#team_log-get_events-continue)  scope: &#x60;events.read&#x60;  Once a cursor has been retrieved from &#x60;get_events&#x60;, use this to paginate through all events. Permission : Team Auditing.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLogGetEventsContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLogGetEventsContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamLogApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamLogApi(
     /**
      * get_events
      * [get_events](https://www.dropbox.com/developers/documentation/http/teams#team_log-get_events)  scope: &#x60;events.read&#x60;  Retrieves team events. If the result&#39;s &#x60;GetTeamEventsResult.has_more&#x60; field is &#x60;true&#x60;, call &#x60;get_events/continue&#x60; with the returned cursor to retrieve more entries. If end_time is not specified in your request, you may use the returned cursor to poll &#x60;get_events/continue&#x60; for new events. Many attributes note &#39;may be missing due to historical data gap&#39;. Note that the file_operations category and &amp; analogous paper events are not available on all Dropbox Business [plans](http://www.dropbox.com/business/plans-comparison). Use [features/get_values](http://www.dropbox.com/developers/documentation/http/teams#team-features-get_values) to check for this feature. Permission : Team Auditing.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamLogGetEventsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamLogGetEventsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamLogApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

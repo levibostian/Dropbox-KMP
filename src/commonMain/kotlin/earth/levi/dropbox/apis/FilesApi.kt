@@ -37,12 +37,11 @@ open class FilesApi(
     /**
      * copy_batch/check
      * [copy_batch/check](https://www.dropbox.com/developers/documentation/http/documentation#files-copy_batch-check)  scope: &#x60;files.content.write&#x60;  Returns the status of an asynchronous job for &#x60;copy_batch:2&#x60;. It returns list of results for each entry.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCopyBatchCheckV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCopyBatchCheckV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -50,7 +49,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -71,12 +69,11 @@ open class FilesApi(
     /**
      * copy_batch
      * [copy_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-copy_batch)  scope: &#x60;files.content.write&#x60;  Copy multiple files or folders to different locations at once in the user&#39;s Dropbox. This route will replace &#x60;copy_batch:1&#x60;. The main difference is this route will return status for each entry, while &#x60;copy_batch:1&#x60; raises failure if any entry fails. This route will either finish synchronously, or return a job ID and do the async copy job in background. Please use &#x60;copy_batch/check:2&#x60; to check the job status.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCopyBatchV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCopyBatchV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -84,7 +81,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -105,12 +101,11 @@ open class FilesApi(
     /**
      * copy_reference/get
      * [copy_reference/get](https://www.dropbox.com/developers/documentation/http/documentation#files-copy_reference-get)  scope: &#x60;files.content.write&#x60;  Get a copy reference to a file or folder. This reference string can be used to save that file or folder to another user&#39;s Dropbox by passing it to &#x60;copy_reference/save&#x60;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCopyReferenceGetPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCopyReferenceGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -118,7 +113,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -139,12 +133,11 @@ open class FilesApi(
     /**
      * copy_reference/save
      * [copy_reference/save](https://www.dropbox.com/developers/documentation/http/documentation#files-copy_reference-save)  scope: &#x60;files.content.write&#x60;  Save a copy reference returned by &#x60;copy_reference/get&#x60; to the user&#39;s Dropbox.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCopyReferenceSavePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCopyReferenceSavePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -152,7 +145,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -173,12 +165,11 @@ open class FilesApi(
     /**
      * copy
      * [copy](https://www.dropbox.com/developers/documentation/http/documentation#files-copy)  scope: &#x60;files.content.write&#x60;  Copy a file or folder to a different location in the user&#39;s Dropbox. If the source path is a folder all its contents will be copied.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCopyV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCopyV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -186,7 +177,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -207,12 +197,11 @@ open class FilesApi(
     /**
      * create_folder_batch/check
      * [create_folder_batch/check](https://www.dropbox.com/developers/documentation/http/documentation#files-create_folder_batch-check)  scope: &#x60;files.content.write&#x60;  Returns the status of an asynchronous job for &#x60;create_folder_batch&#x60;. If success, it returns list of result for each entry.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCreateFolderBatchCheckPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCreateFolderBatchCheckPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -220,7 +209,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -241,12 +229,11 @@ open class FilesApi(
     /**
      * create_folder_batch
      * [create_folder_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-create_folder_batch)  scope: &#x60;files.content.write&#x60;  Create multiple folders at once. This route is asynchronous for large batches, which returns a job ID immediately and runs the create folder batch asynchronously. Otherwise, creates the folders and returns the result synchronously for smaller inputs. You can force asynchronous behaviour by using the &#x60;CreateFolderBatchArg.force_async&#x60; flag.  Use &#x60;create_folder_batch/check&#x60; to check the job status.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCreateFolderBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCreateFolderBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -254,7 +241,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -275,12 +261,11 @@ open class FilesApi(
     /**
      * create_folder
      * [create_folder](https://www.dropbox.com/developers/documentation/http/documentation#files-create_folder)  scope: &#x60;files.content.write&#x60;  Create a folder at a given path.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesCreateFolderV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesCreateFolderV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -288,7 +273,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -309,12 +293,11 @@ open class FilesApi(
     /**
      * delete_batch/check
      * [delete_batch/check](https://www.dropbox.com/developers/documentation/http/documentation#files-delete_batch-check)  scope: &#x60;files.content.write&#x60;  Returns the status of an asynchronous job for &#x60;delete_batch&#x60;. If success, it returns list of result for each entry.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesDeleteBatchCheckPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesDeleteBatchCheckPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -322,7 +305,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -343,12 +325,11 @@ open class FilesApi(
     /**
      * delete_batch
      * [delete_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-delete_batch)  scope: &#x60;files.content.write&#x60;  Delete multiple files/folders at once. This route is asynchronous, which returns a job ID immediately and runs the delete batch asynchronously. Use &#x60;delete_batch/check&#x60; to check the job status.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesDeleteBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesDeleteBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -356,7 +337,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -377,12 +357,11 @@ open class FilesApi(
     /**
      * delete
      * [delete](https://www.dropbox.com/developers/documentation/http/documentation#files-delete)  scope: &#x60;files.content.write&#x60;  Delete the file or folder at a given path. If the path is a folder, all its contents will be deleted too. A successful response indicates that the file or folder was deleted. The returned metadata will be the corresponding &#x60;FileMetadata&#x60; or &#x60;FolderMetadata&#x60; for the item at time of deletion, and not a &#x60;DeletedMetadata&#x60; object.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesDeleteV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesDeleteV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -390,7 +369,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -510,12 +488,11 @@ open class FilesApi(
     /**
      * get_file_lock_batch
      * [get_file_lock_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-get_file_lock_batch)  scope: &#x60;files.content.read&#x60;  Return the lock metadata for the given list of paths.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesGetFileLockBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesGetFileLockBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -523,7 +500,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -544,12 +520,11 @@ open class FilesApi(
     /**
      * get_metadata
      * [get_metadata](https://www.dropbox.com/developers/documentation/http/documentation#files-get_metadata)  scope: &#x60;files.metadata.read&#x60;  Returns the metadata for a file or folder. Note: Metadata for the root folder is unsupported.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesGetMetadataPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesGetMetadataPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -557,7 +532,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -611,12 +585,11 @@ open class FilesApi(
     /**
      * get_temporary_link
      * [get_temporary_link](https://www.dropbox.com/developers/documentation/http/documentation#files-get_temporary_link)  scope: &#x60;files.content.read&#x60;  Get a temporary link to stream content of a file. This link will expire in four hours and afterwards you will get 410 Gone. This URL should not be used to display content directly in the browser. The Content-Type of the link is determined automatically by the file&#39;s mime type.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesGetTemporaryLinkPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesGetTemporaryLinkPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -624,7 +597,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -645,12 +617,11 @@ open class FilesApi(
     /**
      * get_temporary_upload_link
      * [get_temporary_upload_link](https://www.dropbox.com/developers/documentation/http/documentation#files-get_temporary_upload_link)  scope: &#x60;files.content.write&#x60;  Get a one-time use temporary upload link to upload a file to a Dropbox location.  This endpoint acts as a delayed &#x60;upload&#x60;. The returned temporary upload link may be used to make a POST request with the data to be uploaded. The upload will then be perfomed with the &#x60;CommitInfo&#x60; previously provided to &#x60;get_temporary_upload_link&#x60; but evaluated only upon consumption. Hence, errors stemming from invalid &#x60;CommitInfo&#x60; with respect to the state of the user&#39;s Dropbox will only be communicated at consumption time. Additionally, these errors are surfaced as generic HTTP 409 Conflict responses, potentially hiding issue details. The maximum temporary upload link duration is 4 hours. Upon consumption or expiration, a new link will have to be generated. Multiple links may exist for a specific upload path at any given time.  The POST request on the temporary upload link must have its Content-Type set to \&quot;application/octet-stream\&quot;.  Example temporary upload link consumption request:  curl -X POST https://content.dropboxapi.com/apitul/1/bNi2uIYF51cVBND --header \&quot;Content-Type: application/octet-stream\&quot; --data-binary @local_file.txt  A successful temporary upload link consumption request returns the content hash of the uploaded data in JSON format.  Example succesful temporary upload link consumption response: {\&quot;content-hash\&quot;: \&quot;599d71033d700ac892a0e48fa61b125d2f5994\&quot;}  An unsuccessful temporary upload link consumption request returns any of the following status codes:  HTTP 400 Bad Request: Content-Type is not one of application/octet-stream and text/plain or request is invalid. HTTP 409 Conflict: The temporary upload link does not exist or is currently unavailable, the upload failed, or another error happened. HTTP 410 Gone: The temporary upload link is expired or consumed.  Example unsuccessful temporary upload link consumption response: Temporary upload link has been recently consumed.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesGetTemporaryUploadLinkPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesGetTemporaryUploadLinkPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -658,7 +629,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -679,12 +649,11 @@ open class FilesApi(
     /**
      * get_thumbnail_batch
      * [get_thumbnail_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-get_thumbnail_batch)  scope: &#x60;files.content.read&#x60;  Get thumbnails for a list of images. We allow up to 25 thumbnails in a single batch. This method currently supports files with the following file extensions: jpg, jpeg, png, tiff, tif, gif and bmp. Photos that are larger than 20MB in size won&#39;t be converted to a thumbnail.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesGetThumbnailBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesGetThumbnailBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -692,7 +661,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -746,12 +714,11 @@ open class FilesApi(
     /**
      * list_folder/continue
      * [list_folder/continue](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;list_folder&#x60;, use this to paginate through all files and retrieve updates to the folder, following the same rules as documented for &#x60;list_folder&#x60;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesListFolderContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesListFolderContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -759,7 +726,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -780,12 +746,11 @@ open class FilesApi(
     /**
      * list_folder/get_latest_cursor
      * [list_folder/get_latest_cursor](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder-get_latest_cursor)  scope: &#x60;files.metadata.read&#x60;  A way to quickly get a cursor for the folder&#39;s state. Unlike &#x60;list_folder&#x60;, &#x60;list_folder/get_latest_cursor&#x60; doesn&#39;t return any entries. This endpoint is for app which only needs to know about new files and modifications and doesn&#39;t need to know about files that already exist in Dropbox.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesListFolderGetLatestCursorPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesListFolderGetLatestCursorPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -793,7 +758,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -814,12 +778,11 @@ open class FilesApi(
     /**
      * list_folder/longpoll
      * [list_folder/longpoll](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder-longpoll)  scope: &#x60;files.metadata.read&#x60;  A longpoll endpoint to wait for changes on an account. In conjunction with &#x60;list_folder/continue&#x60;, this call gives you a low-latency way to monitor an account for file changes. The connection will block until there are changes available or a timeout occurs. This endpoint is useful mostly for client-side apps. If you&#39;re looking for server-side notifications, check out our [webhooks documentation](https://www.dropbox.com/developers/reference/webhooks).
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesListFolderLongpollPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesListFolderLongpollPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -827,7 +790,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -848,12 +810,11 @@ open class FilesApi(
     /**
      * list_revisions
      * [list_revisions](https://www.dropbox.com/developers/documentation/http/documentation#files-list_revisions)  scope: &#x60;files.metadata.read&#x60;  Returns revisions for files based on a file path or a file id. The file path or file id is identified from the latest file entry at the given file path or id. This end point allows your app to query either by file path or file id by setting the mode parameter appropriately. In the &#x60;ListRevisionsMode.path&#x60; (default) mode, all revisions at the same file path as the latest file entry are returned. If revisions with the same file id are desired, then mode must be set to &#x60;ListRevisionsMode.id&#x60;. The &#x60;ListRevisionsMode.id&#x60; mode is useful to retrieve revisions for a given file across moves or renames.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesListRevisionsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesListRevisionsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -861,7 +822,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -882,12 +842,11 @@ open class FilesApi(
     /**
      * lock_file_batch
      * [lock_file_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-lock_file_batch)  scope: &#x60;files.content.write&#x60;  Lock the files at the given paths. A locked file will be writable only by the lock holder. A successful response indicates that the file has been locked. Returns a list of the locked file paths and their metadata after this operation.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesLockFileBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesLockFileBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -895,7 +854,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -916,12 +874,11 @@ open class FilesApi(
     /**
      * move_batch/check
      * [move_batch/check](https://www.dropbox.com/developers/documentation/http/documentation#files-move_batch-check)  scope: &#x60;files.content.write&#x60;  Returns the status of an asynchronous job for &#x60;move_batch:2&#x60;. It returns list of results for each entry.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesMoveBatchCheckV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesMoveBatchCheckV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -929,7 +886,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -950,12 +906,11 @@ open class FilesApi(
     /**
      * move_batch
      * [move_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-move_batch)  scope: &#x60;files.content.write&#x60;  Move multiple files or folders to different locations at once in the user&#39;s Dropbox. Note that we do not currently support case-only renaming. This route will replace &#x60;move_batch:1&#x60;. The main difference is this route will return status for each entry, while &#x60;move_batch:1&#x60; raises failure if any entry fails. This route will either finish synchronously, or return a job ID and do the async move job in background. Please use &#x60;move_batch/check:2&#x60; to check the job status.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesMoveBatchV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesMoveBatchV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -963,7 +918,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -984,12 +938,11 @@ open class FilesApi(
     /**
      * move
      * [move](https://www.dropbox.com/developers/documentation/http/documentation#files-move)  scope: &#x60;files.content.write&#x60;  Move a file or folder to a different location in the user&#39;s Dropbox. If the source path is a folder all its contents will be moved. Note that we do not currently support case-only renaming.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesMoveV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesMoveV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -997,7 +950,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1018,11 +970,10 @@ open class FilesApi(
     /**
      * permanently_delete
      * [permanently_delete](https://www.dropbox.com/developers/documentation/http/documentation#files-permanently_delete)  scope: &#x60;files.permanent_delete&#x60;  Permanently delete the file or folder at a given path (see https://www.dropbox.com/en/help/40). Note: This endpoint is only available for Dropbox Business apps.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filesPermanentlyDeletePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2filesPermanentlyDeletePost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1030,7 +981,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1051,12 +1001,11 @@ open class FilesApi(
     /**
      * restore
      * [restore](https://www.dropbox.com/developers/documentation/http/documentation#files-restore)  scope: &#x60;files.content.write&#x60;  Restore a specific revision of a file to the given path.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesRestorePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesRestorePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1064,7 +1013,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1085,12 +1033,11 @@ open class FilesApi(
     /**
      * save_url/check_job_status
      * [save_url/check_job_status](https://www.dropbox.com/developers/documentation/http/documentation#files-save_url-check_job_status)  scope: &#x60;files.content.write&#x60;  Check the status of a &#x60;save_url&#x60; job.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesSaveUrlCheckJobStatusPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesSaveUrlCheckJobStatusPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1098,7 +1045,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1119,12 +1065,11 @@ open class FilesApi(
     /**
      * save_url
      * [save_url](https://www.dropbox.com/developers/documentation/http/documentation#files-save_url)  scope: &#x60;files.content.write&#x60;  Save the data from a specified URL into a file in user&#39;s Dropbox. Note that the transfer from the URL must complete within 5 minutes, or the operation will time out and the job will fail. If the given path already exists, the file will be renamed to avoid the conflict (e.g. myfile (1).txt).
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesSaveUrlPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesSaveUrlPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1132,7 +1077,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1153,12 +1097,11 @@ open class FilesApi(
     /**
      * search/continue
      * [search/continue](https://www.dropbox.com/developers/documentation/http/documentation#files-search-continue)  scope: &#x60;files.metadata.read&#x60;  Fetches the next page of search results returned from &#x60;search:2&#x60;. Note: &#x60;search:2&#x60; along with &#x60;search/continue:2&#x60; can only be used to retrieve a maximum of 10,000 matches. Recent changes may not immediately be reflected in search results due to a short delay in indexing. Duplicate results may be returned across pages. Some results may not be returned.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesSearchContinueV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesSearchContinueV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1166,7 +1109,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1187,12 +1129,11 @@ open class FilesApi(
     /**
      * search
      * [search](https://www.dropbox.com/developers/documentation/http/documentation#files-search)  scope: &#x60;files.metadata.read&#x60;  Searches for files and folders. Note: &#x60;search:2&#x60; along with &#x60;search/continue:2&#x60; can only be used to retrieve a maximum of 10,000 matches. Recent changes may not immediately be reflected in search results due to a short delay in indexing. Duplicate results may be returned across pages. Some results may not be returned.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesSearchV2Post(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesSearchV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1200,7 +1141,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1221,12 +1161,11 @@ open class FilesApi(
     /**
      * unlock_file_batch
      * [unlock_file_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-unlock_file_batch)  scope: &#x60;files.content.write&#x60;  Unlock the files at the given paths. A locked file can only be unlocked by the lock holder or, if a business account, a team admin. A successful response indicates that the file has been unlocked. Returns a list of the unlocked file paths and their metadata after this operation.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesUnlockFileBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesUnlockFileBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1234,7 +1173,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1320,12 +1258,11 @@ open class FilesApi(
     /**
      * upload_session/finish_batch/check
      * [upload_session/finish_batch/check](https://www.dropbox.com/developers/documentation/http/documentation#files-upload_session-finish_batch-check)  scope: &#x60;files.content.write&#x60;  Returns the status of an asynchronous job for &#x60;upload_session/finish_batch&#x60;. If success, it returns list of result for each entry.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesUploadSessionFinishBatchCheckPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesUploadSessionFinishBatchCheckPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1333,7 +1270,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -1354,12 +1290,11 @@ open class FilesApi(
     /**
      * upload_session/finish_batch
      * [upload_session/finish_batch](https://www.dropbox.com/developers/documentation/http/documentation#files-upload_session-finish_batch)  scope: &#x60;files.content.write&#x60;  This route helps you commit many files at once into a user&#39;s Dropbox. Use &#x60;upload_session/start&#x60; and &#x60;upload_session/append:2&#x60; to upload file contents. We recommend uploading many files in parallel to increase throughput. Once the file contents have been uploaded, rather than calling &#x60;upload_session/finish&#x60;, use this route to finish all your upload sessions in a single request. &#x60;UploadSessionStartArg.close&#x60; or &#x60;UploadSessionAppendArg.close&#x60; needs to be true for the last &#x60;upload_session/start&#x60; or &#x60;upload_session/append:2&#x60; call. The maximum size of a file one can upload to an upload session is 350 GB. This route will return a job_id immediately and do the async commit job in background. Use &#x60;upload_session/finish_batch/check&#x60; to check the job status. For the same account, this route should be executed serially. That means you should not start the next job before current job finishes. We allow up to 1000 entries in a single request. Calls to this endpoint will count as data transport calls for any Dropbox Business teams with a limit on the number of data transport calls allowed per month. For more information, see the [Data transport limit page](https://www.dropbox.com/developers/reference/data-transport-limit).
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesUploadSessionFinishBatchPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2filesUploadSessionFinishBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1367,7 +1302,6 @@ open class FilesApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

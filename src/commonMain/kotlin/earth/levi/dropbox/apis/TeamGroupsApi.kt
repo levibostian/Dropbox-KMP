@@ -36,12 +36,11 @@ open class TeamGroupsApi(
     /**
      * groups/create
      * [groups/create](https://www.dropbox.com/developers/documentation/http/teams#team-groups-create)  scope: &#x60;groups.write&#x60;  Creates a new, empty group, with a requested name. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsCreatePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsCreatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamGroupsApi(
     /**
      * groups/delete
      * [groups/delete](https://www.dropbox.com/developers/documentation/http/teams#team-groups-delete)  scope: &#x60;groups.write&#x60;  Deletes a group. The group is deleted immediately. However the revoking of group-owned resources may take additional time. Use the &#x60;groups/job_status/get&#x60; to determine whether this process has completed. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsDeletePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsDeletePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -104,12 +100,11 @@ open class TeamGroupsApi(
     /**
      * groups/get_info
      * [groups/get_info](https://www.dropbox.com/developers/documentation/http/teams#team-groups-get_info)  scope: &#x60;groups.read&#x60;  Retrieves information about one or more groups. Note that the optional field  &#x60;GroupFullInfo.members&#x60; is not returned for system-managed groups. Permission : Team Information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsGetInfoPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsGetInfoPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -117,7 +112,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -138,12 +132,11 @@ open class TeamGroupsApi(
     /**
      * groups/job_status/get
      * [groups/job_status/get](https://www.dropbox.com/developers/documentation/http/teams#team-groups-job_status-get)  scope: &#x60;groups.write&#x60;  Once an async_job_id is returned from &#x60;groups/delete&#x60;, &#x60;groups/members/add&#x60; , or &#x60;groups/members/remove&#x60; use this method to poll the status of granting/revoking group members&#39; access to group-owned resources. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsJobStatusGetPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsJobStatusGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -151,7 +144,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -172,12 +164,11 @@ open class TeamGroupsApi(
     /**
      * groups/list/continue
      * [groups/list/continue](https://www.dropbox.com/developers/documentation/http/teams#team-groups-list-continue)  scope: &#x60;groups.read&#x60;  Once a cursor has been retrieved from &#x60;groups/list&#x60;, use this to paginate through all groups. Permission : Team Information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -185,7 +176,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -206,12 +196,11 @@ open class TeamGroupsApi(
     /**
      * groups/list
      * [groups/list](https://www.dropbox.com/developers/documentation/http/teams#team-groups-list)  scope: &#x60;groups.read&#x60;  Lists groups on a team. Permission : Team Information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsListPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsListPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -219,7 +208,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -240,12 +228,11 @@ open class TeamGroupsApi(
     /**
      * groups/members/add
      * [groups/members/add](https://www.dropbox.com/developers/documentation/http/teams#team-groups-members-add)  scope: &#x60;groups.write&#x60;  Adds members to a group. The members are added immediately. However the granting of group-owned resources may take additional time. Use the &#x60;groups/job_status/get&#x60; to determine whether this process has completed. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsMembersAddPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsMembersAddPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -253,7 +240,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -274,12 +260,11 @@ open class TeamGroupsApi(
     /**
      * groups/members/list/continue
      * [groups/members/list/continue](https://www.dropbox.com/developers/documentation/http/teams#team-groups-members-list-continue)  scope: &#x60;groups.read&#x60;  Once a cursor has been retrieved from &#x60;groups/members/list&#x60;, use this to paginate through all members of the group. Permission : Team information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsMembersListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsMembersListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -287,7 +272,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -308,12 +292,11 @@ open class TeamGroupsApi(
     /**
      * groups/members/list
      * [groups/members/list](https://www.dropbox.com/developers/documentation/http/teams#team-groups-members-list)  scope: &#x60;groups.read&#x60;  Lists members of a group. Permission : Team Information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsMembersListPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsMembersListPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -321,7 +304,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -342,12 +324,11 @@ open class TeamGroupsApi(
     /**
      * groups/members/remove
      * [groups/members/remove](https://www.dropbox.com/developers/documentation/http/teams#team-groups-members-remove)  scope: &#x60;groups.write&#x60;  Removes members from a group. The members are removed immediately. However the revoking of group-owned resources may take additional time. Use the &#x60;groups/job_status/get&#x60; to determine whether this process has completed. This method permits removing the only owner of a group, even in cases where this is not possible via the web client. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsMembersRemovePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsMembersRemovePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -355,7 +336,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -376,12 +356,11 @@ open class TeamGroupsApi(
     /**
      * groups/members/set_access_type
      * [groups/members/set_access_type](https://www.dropbox.com/developers/documentation/http/teams#team-groups-members-set_access_type)  scope: &#x60;groups.write&#x60;  Sets a member&#39;s access type in a group. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsMembersSetAccessTypePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsMembersSetAccessTypePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -389,7 +368,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -410,12 +388,11 @@ open class TeamGroupsApi(
     /**
      * groups/update
      * [groups/update](https://www.dropbox.com/developers/documentation/http/teams#team-groups-update)  scope: &#x60;groups.write&#x60;  Updates a group&#39;s name and/or external ID. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamGroupsUpdatePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamGroupsUpdatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -423,7 +400,6 @@ open class TeamGroupsApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,

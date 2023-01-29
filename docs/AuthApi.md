@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="call2authTokenFromOauth1Post"></a>
 # **call2authTokenFromOauth1Post**
-> kotlin.String call2authTokenFromOauth1Post(contentType, body)
+> kotlin.String call2authTokenFromOauth1Post(body)
 
 token/from_oauth1
 
@@ -23,10 +23,9 @@ token/from_oauth1
 //import earth.levi.dropbox.models.*
 
 val apiInstance = AuthApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2authTokenFromOauth1Post(contentType, body)
+    val result : kotlin.String = apiInstance.call2authTokenFromOauth1Post(body)
     println(result)
 } catch (e: ClientException) {
     println("4xx response calling AuthApi#call2authTokenFromOauth1Post")
@@ -41,7 +40,6 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
  **body** | **kotlin.String**|  | [optional]
 
 ### Return type
@@ -56,7 +54,7 @@ Configure bearerAuth:
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 <a name="call2authTokenRevokePost"></a>

@@ -36,12 +36,11 @@ open class TeamMembersApi(
     /**
      * members/add/job_status/get
      * [members/add/job_status/get](https://www.dropbox.com/developers/documentation/http/teams#team-members-add-job_status-get)  scope: &#x60;members.write&#x60;  Once an async_job_id is returned from &#x60;members/add&#x60; , use this to poll the status of the asynchronous request. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersAddJobStatusGetPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersAddJobStatusGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -49,7 +48,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -70,12 +68,11 @@ open class TeamMembersApi(
     /**
      * members/add
      * [members/add](https://www.dropbox.com/developers/documentation/http/teams#team-members-add)  scope: &#x60;members.write&#x60;  Adds members to a team. Permission : Team member management A maximum of 20 members can be specified in a single call. If no Dropbox account exists with the email address specified, a new Dropbox account will be created with the given email address, and that account will be invited to the team. If a personal Dropbox account exists with the email address specified in the call, this call will create a placeholder Dropbox account for the user on the team and send an email inviting the user to migrate their existing personal account onto the team. Team member management apps are required to set an initial given_name and surname for a user to use in the team invitation and for &#39;Perform as team member&#39; actions taken on the user before they become &#39;active&#39;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersAddPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersAddPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -83,7 +80,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -104,12 +100,11 @@ open class TeamMembersApi(
     /**
      * members/delete_profile_photo
      * [members/delete_profile_photo](https://www.dropbox.com/developers/documentation/http/teams#team-members-delete_profile_photo)  scope: &#x60;members.write&#x60;  Deletes a team member&#39;s profile photo. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersDeleteProfilePhotoPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersDeleteProfilePhotoPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -117,7 +112,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -138,12 +132,11 @@ open class TeamMembersApi(
     /**
      * members/get_info
      * [members/get_info](https://www.dropbox.com/developers/documentation/http/teams#team-members-get_info)  scope: &#x60;members.read&#x60;  Returns information about multiple team members. Permission : Team information This endpoint will return &#x60;MembersGetInfoItem.id_not_found&#x60;, for IDs (or emails) that cannot be matched to a valid team member.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersGetInfoPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersGetInfoPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -151,7 +144,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -172,12 +164,11 @@ open class TeamMembersApi(
     /**
      * members/list/continue
      * [members/list/continue](https://www.dropbox.com/developers/documentation/http/teams#team-members-list-continue)  scope: &#x60;members.read&#x60;  Once a cursor has been retrieved from &#x60;members/list&#x60;, use this to paginate through all team members. Permission : Team information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersListContinuePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -185,7 +176,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -206,12 +196,11 @@ open class TeamMembersApi(
     /**
      * members/list
      * [members/list](https://www.dropbox.com/developers/documentation/http/teams#team-members-list)  scope: &#x60;members.read&#x60;  Lists members of a team. Permission : Team information.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersListPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersListPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -219,7 +208,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -240,12 +228,11 @@ open class TeamMembersApi(
     /**
      * members/move_former_member_files/job_status/check
      * [members/move_former_member_files/job_status/check](https://www.dropbox.com/developers/documentation/http/teams#team-members-move_former_member_files-job_status-check)  scope: &#x60;members.write&#x60;  Once an async_job_id is returned from &#x60;members/move_former_member_files&#x60; , use this to poll the status of the asynchronous request. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersMoveFormerMemberFilesJobStatusCheckPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersMoveFormerMemberFilesJobStatusCheckPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -253,7 +240,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -274,12 +260,11 @@ open class TeamMembersApi(
     /**
      * members/move_former_member_files
      * [members/move_former_member_files](https://www.dropbox.com/developers/documentation/http/teams#team-members-move_former_member_files)  scope: &#x60;members.write&#x60;  Moves removed member&#39;s files to a different member. This endpoint initiates an asynchronous job. To obtain the final result of the job, the client should periodically poll &#x60;members/move_former_member_files/job_status/check&#x60;. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersMoveFormerMemberFilesPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersMoveFormerMemberFilesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -287,7 +272,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -308,11 +292,10 @@ open class TeamMembersApi(
     /**
      * members/recover
      * [members/recover](https://www.dropbox.com/developers/documentation/http/teams#team-members-recover)  scope: &#x60;members.delete&#x60;  Recover a deleted member. Permission : Team member management Exactly one of team_member_id, email, or external_id must be provided to identify the user account.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamMembersRecoverPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamMembersRecoverPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -320,7 +303,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -341,12 +323,11 @@ open class TeamMembersApi(
     /**
      * members/remove/job_status/get
      * [members/remove/job_status/get](https://www.dropbox.com/developers/documentation/http/teams#team-members-remove-job_status-get)  scope: &#x60;members.delete&#x60;  Once an async_job_id is returned from &#x60;members/remove&#x60; , use this to poll the status of the asynchronous request. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersRemoveJobStatusGetPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersRemoveJobStatusGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -354,7 +335,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -375,12 +355,11 @@ open class TeamMembersApi(
     /**
      * members/remove
      * [members/remove](https://www.dropbox.com/developers/documentation/http/teams#team-members-remove)  scope: &#x60;members.delete&#x60;  Removes a member from a team. Permission : Team member management Exactly one of team_member_id, email, or external_id must be provided to identify the user account. Accounts can be recovered via &#x60;members/recover&#x60; for a 7 day period or until the account has been permanently deleted or transferred to another account (whichever comes first). Calling &#x60;members/add&#x60; while a user is still recoverable on your team will return with &#x60;MemberAddResult.user_already_on_team&#x60;. Accounts can have their files transferred via the admin console for a limited time, based on the version history length associated with the team (180 days for most teams). This endpoint may initiate an asynchronous job. To obtain the final result of the job, the client should periodically poll &#x60;members/remove/job_status/get&#x60;.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersRemovePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersRemovePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -388,7 +367,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -409,12 +387,11 @@ open class TeamMembersApi(
     /**
      * members/secondary_emails/add
      * [members/secondary_emails/add](https://www.dropbox.com/developers/documentation/http/teams#team-members-secondary_emails-add)  scope: &#x60;members.write&#x60;  Add secondary emails to users. Permission : Team member management. Emails that are on verified domains will be verified automatically. For each email address not on a verified domain a verification email will be sent.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSecondaryEmailsAddPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSecondaryEmailsAddPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -422,7 +399,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -443,12 +419,11 @@ open class TeamMembersApi(
     /**
      * members/secondary_emails/delete
      * [members/secondary_emails/delete](https://www.dropbox.com/developers/documentation/http/teams#team-members-secondary_emails-delete)  scope: &#x60;members.write&#x60;  Delete secondary emails from users Permission : Team member management. Users will be notified of deletions of verified secondary emails at both the secondary email and their primary email.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSecondaryEmailsDeletePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSecondaryEmailsDeletePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -456,7 +431,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -477,12 +451,11 @@ open class TeamMembersApi(
     /**
      * members/secondary_emails/resend_verification_emails
      * [members/secondary_emails/resend_verification_emails](https://www.dropbox.com/developers/documentation/http/teams#team-members-secondary_emails-resend_verification_emails)  scope: &#x60;members.write&#x60;  Resend secondary email verification emails. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSecondaryEmailsResendVerificationEmailsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSecondaryEmailsResendVerificationEmailsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -490,7 +463,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -511,11 +483,10 @@ open class TeamMembersApi(
     /**
      * members/send_welcome_email
      * [members/send_welcome_email](https://www.dropbox.com/developers/documentation/http/teams#team-members-send_welcome_email)  scope: &#x60;members.write&#x60;  Sends welcome email to pending team member. Permission : Team member management Exactly one of team_member_id, email, or external_id must be provided to identify the user account. No-op if team member is not pending.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamMembersSendWelcomeEmailPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamMembersSendWelcomeEmailPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -523,7 +494,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -544,12 +514,11 @@ open class TeamMembersApi(
     /**
      * members/set_admin_permissions
      * [members/set_admin_permissions](https://www.dropbox.com/developers/documentation/http/teams#team-members-set_admin_permissions)  scope: &#x60;members.write&#x60;  Updates a team member&#39;s permissions. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSetAdminPermissionsPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSetAdminPermissionsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -557,7 +526,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -578,12 +546,11 @@ open class TeamMembersApi(
     /**
      * members/set_profile_photo
      * [members/set_profile_photo](https://www.dropbox.com/developers/documentation/http/teams#team-members-set_profile_photo)  scope: &#x60;members.write&#x60;  Updates a team member&#39;s profile photo. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSetProfilePhotoPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSetProfilePhotoPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -591,7 +558,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -612,12 +578,11 @@ open class TeamMembersApi(
     /**
      * members/set_profile
      * [members/set_profile](https://www.dropbox.com/developers/documentation/http/teams#team-members-set_profile)  scope: &#x60;members.write&#x60;  Updates a team member&#39;s profile. Permission : Team member management.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2teamMembersSetProfilePost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun call2teamMembersSetProfilePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -625,7 +590,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -646,11 +610,10 @@ open class TeamMembersApi(
     /**
      * members/suspend
      * [members/suspend](https://www.dropbox.com/developers/documentation/http/teams#team-members-suspend)  scope: &#x60;members.write&#x60;  Suspend a member from a team. Permission : Team member management Exactly one of team_member_id, email, or external_id must be provided to identify the user account.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamMembersSuspendPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamMembersSuspendPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -658,7 +621,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
@@ -679,11 +641,10 @@ open class TeamMembersApi(
     /**
      * members/unsuspend
      * [members/unsuspend](https://www.dropbox.com/developers/documentation/http/teams#team-members-unsuspend)  scope: &#x60;members.write&#x60;  Unsuspend a member from a team. Permission : Team member management Exactly one of team_member_id, email, or external_id must be provided to identify the user account.
-     * @param contentType  (optional)
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2teamMembersUnsuspendPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun call2teamMembersUnsuspendPost(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -691,7 +652,6 @@ open class TeamMembersApi(
 
         val localVariableQuery = mutableMapOf<String, List<String>>()
         val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
