@@ -40,7 +40,7 @@ open class AccountApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2accountSetProfilePhotoPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun setProfilePhoto(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

@@ -39,7 +39,7 @@ open class FilePropertiesApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesAddPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun add(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -70,7 +70,7 @@ open class FilePropertiesApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesOverwritePost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun overwrite(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -101,7 +101,7 @@ open class FilePropertiesApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesRemovePost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun propertiesRemove(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -127,38 +127,6 @@ open class FilePropertiesApi(
 
 
     /**
-     * properties/search/continue
-     * [properties/search/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;properties/search&#x60;, use this to paginate through all search results.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesPropertiesSearchContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/file_properties/properties/search/continue",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * properties/search
      * [properties/search](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search)  scope: &#x60;files.metadata.read&#x60;  Search across property templates for particular property field values.
      * @param authorization  (optional)
@@ -166,7 +134,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesPropertiesSearchPost(authorization: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun propertiesSearch(authorization: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -193,12 +161,44 @@ open class FilePropertiesApi(
 
 
     /**
+     * properties/search/continue
+     * [properties/search/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;properties/search&#x60;, use this to paginate through all search results.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun propertiesSearchContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/file_properties/properties/search/continue",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * properties/update
      * [properties/update](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-update)  scope: &#x60;files.metadata.write&#x60;  Add, update or remove properties associated with the supplied file and templates. This endpoint should be used instead of &#x60;properties/overwrite&#x60; when property groups are being updated via a \&quot;delta\&quot; instead of via a \&quot;snapshot\&quot; . In other words, this endpoint will not delete any omitted fields from a property group, whereas &#x60;properties/overwrite&#x60; will delete any fields that are omitted from a property group.
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesPropertiesUpdatePost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun propertiesUpdate(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -230,7 +230,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesAddForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesAddForTeam(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -262,7 +262,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesAddForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesAddForUser(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -294,7 +294,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesGetForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesGetForTeam(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -326,7 +326,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesGetForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesGetForUser(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -357,7 +357,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesListForTeamPost(): HttpResponse<kotlin.String> {
+    open suspend fun templatesListForTeam(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -388,7 +388,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesListForUserPost(): HttpResponse<kotlin.String> {
+    open suspend fun templatesListForUser(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -419,7 +419,7 @@ open class FilePropertiesApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesTemplatesRemoveForTeamPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun templatesRemoveForTeam(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -450,7 +450,7 @@ open class FilePropertiesApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2filePropertiesTemplatesRemoveForUserPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun templatesRemoveForUser(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -482,7 +482,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesUpdateForTeamPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesUpdateForTeam(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -514,7 +514,7 @@ open class FilePropertiesApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filePropertiesTemplatesUpdateForUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun templatesUpdateForUser(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

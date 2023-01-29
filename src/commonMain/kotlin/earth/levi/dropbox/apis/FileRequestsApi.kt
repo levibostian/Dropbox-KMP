@@ -39,7 +39,7 @@ open class FileRequestsApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsCountPost(): HttpResponse<kotlin.String> {
+    open suspend fun count(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -71,7 +71,7 @@ open class FileRequestsApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsCreatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun create(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -102,7 +102,7 @@ open class FileRequestsApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsDeleteAllClosedPost(): HttpResponse<kotlin.String> {
+    open suspend fun deleteAllClosed(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -134,7 +134,7 @@ open class FileRequestsApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsDeletePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun fileRequestsDelete(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -166,7 +166,7 @@ open class FileRequestsApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsGetPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun get(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -192,45 +192,13 @@ open class FileRequestsApi(
 
 
     /**
-     * list/continue
-     * [list/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list-continue)  scope: &#x60;file_requests.read&#x60;  Once a cursor has been retrieved from &#x60;list:2&#x60;, use this to paginate through all file requests. The cursor must come from a previous call to &#x60;list:2&#x60; or &#x60;list/continue&#x60;.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsListContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/file_requests/list/continue",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * list
      * [list](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list)  scope: &#x60;file_requests.read&#x60;  Returns a list of file requests owned by this user. For apps with the app folder permission, this will only return file requests with destinations in the app folder.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsListV2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun list(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -256,13 +224,45 @@ open class FileRequestsApi(
 
 
     /**
+     * list/continue
+     * [list/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list-continue)  scope: &#x60;file_requests.read&#x60;  Once a cursor has been retrieved from &#x60;list:2&#x60;, use this to paginate through all file requests. The cursor must come from a previous call to &#x60;list:2&#x60; or &#x60;list/continue&#x60;.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun listContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/file_requests/list/continue",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * update
      * [update](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-update)  scope: &#x60;file_requests.write&#x60;  Update a file request.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2fileRequestsUpdatePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun update(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

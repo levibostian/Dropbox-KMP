@@ -4,19 +4,19 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2fileRequestsCountPost**](FileRequestsApi.md#call2fileRequestsCountPost) | **POST** /2/file_requests/count | count
-[**call2fileRequestsCreatePost**](FileRequestsApi.md#call2fileRequestsCreatePost) | **POST** /2/file_requests/create | create
-[**call2fileRequestsDeleteAllClosedPost**](FileRequestsApi.md#call2fileRequestsDeleteAllClosedPost) | **POST** /2/file_requests/delete_all_closed | delete_all_closed
-[**call2fileRequestsDeletePost**](FileRequestsApi.md#call2fileRequestsDeletePost) | **POST** /2/file_requests/delete | delete
-[**call2fileRequestsGetPost**](FileRequestsApi.md#call2fileRequestsGetPost) | **POST** /2/file_requests/get | get
-[**call2fileRequestsListContinuePost**](FileRequestsApi.md#call2fileRequestsListContinuePost) | **POST** /2/file_requests/list/continue | list/continue
-[**call2fileRequestsListV2Post**](FileRequestsApi.md#call2fileRequestsListV2Post) | **POST** /2/file_requests/list_v2 | list
-[**call2fileRequestsUpdatePost**](FileRequestsApi.md#call2fileRequestsUpdatePost) | **POST** /2/file_requests/update | update
+[**count**](FileRequestsApi.md#count) | **POST** /2/file_requests/count | count
+[**create**](FileRequestsApi.md#create) | **POST** /2/file_requests/create | create
+[**deleteAllClosed**](FileRequestsApi.md#deleteAllClosed) | **POST** /2/file_requests/delete_all_closed | delete_all_closed
+[**fileRequestsDelete**](FileRequestsApi.md#fileRequestsDelete) | **POST** /2/file_requests/delete | delete
+[**get**](FileRequestsApi.md#get) | **POST** /2/file_requests/get | get
+[**list**](FileRequestsApi.md#list) | **POST** /2/file_requests/list_v2 | list
+[**listContinue**](FileRequestsApi.md#listContinue) | **POST** /2/file_requests/list/continue | list/continue
+[**update**](FileRequestsApi.md#update) | **POST** /2/file_requests/update | update
 
 
-<a name="call2fileRequestsCountPost"></a>
-# **call2fileRequestsCountPost**
-> kotlin.String call2fileRequestsCountPost()
+<a name="count"></a>
+# **count**
+> kotlin.String count()
 
 count
 
@@ -30,13 +30,13 @@ count
 
 val apiInstance = FileRequestsApi()
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsCountPost()
+    val result : kotlin.String = apiInstance.count()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsCountPost")
+    println("4xx response calling FileRequestsApi#count")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsCountPost")
+    println("5xx response calling FileRequestsApi#count")
     e.printStackTrace()
 }
 ```
@@ -59,9 +59,9 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2fileRequestsCreatePost"></a>
-# **call2fileRequestsCreatePost**
-> kotlin.String call2fileRequestsCreatePost(body)
+<a name="create"></a>
+# **create**
+> kotlin.String create(body)
 
 create
 
@@ -76,13 +76,13 @@ create
 val apiInstance = FileRequestsApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsCreatePost(body)
+    val result : kotlin.String = apiInstance.create(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsCreatePost")
+    println("4xx response calling FileRequestsApi#create")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsCreatePost")
+    println("5xx response calling FileRequestsApi#create")
     e.printStackTrace()
 }
 ```
@@ -108,9 +108,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2fileRequestsDeleteAllClosedPost"></a>
-# **call2fileRequestsDeleteAllClosedPost**
-> kotlin.String call2fileRequestsDeleteAllClosedPost()
+<a name="deleteAllClosed"></a>
+# **deleteAllClosed**
+> kotlin.String deleteAllClosed()
 
 delete_all_closed
 
@@ -124,13 +124,13 @@ delete_all_closed
 
 val apiInstance = FileRequestsApi()
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsDeleteAllClosedPost()
+    val result : kotlin.String = apiInstance.deleteAllClosed()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsDeleteAllClosedPost")
+    println("4xx response calling FileRequestsApi#deleteAllClosed")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsDeleteAllClosedPost")
+    println("5xx response calling FileRequestsApi#deleteAllClosed")
     e.printStackTrace()
 }
 ```
@@ -153,9 +153,9 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2fileRequestsDeletePost"></a>
-# **call2fileRequestsDeletePost**
-> kotlin.String call2fileRequestsDeletePost(body)
+<a name="fileRequestsDelete"></a>
+# **fileRequestsDelete**
+> kotlin.String fileRequestsDelete(body)
 
 delete
 
@@ -170,13 +170,13 @@ delete
 val apiInstance = FileRequestsApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsDeletePost(body)
+    val result : kotlin.String = apiInstance.fileRequestsDelete(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsDeletePost")
+    println("4xx response calling FileRequestsApi#fileRequestsDelete")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsDeletePost")
+    println("5xx response calling FileRequestsApi#fileRequestsDelete")
     e.printStackTrace()
 }
 ```
@@ -202,9 +202,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2fileRequestsGetPost"></a>
-# **call2fileRequestsGetPost**
-> kotlin.String call2fileRequestsGetPost(body)
+<a name="get"></a>
+# **get**
+> kotlin.String get(body)
 
 get
 
@@ -219,13 +219,13 @@ get
 val apiInstance = FileRequestsApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsGetPost(body)
+    val result : kotlin.String = apiInstance.get(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsGetPost")
+    println("4xx response calling FileRequestsApi#get")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsGetPost")
+    println("5xx response calling FileRequestsApi#get")
     e.printStackTrace()
 }
 ```
@@ -251,58 +251,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2fileRequestsListContinuePost"></a>
-# **call2fileRequestsListContinuePost**
-> kotlin.String call2fileRequestsListContinuePost(body)
-
-list/continue
-
-[list/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list-continue)  scope: &#x60;file_requests.read&#x60;  Once a cursor has been retrieved from &#x60;list:2&#x60;, use this to paginate through all file requests. The cursor must come from a previous call to &#x60;list:2&#x60; or &#x60;list/continue&#x60;.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = FileRequestsApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2fileRequestsListContinuePost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsListContinuePost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsListContinuePost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2fileRequestsListV2Post"></a>
-# **call2fileRequestsListV2Post**
-> kotlin.String call2fileRequestsListV2Post(body)
+<a name="list"></a>
+# **list**
+> kotlin.String list(body)
 
 list
 
@@ -317,13 +268,13 @@ list
 val apiInstance = FileRequestsApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsListV2Post(body)
+    val result : kotlin.String = apiInstance.list(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsListV2Post")
+    println("4xx response calling FileRequestsApi#list")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsListV2Post")
+    println("5xx response calling FileRequestsApi#list")
     e.printStackTrace()
 }
 ```
@@ -349,9 +300,58 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2fileRequestsUpdatePost"></a>
-# **call2fileRequestsUpdatePost**
-> kotlin.String call2fileRequestsUpdatePost(body)
+<a name="listContinue"></a>
+# **listContinue**
+> kotlin.String listContinue(body)
+
+list/continue
+
+[list/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_requests-list-continue)  scope: &#x60;file_requests.read&#x60;  Once a cursor has been retrieved from &#x60;list:2&#x60;, use this to paginate through all file requests. The cursor must come from a previous call to &#x60;list:2&#x60; or &#x60;list/continue&#x60;.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = FileRequestsApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.listContinue(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling FileRequestsApi#listContinue")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling FileRequestsApi#listContinue")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="update"></a>
+# **update**
+> kotlin.String update(body)
 
 update
 
@@ -366,13 +366,13 @@ update
 val apiInstance = FileRequestsApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2fileRequestsUpdatePost(body)
+    val result : kotlin.String = apiInstance.update(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FileRequestsApi#call2fileRequestsUpdatePost")
+    println("4xx response calling FileRequestsApi#update")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FileRequestsApi#call2fileRequestsUpdatePost")
+    println("5xx response calling FileRequestsApi#update")
     e.printStackTrace()
 }
 ```

@@ -40,7 +40,7 @@ open class CheckApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2checkAppPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun app(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -72,7 +72,7 @@ open class CheckApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2checkUserPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun user(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

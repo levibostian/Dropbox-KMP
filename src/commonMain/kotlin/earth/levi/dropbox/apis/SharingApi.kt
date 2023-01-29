@@ -40,7 +40,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingAddFileMemberPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun addFileMember(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -71,7 +71,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingAddFolderMemberPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun addFolderMember(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -103,7 +103,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingCheckJobStatusPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun checkJobStatus(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -135,7 +135,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingCheckRemoveMemberJobStatusPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun checkRemoveMemberJobStatus(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -167,7 +167,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingCheckShareJobStatusPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun checkShareJobStatus(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -193,45 +193,13 @@ open class SharingApi(
 
 
     /**
-     * get_file_metadata/batch
-     * [get_file_metadata/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_file_metadata-batch)  scope: &#x60;sharing.read&#x60;  Returns shared file metadata.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingGetFileMetadataBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/sharing/get_file_metadata/batch",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * get_file_metadata
      * [get_file_metadata](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_file_metadata)  scope: &#x60;sharing.read&#x60;  Returns shared file metadata.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingGetFileMetadataPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun getFileMetadata(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -257,13 +225,45 @@ open class SharingApi(
 
 
     /**
+     * get_file_metadata/batch
+     * [get_file_metadata/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_file_metadata-batch)  scope: &#x60;sharing.read&#x60;  Returns shared file metadata.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun getFileMetadataBatch(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/sharing/get_file_metadata/batch",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * get_folder_metadata
      * [get_folder_metadata](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_folder_metadata)  scope: &#x60;sharing.read&#x60;  Returns shared folder metadata by its folder ID.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingGetFolderMetadataPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun getFolderMetadata(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -295,7 +295,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingGetSharedLinkFilePost(dropboxAPIArg: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun getSharedLinkFile(dropboxAPIArg: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -328,7 +328,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingGetSharedLinkMetadataPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun getSharedLinkMetadata(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -354,13 +354,45 @@ open class SharingApi(
 
 
     /**
+     * list_file_members
+     * [list_file_members](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members)  scope: &#x60;sharing.read&#x60;  Use to obtain the members who have been invited to a file, both inherited and uninherited members.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun listFileMembers(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/sharing/list_file_members",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * list_file_members/batch
      * [list_file_members/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members-batch)  scope: &#x60;sharing.read&#x60;  Get members of multiple files at once. The arguments to this route are more limited, and the limit on query result size per file is more strict. To customize the results more, use the individual file endpoint. Inherited users and groups are not included in the result, and permissions are not returned for this endpoint.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFileMembersBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listFileMembersBatch(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -392,7 +424,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFileMembersContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listFileMembersContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -418,45 +450,13 @@ open class SharingApi(
 
 
     /**
-     * list_file_members
-     * [list_file_members](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members)  scope: &#x60;sharing.read&#x60;  Use to obtain the members who have been invited to a file, both inherited and uninherited members.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFileMembersPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/sharing/list_file_members",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * list_folder_members/continue
      * [list_folder_members/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folder_members-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_folder_members&#x60;, use this to paginate through all shared folder members.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFolderMembersContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listFolderMembersContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -482,45 +482,13 @@ open class SharingApi(
 
 
     /**
-     * list_folders/continue
-     * [list_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_folders&#x60;, use this to paginate through all shared folders. The cursor must come from a previous call to &#x60;list_folders&#x60; or &#x60;list_folders/continue&#x60;.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFoldersContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/sharing/list_folders/continue",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * list_folders
      * [list_folders](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folders)  scope: &#x60;sharing.read&#x60;  Return the list of all shared folders the current user has access to.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListFoldersPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listFolders(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -546,13 +514,13 @@ open class SharingApi(
 
 
     /**
-     * list_mountable_folders/continue
-     * [list_mountable_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_mountable_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_mountable_folders&#x60;, use this to paginate through all mountable shared folders. The cursor must come from a previous call to &#x60;list_mountable_folders&#x60; or &#x60;list_mountable_folders/continue&#x60;.
+     * list_folders/continue
+     * [list_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_folders&#x60;, use this to paginate through all shared folders. The cursor must come from a previous call to &#x60;list_folders&#x60; or &#x60;list_folders/continue&#x60;.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListMountableFoldersContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listFoldersContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -563,7 +531,7 @@ open class SharingApi(
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
-            "/2/sharing/list_mountable_folders/continue",
+            "/2/sharing/list_folders/continue",
             query = localVariableQuery,
             headers = localVariableHeaders
         )
@@ -584,7 +552,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListMountableFoldersPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listMountableFolders(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -610,13 +578,13 @@ open class SharingApi(
 
 
     /**
-     * list_received_files/continue
-     * [list_received_files/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_received_files-continue)  scope: &#x60;sharing.read&#x60;  Get more results with a cursor from &#x60;list_received_files&#x60;.
+     * list_mountable_folders/continue
+     * [list_mountable_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_mountable_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_mountable_folders&#x60;, use this to paginate through all mountable shared folders. The cursor must come from a previous call to &#x60;list_mountable_folders&#x60; or &#x60;list_mountable_folders/continue&#x60;.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListReceivedFilesContinuePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listMountableFoldersContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -627,7 +595,7 @@ open class SharingApi(
 
         val localVariableConfig = RequestConfig<kotlin.Any?>(
             RequestMethod.POST,
-            "/2/sharing/list_received_files/continue",
+            "/2/sharing/list_mountable_folders/continue",
             query = localVariableQuery,
             headers = localVariableHeaders
         )
@@ -648,7 +616,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListReceivedFilesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listReceivedFiles(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -674,13 +642,45 @@ open class SharingApi(
 
 
     /**
+     * list_received_files/continue
+     * [list_received_files/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_received_files-continue)  scope: &#x60;sharing.read&#x60;  Get more results with a cursor from &#x60;list_received_files&#x60;.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun listReceivedFilesContinue(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/sharing/list_received_files/continue",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * list_shared_links
      * [list_shared_links](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_shared_links)  scope: &#x60;sharing.read&#x60;  List shared links of this user. If no path is given, returns a list of all shared links for the current user. If a non-empty path is given, returns a list of all shared links that allow access to the given path - direct links to the given path and links to parent folders of the given path. Links to parent folders can be suppressed by setting direct_only to true.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingListSharedLinksPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun listSharedLinks(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -712,7 +712,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingModifySharedLinkSettingsPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun modifySharedLinkSettings(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -744,7 +744,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingMountFolderPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun mountFolder(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -775,7 +775,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingRelinquishFileMembershipPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun relinquishFileMembership(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -807,7 +807,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingRelinquishFolderMembershipPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun relinquishFolderMembership(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -839,7 +839,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingRemoveFileMember2Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun removeFileMember2(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -871,7 +871,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingRemoveFolderMemberPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun removeFolderMember(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -902,7 +902,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingRevokeSharedLinkPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun revokeSharedLink(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -934,7 +934,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingSetAccessInheritancePost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun setAccessInheritance(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -966,7 +966,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingShareFolderPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun shareFolder(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -997,7 +997,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingTransferFolderPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun transferFolder(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1028,7 +1028,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingUnmountFolderPost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun unmountFolder(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1059,7 +1059,7 @@ open class SharingApi(
      * @param body  (optional)
      * @return void
      */
-    open suspend fun call2sharingUnshareFilePost(body: kotlin.String? = null): HttpResponse<Unit> {
+    open suspend fun unshareFile(body: kotlin.String? = null): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1091,7 +1091,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingUnshareFolderPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun unshareFolder(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1123,7 +1123,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingUpdateFileMemberPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun updateFileMember(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1155,7 +1155,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingUpdateFolderMemberPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun updateFolderMember(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -1187,7 +1187,7 @@ open class SharingApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2sharingUpdateFolderPolicyPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun updateFolderPolicy(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

@@ -34,42 +34,11 @@ open class ContactsApi(
 ) : ApiClient(baseUrl, httpClientEngine, httpClientConfig, jsonSerializer) {
 
     /**
-     * delete_manual_contacts_batch
-     * [delete_manual_contacts_batch](https://www.dropbox.com/developers/documentation/http/documentation#contacts-delete_manual_contacts_batch)  scope: &#x60;contacts.write&#x60;  Removes manually added contacts from the given list.
-     * @param body  (optional)
-     * @return void
-     */
-    open suspend fun call2contactsDeleteManualContactsBatchPost(body: kotlin.String? = null): HttpResponse<Unit> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/contacts/delete_manual_contacts_batch",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * delete_manual_contacts
      * [delete_manual_contacts](https://www.dropbox.com/developers/documentation/http/documentation#contacts-delete_manual_contacts)  scope: &#x60;contacts.write&#x60;  Removes all manually added contacts. You&#39;ll still keep contacts who are on your team or who you imported. New contacts will be added when you share.      
      * @return void
      */
-    open suspend fun call2contactsDeleteManualContactsPost(): HttpResponse<Unit> {
+    open suspend fun deleteManualContacts(): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -92,6 +61,37 @@ open class ContactsApi(
             localVariableAuthNames
         ).wrap()
     }
+
+
+    /**
+     * delete_manual_contacts_batch
+     * [delete_manual_contacts_batch](https://www.dropbox.com/developers/documentation/http/documentation#contacts-delete_manual_contacts_batch)  scope: &#x60;contacts.write&#x60;  Removes manually added contacts from the given list.
+     * @param body  (optional)
+     * @return void
+     */
+    open suspend fun deleteManualContactsBatch(body: kotlin.String? = null): HttpResponse<Unit> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/contacts/delete_manual_contacts_batch",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
 
 
 }

@@ -40,7 +40,7 @@ open class UsersApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersFeaturesGetValuesPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun featuresGetValues(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -66,45 +66,13 @@ open class UsersApi(
 
 
     /**
-     * get_account_batch
-     * [get_account_batch](https://www.dropbox.com/developers/documentation/http/documentation#users-get_account_batch)  scope: &#x60;sharing.read&#x60;  Get information about multiple user accounts.  At most 300 accounts may be queried per request.
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetAccountBatchPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/users/get_account_batch",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * get_account
      * [get_account](https://www.dropbox.com/developers/documentation/http/documentation#users-get_account)  scope: &#x60;sharing.read&#x60;  Get information about a user&#39;s account.
      * @param body  (optional)
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetAccountPost(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun getAccount(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -130,12 +98,44 @@ open class UsersApi(
 
 
     /**
+     * get_account_batch
+     * [get_account_batch](https://www.dropbox.com/developers/documentation/http/documentation#users-get_account_batch)  scope: &#x60;sharing.read&#x60;  Get information about multiple user accounts.  At most 300 accounts may be queried per request.
+     * @param body  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun getAccountBatch(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = body
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/users/get_account_batch",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
+
+
+    /**
      * get_current_account
      * [get_current_account](https://www.dropbox.com/developers/documentation/http/documentation#users-get_current_account)  scope: &#x60;account_info.read&#x60;  Get information about the current user&#39;s account.      
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetCurrentAccountPost(): HttpResponse<kotlin.String> {
+    open suspend fun getCurrentAccount(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -166,7 +166,7 @@ open class UsersApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2usersGetSpaceUsagePost(): HttpResponse<kotlin.String> {
+    open suspend fun getSpaceUsage(): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

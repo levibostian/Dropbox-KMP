@@ -4,27 +4,27 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2filePropertiesPropertiesAddPost**](FilePropertiesApi.md#call2filePropertiesPropertiesAddPost) | **POST** /2/file_properties/properties/add | properties/add
-[**call2filePropertiesPropertiesOverwritePost**](FilePropertiesApi.md#call2filePropertiesPropertiesOverwritePost) | **POST** /2/file_properties/properties/overwrite | properties/overwrite
-[**call2filePropertiesPropertiesRemovePost**](FilePropertiesApi.md#call2filePropertiesPropertiesRemovePost) | **POST** /2/file_properties/properties/remove | properties/remove
-[**call2filePropertiesPropertiesSearchContinuePost**](FilePropertiesApi.md#call2filePropertiesPropertiesSearchContinuePost) | **POST** /2/file_properties/properties/search/continue | properties/search/continue
-[**call2filePropertiesPropertiesSearchPost**](FilePropertiesApi.md#call2filePropertiesPropertiesSearchPost) | **POST** /2/file_properties/properties/search | properties/search
-[**call2filePropertiesPropertiesUpdatePost**](FilePropertiesApi.md#call2filePropertiesPropertiesUpdatePost) | **POST** /2/file_properties/properties/update | properties/update
-[**call2filePropertiesTemplatesAddForTeamPost**](FilePropertiesApi.md#call2filePropertiesTemplatesAddForTeamPost) | **POST** /2/file_properties/templates/add_for_team | templates/add_for_team
-[**call2filePropertiesTemplatesAddForUserPost**](FilePropertiesApi.md#call2filePropertiesTemplatesAddForUserPost) | **POST** /2/file_properties/templates/add_for_user | templates/add_for_user
-[**call2filePropertiesTemplatesGetForTeamPost**](FilePropertiesApi.md#call2filePropertiesTemplatesGetForTeamPost) | **POST** /2/file_properties/templates/get_for_team | templates/get_for_team
-[**call2filePropertiesTemplatesGetForUserPost**](FilePropertiesApi.md#call2filePropertiesTemplatesGetForUserPost) | **POST** /2/file_properties/templates/get_for_user | templates/get_for_user
-[**call2filePropertiesTemplatesListForTeamPost**](FilePropertiesApi.md#call2filePropertiesTemplatesListForTeamPost) | **POST** /2/file_properties/templates/list_for_team | templates/list_for_team
-[**call2filePropertiesTemplatesListForUserPost**](FilePropertiesApi.md#call2filePropertiesTemplatesListForUserPost) | **POST** /2/file_properties/templates/list_for_user | templates/list_for_user
-[**call2filePropertiesTemplatesRemoveForTeamPost**](FilePropertiesApi.md#call2filePropertiesTemplatesRemoveForTeamPost) | **POST** /2/file_properties/templates/remove_for_team | templates/remove_for_team
-[**call2filePropertiesTemplatesRemoveForUserPost**](FilePropertiesApi.md#call2filePropertiesTemplatesRemoveForUserPost) | **POST** /2/file_properties/templates/remove_for_user | templates/remove_for_user
-[**call2filePropertiesTemplatesUpdateForTeamPost**](FilePropertiesApi.md#call2filePropertiesTemplatesUpdateForTeamPost) | **POST** /2/file_properties/templates/update_for_team | templates/update_for_team
-[**call2filePropertiesTemplatesUpdateForUserPost**](FilePropertiesApi.md#call2filePropertiesTemplatesUpdateForUserPost) | **POST** /2/file_properties/templates/update_for_user | templates/update_for_user
+[**add**](FilePropertiesApi.md#add) | **POST** /2/file_properties/properties/add | properties/add
+[**overwrite**](FilePropertiesApi.md#overwrite) | **POST** /2/file_properties/properties/overwrite | properties/overwrite
+[**propertiesRemove**](FilePropertiesApi.md#propertiesRemove) | **POST** /2/file_properties/properties/remove | properties/remove
+[**propertiesSearch**](FilePropertiesApi.md#propertiesSearch) | **POST** /2/file_properties/properties/search | properties/search
+[**propertiesSearchContinue**](FilePropertiesApi.md#propertiesSearchContinue) | **POST** /2/file_properties/properties/search/continue | properties/search/continue
+[**propertiesUpdate**](FilePropertiesApi.md#propertiesUpdate) | **POST** /2/file_properties/properties/update | properties/update
+[**templatesAddForTeam**](FilePropertiesApi.md#templatesAddForTeam) | **POST** /2/file_properties/templates/add_for_team | templates/add_for_team
+[**templatesAddForUser**](FilePropertiesApi.md#templatesAddForUser) | **POST** /2/file_properties/templates/add_for_user | templates/add_for_user
+[**templatesGetForTeam**](FilePropertiesApi.md#templatesGetForTeam) | **POST** /2/file_properties/templates/get_for_team | templates/get_for_team
+[**templatesGetForUser**](FilePropertiesApi.md#templatesGetForUser) | **POST** /2/file_properties/templates/get_for_user | templates/get_for_user
+[**templatesListForTeam**](FilePropertiesApi.md#templatesListForTeam) | **POST** /2/file_properties/templates/list_for_team | templates/list_for_team
+[**templatesListForUser**](FilePropertiesApi.md#templatesListForUser) | **POST** /2/file_properties/templates/list_for_user | templates/list_for_user
+[**templatesRemoveForTeam**](FilePropertiesApi.md#templatesRemoveForTeam) | **POST** /2/file_properties/templates/remove_for_team | templates/remove_for_team
+[**templatesRemoveForUser**](FilePropertiesApi.md#templatesRemoveForUser) | **POST** /2/file_properties/templates/remove_for_user | templates/remove_for_user
+[**templatesUpdateForTeam**](FilePropertiesApi.md#templatesUpdateForTeam) | **POST** /2/file_properties/templates/update_for_team | templates/update_for_team
+[**templatesUpdateForUser**](FilePropertiesApi.md#templatesUpdateForUser) | **POST** /2/file_properties/templates/update_for_user | templates/update_for_user
 
 
-<a name="call2filePropertiesPropertiesAddPost"></a>
-# **call2filePropertiesPropertiesAddPost**
-> call2filePropertiesPropertiesAddPost(body)
+<a name="add"></a>
+# **add**
+> add(body)
 
 properties/add
 
@@ -39,12 +39,12 @@ properties/add
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesAddPost(body)
+    apiInstance.add(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesAddPost")
+    println("4xx response calling FilePropertiesApi#add")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesAddPost")
+    println("5xx response calling FilePropertiesApi#add")
     e.printStackTrace()
 }
 ```
@@ -70,9 +70,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesPropertiesOverwritePost"></a>
-# **call2filePropertiesPropertiesOverwritePost**
-> call2filePropertiesPropertiesOverwritePost(body)
+<a name="overwrite"></a>
+# **overwrite**
+> overwrite(body)
 
 properties/overwrite
 
@@ -87,12 +87,12 @@ properties/overwrite
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesOverwritePost(body)
+    apiInstance.overwrite(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesOverwritePost")
+    println("4xx response calling FilePropertiesApi#overwrite")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesOverwritePost")
+    println("5xx response calling FilePropertiesApi#overwrite")
     e.printStackTrace()
 }
 ```
@@ -118,9 +118,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesPropertiesRemovePost"></a>
-# **call2filePropertiesPropertiesRemovePost**
-> call2filePropertiesPropertiesRemovePost(body)
+<a name="propertiesRemove"></a>
+# **propertiesRemove**
+> propertiesRemove(body)
 
 properties/remove
 
@@ -135,12 +135,12 @@ properties/remove
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesRemovePost(body)
+    apiInstance.propertiesRemove(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesRemovePost")
+    println("4xx response calling FilePropertiesApi#propertiesRemove")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesRemovePost")
+    println("5xx response calling FilePropertiesApi#propertiesRemove")
     e.printStackTrace()
 }
 ```
@@ -166,58 +166,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesPropertiesSearchContinuePost"></a>
-# **call2filePropertiesPropertiesSearchContinuePost**
-> kotlin.String call2filePropertiesPropertiesSearchContinuePost(body)
-
-properties/search/continue
-
-[properties/search/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;properties/search&#x60;, use this to paginate through all search results.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = FilePropertiesApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchContinuePost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchContinuePost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchContinuePost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2filePropertiesPropertiesSearchPost"></a>
-# **call2filePropertiesPropertiesSearchPost**
-> kotlin.String call2filePropertiesPropertiesSearchPost(authorization, body)
+<a name="propertiesSearch"></a>
+# **propertiesSearch**
+> kotlin.String propertiesSearch(authorization, body)
 
 properties/search
 
@@ -233,13 +184,13 @@ val apiInstance = FilePropertiesApi()
 val authorization : kotlin.String =  Bearer IU571Pc9cGAAAAAAAAAAAQh57r-VTd7qBjZBUsVHLR6NRVTcd0FOThotVQmF9q9F // kotlin.String | 
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesPropertiesSearchPost(authorization, body)
+    val result : kotlin.String = apiInstance.propertiesSearch(authorization, body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchPost")
+    println("4xx response calling FilePropertiesApi#propertiesSearch")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesSearchPost")
+    println("5xx response calling FilePropertiesApi#propertiesSearch")
     e.printStackTrace()
 }
 ```
@@ -266,9 +217,58 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesPropertiesUpdatePost"></a>
-# **call2filePropertiesPropertiesUpdatePost**
-> call2filePropertiesPropertiesUpdatePost(body)
+<a name="propertiesSearchContinue"></a>
+# **propertiesSearchContinue**
+> kotlin.String propertiesSearchContinue(body)
+
+properties/search/continue
+
+[properties/search/continue](https://www.dropbox.com/developers/documentation/http/documentation#file_properties-properties-search-continue)  scope: &#x60;files.metadata.read&#x60;  Once a cursor has been retrieved from &#x60;properties/search&#x60;, use this to paginate through all search results.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = FilePropertiesApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.propertiesSearchContinue(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling FilePropertiesApi#propertiesSearchContinue")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling FilePropertiesApi#propertiesSearchContinue")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="propertiesUpdate"></a>
+# **propertiesUpdate**
+> propertiesUpdate(body)
 
 properties/update
 
@@ -283,12 +283,12 @@ properties/update
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesPropertiesUpdatePost(body)
+    apiInstance.propertiesUpdate(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesPropertiesUpdatePost")
+    println("4xx response calling FilePropertiesApi#propertiesUpdate")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesPropertiesUpdatePost")
+    println("5xx response calling FilePropertiesApi#propertiesUpdate")
     e.printStackTrace()
 }
 ```
@@ -314,9 +314,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesAddForTeamPost"></a>
-# **call2filePropertiesTemplatesAddForTeamPost**
-> kotlin.String call2filePropertiesTemplatesAddForTeamPost(body)
+<a name="templatesAddForTeam"></a>
+# **templatesAddForTeam**
+> kotlin.String templatesAddForTeam(body)
 
 templates/add_for_team
 
@@ -331,13 +331,13 @@ templates/add_for_team
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForTeamPost(body)
+    val result : kotlin.String = apiInstance.templatesAddForTeam(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForTeamPost")
+    println("4xx response calling FilePropertiesApi#templatesAddForTeam")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForTeamPost")
+    println("5xx response calling FilePropertiesApi#templatesAddForTeam")
     e.printStackTrace()
 }
 ```
@@ -363,9 +363,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesAddForUserPost"></a>
-# **call2filePropertiesTemplatesAddForUserPost**
-> kotlin.String call2filePropertiesTemplatesAddForUserPost(body)
+<a name="templatesAddForUser"></a>
+# **templatesAddForUser**
+> kotlin.String templatesAddForUser(body)
 
 templates/add_for_user
 
@@ -380,13 +380,13 @@ templates/add_for_user
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesAddForUserPost(body)
+    val result : kotlin.String = apiInstance.templatesAddForUser(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForUserPost")
+    println("4xx response calling FilePropertiesApi#templatesAddForUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesAddForUserPost")
+    println("5xx response calling FilePropertiesApi#templatesAddForUser")
     e.printStackTrace()
 }
 ```
@@ -412,9 +412,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesGetForTeamPost"></a>
-# **call2filePropertiesTemplatesGetForTeamPost**
-> kotlin.String call2filePropertiesTemplatesGetForTeamPost(body)
+<a name="templatesGetForTeam"></a>
+# **templatesGetForTeam**
+> kotlin.String templatesGetForTeam(body)
 
 templates/get_for_team
 
@@ -429,13 +429,13 @@ templates/get_for_team
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForTeamPost(body)
+    val result : kotlin.String = apiInstance.templatesGetForTeam(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForTeamPost")
+    println("4xx response calling FilePropertiesApi#templatesGetForTeam")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForTeamPost")
+    println("5xx response calling FilePropertiesApi#templatesGetForTeam")
     e.printStackTrace()
 }
 ```
@@ -461,9 +461,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesGetForUserPost"></a>
-# **call2filePropertiesTemplatesGetForUserPost**
-> kotlin.String call2filePropertiesTemplatesGetForUserPost(body)
+<a name="templatesGetForUser"></a>
+# **templatesGetForUser**
+> kotlin.String templatesGetForUser(body)
 
 templates/get_for_user
 
@@ -478,13 +478,13 @@ templates/get_for_user
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesGetForUserPost(body)
+    val result : kotlin.String = apiInstance.templatesGetForUser(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForUserPost")
+    println("4xx response calling FilePropertiesApi#templatesGetForUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesGetForUserPost")
+    println("5xx response calling FilePropertiesApi#templatesGetForUser")
     e.printStackTrace()
 }
 ```
@@ -510,9 +510,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesListForTeamPost"></a>
-# **call2filePropertiesTemplatesListForTeamPost**
-> kotlin.String call2filePropertiesTemplatesListForTeamPost()
+<a name="templatesListForTeam"></a>
+# **templatesListForTeam**
+> kotlin.String templatesListForTeam()
 
 templates/list_for_team
 
@@ -526,13 +526,13 @@ templates/list_for_team
 
 val apiInstance = FilePropertiesApi()
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesListForTeamPost()
+    val result : kotlin.String = apiInstance.templatesListForTeam()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesListForTeamPost")
+    println("4xx response calling FilePropertiesApi#templatesListForTeam")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesListForTeamPost")
+    println("5xx response calling FilePropertiesApi#templatesListForTeam")
     e.printStackTrace()
 }
 ```
@@ -555,9 +555,9 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesListForUserPost"></a>
-# **call2filePropertiesTemplatesListForUserPost**
-> kotlin.String call2filePropertiesTemplatesListForUserPost()
+<a name="templatesListForUser"></a>
+# **templatesListForUser**
+> kotlin.String templatesListForUser()
 
 templates/list_for_user
 
@@ -571,13 +571,13 @@ templates/list_for_user
 
 val apiInstance = FilePropertiesApi()
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesListForUserPost()
+    val result : kotlin.String = apiInstance.templatesListForUser()
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesListForUserPost")
+    println("4xx response calling FilePropertiesApi#templatesListForUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesListForUserPost")
+    println("5xx response calling FilePropertiesApi#templatesListForUser")
     e.printStackTrace()
 }
 ```
@@ -600,9 +600,9 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesRemoveForTeamPost"></a>
-# **call2filePropertiesTemplatesRemoveForTeamPost**
-> call2filePropertiesTemplatesRemoveForTeamPost(body)
+<a name="templatesRemoveForTeam"></a>
+# **templatesRemoveForTeam**
+> templatesRemoveForTeam(body)
 
 templates/remove_for_team
 
@@ -617,12 +617,12 @@ templates/remove_for_team
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesTemplatesRemoveForTeamPost(body)
+    apiInstance.templatesRemoveForTeam(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForTeamPost")
+    println("4xx response calling FilePropertiesApi#templatesRemoveForTeam")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForTeamPost")
+    println("5xx response calling FilePropertiesApi#templatesRemoveForTeam")
     e.printStackTrace()
 }
 ```
@@ -648,9 +648,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesRemoveForUserPost"></a>
-# **call2filePropertiesTemplatesRemoveForUserPost**
-> call2filePropertiesTemplatesRemoveForUserPost(body)
+<a name="templatesRemoveForUser"></a>
+# **templatesRemoveForUser**
+> templatesRemoveForUser(body)
 
 templates/remove_for_user
 
@@ -665,12 +665,12 @@ templates/remove_for_user
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2filePropertiesTemplatesRemoveForUserPost(body)
+    apiInstance.templatesRemoveForUser(body)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForUserPost")
+    println("4xx response calling FilePropertiesApi#templatesRemoveForUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesRemoveForUserPost")
+    println("5xx response calling FilePropertiesApi#templatesRemoveForUser")
     e.printStackTrace()
 }
 ```
@@ -696,9 +696,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesUpdateForTeamPost"></a>
-# **call2filePropertiesTemplatesUpdateForTeamPost**
-> kotlin.String call2filePropertiesTemplatesUpdateForTeamPost(body)
+<a name="templatesUpdateForTeam"></a>
+# **templatesUpdateForTeam**
+> kotlin.String templatesUpdateForTeam(body)
 
 templates/update_for_team
 
@@ -713,13 +713,13 @@ templates/update_for_team
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForTeamPost(body)
+    val result : kotlin.String = apiInstance.templatesUpdateForTeam(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForTeamPost")
+    println("4xx response calling FilePropertiesApi#templatesUpdateForTeam")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForTeamPost")
+    println("5xx response calling FilePropertiesApi#templatesUpdateForTeam")
     e.printStackTrace()
 }
 ```
@@ -745,9 +745,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2filePropertiesTemplatesUpdateForUserPost"></a>
-# **call2filePropertiesTemplatesUpdateForUserPost**
-> kotlin.String call2filePropertiesTemplatesUpdateForUserPost(body)
+<a name="templatesUpdateForUser"></a>
+# **templatesUpdateForUser**
+> kotlin.String templatesUpdateForUser(body)
 
 templates/update_for_user
 
@@ -762,13 +762,13 @@ templates/update_for_user
 val apiInstance = FilePropertiesApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2filePropertiesTemplatesUpdateForUserPost(body)
+    val result : kotlin.String = apiInstance.templatesUpdateForUser(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForUserPost")
+    println("4xx response calling FilePropertiesApi#templatesUpdateForUser")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling FilePropertiesApi#call2filePropertiesTemplatesUpdateForUserPost")
+    println("5xx response calling FilePropertiesApi#templatesUpdateForUser")
     e.printStackTrace()
 }
 ```

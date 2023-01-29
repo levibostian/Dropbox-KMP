@@ -4,48 +4,48 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2sharingAddFileMemberPost**](SharingApi.md#call2sharingAddFileMemberPost) | **POST** /2/sharing/add_file_member | add_file_member
-[**call2sharingAddFolderMemberPost**](SharingApi.md#call2sharingAddFolderMemberPost) | **POST** /2/sharing/add_folder_member | add_folder_member
-[**call2sharingCheckJobStatusPost**](SharingApi.md#call2sharingCheckJobStatusPost) | **POST** /2/sharing/check_job_status | check_job_status
-[**call2sharingCheckRemoveMemberJobStatusPost**](SharingApi.md#call2sharingCheckRemoveMemberJobStatusPost) | **POST** /2/sharing/check_remove_member_job_status | check_remove_member_job_status
-[**call2sharingCheckShareJobStatusPost**](SharingApi.md#call2sharingCheckShareJobStatusPost) | **POST** /2/sharing/check_share_job_status | check_share_job_status
-[**call2sharingGetFileMetadataBatchPost**](SharingApi.md#call2sharingGetFileMetadataBatchPost) | **POST** /2/sharing/get_file_metadata/batch | get_file_metadata/batch
-[**call2sharingGetFileMetadataPost**](SharingApi.md#call2sharingGetFileMetadataPost) | **POST** /2/sharing/get_file_metadata | get_file_metadata
-[**call2sharingGetFolderMetadataPost**](SharingApi.md#call2sharingGetFolderMetadataPost) | **POST** /2/sharing/get_folder_metadata | get_folder_metadata
-[**call2sharingGetSharedLinkFilePost**](SharingApi.md#call2sharingGetSharedLinkFilePost) | **POST** /2/sharing/get_shared_link_file | get_shared_link_file
-[**call2sharingGetSharedLinkMetadataPost**](SharingApi.md#call2sharingGetSharedLinkMetadataPost) | **POST** /2/sharing/get_shared_link_metadata | get_shared_link_metadata
-[**call2sharingListFileMembersBatchPost**](SharingApi.md#call2sharingListFileMembersBatchPost) | **POST** /2/sharing/list_file_members/batch | list_file_members/batch
-[**call2sharingListFileMembersContinuePost**](SharingApi.md#call2sharingListFileMembersContinuePost) | **POST** /2/sharing/list_file_members/continue | list_file_members/continue
-[**call2sharingListFileMembersPost**](SharingApi.md#call2sharingListFileMembersPost) | **POST** /2/sharing/list_file_members | list_file_members
-[**call2sharingListFolderMembersContinuePost**](SharingApi.md#call2sharingListFolderMembersContinuePost) | **POST** /2/sharing/list_folder_members/continue | list_folder_members/continue
-[**call2sharingListFoldersContinuePost**](SharingApi.md#call2sharingListFoldersContinuePost) | **POST** /2/sharing/list_folders/continue | list_folders/continue
-[**call2sharingListFoldersPost**](SharingApi.md#call2sharingListFoldersPost) | **POST** /2/sharing/list_folders | list_folders
-[**call2sharingListMountableFoldersContinuePost**](SharingApi.md#call2sharingListMountableFoldersContinuePost) | **POST** /2/sharing/list_mountable_folders/continue | list_mountable_folders/continue
-[**call2sharingListMountableFoldersPost**](SharingApi.md#call2sharingListMountableFoldersPost) | **POST** /2/sharing/list_mountable_folders | list_mountable_folders
-[**call2sharingListReceivedFilesContinuePost**](SharingApi.md#call2sharingListReceivedFilesContinuePost) | **POST** /2/sharing/list_received_files/continue | list_received_files/continue
-[**call2sharingListReceivedFilesPost**](SharingApi.md#call2sharingListReceivedFilesPost) | **POST** /2/sharing/list_received_files | list_received_files
-[**call2sharingListSharedLinksPost**](SharingApi.md#call2sharingListSharedLinksPost) | **POST** /2/sharing/list_shared_links | list_shared_links
-[**call2sharingModifySharedLinkSettingsPost**](SharingApi.md#call2sharingModifySharedLinkSettingsPost) | **POST** /2/sharing/modify_shared_link_settings | modify_shared_link_settings
-[**call2sharingMountFolderPost**](SharingApi.md#call2sharingMountFolderPost) | **POST** /2/sharing/mount_folder | mount_folder
-[**call2sharingRelinquishFileMembershipPost**](SharingApi.md#call2sharingRelinquishFileMembershipPost) | **POST** /2/sharing/relinquish_file_membership | relinquish_file_membership
-[**call2sharingRelinquishFolderMembershipPost**](SharingApi.md#call2sharingRelinquishFolderMembershipPost) | **POST** /2/sharing/relinquish_folder_membership | relinquish_folder_membership
-[**call2sharingRemoveFileMember2Post**](SharingApi.md#call2sharingRemoveFileMember2Post) | **POST** /2/sharing/remove_file_member_2 | remove_file_member_2
-[**call2sharingRemoveFolderMemberPost**](SharingApi.md#call2sharingRemoveFolderMemberPost) | **POST** /2/sharing/remove_folder_member | remove_folder_member
-[**call2sharingRevokeSharedLinkPost**](SharingApi.md#call2sharingRevokeSharedLinkPost) | **POST** /2/sharing/revoke_shared_link | revoke_shared_link
-[**call2sharingSetAccessInheritancePost**](SharingApi.md#call2sharingSetAccessInheritancePost) | **POST** /2/sharing/set_access_inheritance | set_access_inheritance
-[**call2sharingShareFolderPost**](SharingApi.md#call2sharingShareFolderPost) | **POST** /2/sharing/share_folder | share_folder
-[**call2sharingTransferFolderPost**](SharingApi.md#call2sharingTransferFolderPost) | **POST** /2/sharing/transfer_folder | transfer_folder
-[**call2sharingUnmountFolderPost**](SharingApi.md#call2sharingUnmountFolderPost) | **POST** /2/sharing/unmount_folder | unmount_folder
-[**call2sharingUnshareFilePost**](SharingApi.md#call2sharingUnshareFilePost) | **POST** /2/sharing/unshare_file | unshare_file
-[**call2sharingUnshareFolderPost**](SharingApi.md#call2sharingUnshareFolderPost) | **POST** /2/sharing/unshare_folder | unshare_folder
-[**call2sharingUpdateFileMemberPost**](SharingApi.md#call2sharingUpdateFileMemberPost) | **POST** /2/sharing/update_file_member | update_file_member
-[**call2sharingUpdateFolderMemberPost**](SharingApi.md#call2sharingUpdateFolderMemberPost) | **POST** /2/sharing/update_folder_member | update_folder_member
-[**call2sharingUpdateFolderPolicyPost**](SharingApi.md#call2sharingUpdateFolderPolicyPost) | **POST** /2/sharing/update_folder_policy | update_folder_policy
+[**addFileMember**](SharingApi.md#addFileMember) | **POST** /2/sharing/add_file_member | add_file_member
+[**addFolderMember**](SharingApi.md#addFolderMember) | **POST** /2/sharing/add_folder_member | add_folder_member
+[**checkJobStatus**](SharingApi.md#checkJobStatus) | **POST** /2/sharing/check_job_status | check_job_status
+[**checkRemoveMemberJobStatus**](SharingApi.md#checkRemoveMemberJobStatus) | **POST** /2/sharing/check_remove_member_job_status | check_remove_member_job_status
+[**checkShareJobStatus**](SharingApi.md#checkShareJobStatus) | **POST** /2/sharing/check_share_job_status | check_share_job_status
+[**getFileMetadata**](SharingApi.md#getFileMetadata) | **POST** /2/sharing/get_file_metadata | get_file_metadata
+[**getFileMetadataBatch**](SharingApi.md#getFileMetadataBatch) | **POST** /2/sharing/get_file_metadata/batch | get_file_metadata/batch
+[**getFolderMetadata**](SharingApi.md#getFolderMetadata) | **POST** /2/sharing/get_folder_metadata | get_folder_metadata
+[**getSharedLinkFile**](SharingApi.md#getSharedLinkFile) | **POST** /2/sharing/get_shared_link_file | get_shared_link_file
+[**getSharedLinkMetadata**](SharingApi.md#getSharedLinkMetadata) | **POST** /2/sharing/get_shared_link_metadata | get_shared_link_metadata
+[**listFileMembers**](SharingApi.md#listFileMembers) | **POST** /2/sharing/list_file_members | list_file_members
+[**listFileMembersBatch**](SharingApi.md#listFileMembersBatch) | **POST** /2/sharing/list_file_members/batch | list_file_members/batch
+[**listFileMembersContinue**](SharingApi.md#listFileMembersContinue) | **POST** /2/sharing/list_file_members/continue | list_file_members/continue
+[**listFolderMembersContinue**](SharingApi.md#listFolderMembersContinue) | **POST** /2/sharing/list_folder_members/continue | list_folder_members/continue
+[**listFolders**](SharingApi.md#listFolders) | **POST** /2/sharing/list_folders | list_folders
+[**listFoldersContinue**](SharingApi.md#listFoldersContinue) | **POST** /2/sharing/list_folders/continue | list_folders/continue
+[**listMountableFolders**](SharingApi.md#listMountableFolders) | **POST** /2/sharing/list_mountable_folders | list_mountable_folders
+[**listMountableFoldersContinue**](SharingApi.md#listMountableFoldersContinue) | **POST** /2/sharing/list_mountable_folders/continue | list_mountable_folders/continue
+[**listReceivedFiles**](SharingApi.md#listReceivedFiles) | **POST** /2/sharing/list_received_files | list_received_files
+[**listReceivedFilesContinue**](SharingApi.md#listReceivedFilesContinue) | **POST** /2/sharing/list_received_files/continue | list_received_files/continue
+[**listSharedLinks**](SharingApi.md#listSharedLinks) | **POST** /2/sharing/list_shared_links | list_shared_links
+[**modifySharedLinkSettings**](SharingApi.md#modifySharedLinkSettings) | **POST** /2/sharing/modify_shared_link_settings | modify_shared_link_settings
+[**mountFolder**](SharingApi.md#mountFolder) | **POST** /2/sharing/mount_folder | mount_folder
+[**relinquishFileMembership**](SharingApi.md#relinquishFileMembership) | **POST** /2/sharing/relinquish_file_membership | relinquish_file_membership
+[**relinquishFolderMembership**](SharingApi.md#relinquishFolderMembership) | **POST** /2/sharing/relinquish_folder_membership | relinquish_folder_membership
+[**removeFileMember2**](SharingApi.md#removeFileMember2) | **POST** /2/sharing/remove_file_member_2 | remove_file_member_2
+[**removeFolderMember**](SharingApi.md#removeFolderMember) | **POST** /2/sharing/remove_folder_member | remove_folder_member
+[**revokeSharedLink**](SharingApi.md#revokeSharedLink) | **POST** /2/sharing/revoke_shared_link | revoke_shared_link
+[**setAccessInheritance**](SharingApi.md#setAccessInheritance) | **POST** /2/sharing/set_access_inheritance | set_access_inheritance
+[**shareFolder**](SharingApi.md#shareFolder) | **POST** /2/sharing/share_folder | share_folder
+[**transferFolder**](SharingApi.md#transferFolder) | **POST** /2/sharing/transfer_folder | transfer_folder
+[**unmountFolder**](SharingApi.md#unmountFolder) | **POST** /2/sharing/unmount_folder | unmount_folder
+[**unshareFile**](SharingApi.md#unshareFile) | **POST** /2/sharing/unshare_file | unshare_file
+[**unshareFolder**](SharingApi.md#unshareFolder) | **POST** /2/sharing/unshare_folder | unshare_folder
+[**updateFileMember**](SharingApi.md#updateFileMember) | **POST** /2/sharing/update_file_member | update_file_member
+[**updateFolderMember**](SharingApi.md#updateFolderMember) | **POST** /2/sharing/update_folder_member | update_folder_member
+[**updateFolderPolicy**](SharingApi.md#updateFolderPolicy) | **POST** /2/sharing/update_folder_policy | update_folder_policy
 
 
-<a name="call2sharingAddFileMemberPost"></a>
-# **call2sharingAddFileMemberPost**
-> kotlin.String call2sharingAddFileMemberPost(body)
+<a name="addFileMember"></a>
+# **addFileMember**
+> kotlin.String addFileMember(body)
 
 add_file_member
 
@@ -60,13 +60,13 @@ add_file_member
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingAddFileMemberPost(body)
+    val result : kotlin.String = apiInstance.addFileMember(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingAddFileMemberPost")
+    println("4xx response calling SharingApi#addFileMember")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingAddFileMemberPost")
+    println("5xx response calling SharingApi#addFileMember")
     e.printStackTrace()
 }
 ```
@@ -92,9 +92,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingAddFolderMemberPost"></a>
-# **call2sharingAddFolderMemberPost**
-> call2sharingAddFolderMemberPost(body)
+<a name="addFolderMember"></a>
+# **addFolderMember**
+> addFolderMember(body)
 
 add_folder_member
 
@@ -109,12 +109,12 @@ add_folder_member
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingAddFolderMemberPost(body)
+    apiInstance.addFolderMember(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingAddFolderMemberPost")
+    println("4xx response calling SharingApi#addFolderMember")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingAddFolderMemberPost")
+    println("5xx response calling SharingApi#addFolderMember")
     e.printStackTrace()
 }
 ```
@@ -140,9 +140,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingCheckJobStatusPost"></a>
-# **call2sharingCheckJobStatusPost**
-> kotlin.String call2sharingCheckJobStatusPost(body)
+<a name="checkJobStatus"></a>
+# **checkJobStatus**
+> kotlin.String checkJobStatus(body)
 
 check_job_status
 
@@ -157,13 +157,13 @@ check_job_status
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckJobStatusPost(body)
+    val result : kotlin.String = apiInstance.checkJobStatus(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingCheckJobStatusPost")
+    println("4xx response calling SharingApi#checkJobStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingCheckJobStatusPost")
+    println("5xx response calling SharingApi#checkJobStatus")
     e.printStackTrace()
 }
 ```
@@ -189,9 +189,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingCheckRemoveMemberJobStatusPost"></a>
-# **call2sharingCheckRemoveMemberJobStatusPost**
-> kotlin.String call2sharingCheckRemoveMemberJobStatusPost(body)
+<a name="checkRemoveMemberJobStatus"></a>
+# **checkRemoveMemberJobStatus**
+> kotlin.String checkRemoveMemberJobStatus(body)
 
 check_remove_member_job_status
 
@@ -206,13 +206,13 @@ check_remove_member_job_status
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckRemoveMemberJobStatusPost(body)
+    val result : kotlin.String = apiInstance.checkRemoveMemberJobStatus(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingCheckRemoveMemberJobStatusPost")
+    println("4xx response calling SharingApi#checkRemoveMemberJobStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingCheckRemoveMemberJobStatusPost")
+    println("5xx response calling SharingApi#checkRemoveMemberJobStatus")
     e.printStackTrace()
 }
 ```
@@ -238,9 +238,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingCheckShareJobStatusPost"></a>
-# **call2sharingCheckShareJobStatusPost**
-> kotlin.String call2sharingCheckShareJobStatusPost(body)
+<a name="checkShareJobStatus"></a>
+# **checkShareJobStatus**
+> kotlin.String checkShareJobStatus(body)
 
 check_share_job_status
 
@@ -255,13 +255,13 @@ check_share_job_status
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingCheckShareJobStatusPost(body)
+    val result : kotlin.String = apiInstance.checkShareJobStatus(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingCheckShareJobStatusPost")
+    println("4xx response calling SharingApi#checkShareJobStatus")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingCheckShareJobStatusPost")
+    println("5xx response calling SharingApi#checkShareJobStatus")
     e.printStackTrace()
 }
 ```
@@ -287,58 +287,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingGetFileMetadataBatchPost"></a>
-# **call2sharingGetFileMetadataBatchPost**
-> kotlin.String call2sharingGetFileMetadataBatchPost(body)
-
-get_file_metadata/batch
-
-[get_file_metadata/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_file_metadata-batch)  scope: &#x60;sharing.read&#x60;  Returns shared file metadata.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = SharingApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataBatchPost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingGetFileMetadataBatchPost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingGetFileMetadataBatchPost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2sharingGetFileMetadataPost"></a>
-# **call2sharingGetFileMetadataPost**
-> kotlin.String call2sharingGetFileMetadataPost(body)
+<a name="getFileMetadata"></a>
+# **getFileMetadata**
+> kotlin.String getFileMetadata(body)
 
 get_file_metadata
 
@@ -353,13 +304,13 @@ get_file_metadata
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetFileMetadataPost(body)
+    val result : kotlin.String = apiInstance.getFileMetadata(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingGetFileMetadataPost")
+    println("4xx response calling SharingApi#getFileMetadata")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingGetFileMetadataPost")
+    println("5xx response calling SharingApi#getFileMetadata")
     e.printStackTrace()
 }
 ```
@@ -385,9 +336,58 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingGetFolderMetadataPost"></a>
-# **call2sharingGetFolderMetadataPost**
-> kotlin.String call2sharingGetFolderMetadataPost(body)
+<a name="getFileMetadataBatch"></a>
+# **getFileMetadataBatch**
+> kotlin.String getFileMetadataBatch(body)
+
+get_file_metadata/batch
+
+[get_file_metadata/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-get_file_metadata-batch)  scope: &#x60;sharing.read&#x60;  Returns shared file metadata.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = SharingApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.getFileMetadataBatch(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling SharingApi#getFileMetadataBatch")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling SharingApi#getFileMetadataBatch")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="getFolderMetadata"></a>
+# **getFolderMetadata**
+> kotlin.String getFolderMetadata(body)
 
 get_folder_metadata
 
@@ -402,13 +402,13 @@ get_folder_metadata
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetFolderMetadataPost(body)
+    val result : kotlin.String = apiInstance.getFolderMetadata(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingGetFolderMetadataPost")
+    println("4xx response calling SharingApi#getFolderMetadata")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingGetFolderMetadataPost")
+    println("5xx response calling SharingApi#getFolderMetadata")
     e.printStackTrace()
 }
 ```
@@ -434,9 +434,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingGetSharedLinkFilePost"></a>
-# **call2sharingGetSharedLinkFilePost**
-> kotlin.String call2sharingGetSharedLinkFilePost(dropboxAPIArg)
+<a name="getSharedLinkFile"></a>
+# **getSharedLinkFile**
+> kotlin.String getSharedLinkFile(dropboxAPIArg)
 
 get_shared_link_file
 
@@ -454,13 +454,13 @@ val dropboxAPIArg : kotlin.String = {
     "path": "/Prime_Numbers.txt"
 } // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetSharedLinkFilePost(dropboxAPIArg)
+    val result : kotlin.String = apiInstance.getSharedLinkFile(dropboxAPIArg)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingGetSharedLinkFilePost")
+    println("4xx response calling SharingApi#getSharedLinkFile")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingGetSharedLinkFilePost")
+    println("5xx response calling SharingApi#getSharedLinkFile")
     e.printStackTrace()
 }
 ```
@@ -486,9 +486,9 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2sharingGetSharedLinkMetadataPost"></a>
-# **call2sharingGetSharedLinkMetadataPost**
-> kotlin.String call2sharingGetSharedLinkMetadataPost(body)
+<a name="getSharedLinkMetadata"></a>
+# **getSharedLinkMetadata**
+> kotlin.String getSharedLinkMetadata(body)
 
 get_shared_link_metadata
 
@@ -503,13 +503,13 @@ get_shared_link_metadata
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingGetSharedLinkMetadataPost(body)
+    val result : kotlin.String = apiInstance.getSharedLinkMetadata(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingGetSharedLinkMetadataPost")
+    println("4xx response calling SharingApi#getSharedLinkMetadata")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingGetSharedLinkMetadataPost")
+    println("5xx response calling SharingApi#getSharedLinkMetadata")
     e.printStackTrace()
 }
 ```
@@ -535,107 +535,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListFileMembersBatchPost"></a>
-# **call2sharingListFileMembersBatchPost**
-> kotlin.String call2sharingListFileMembersBatchPost(body)
-
-list_file_members/batch
-
-[list_file_members/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members-batch)  scope: &#x60;sharing.read&#x60;  Get members of multiple files at once. The arguments to this route are more limited, and the limit on query result size per file is more strict. To customize the results more, use the individual file endpoint. Inherited users and groups are not included in the result, and permissions are not returned for this endpoint.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = SharingApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersBatchPost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFileMembersBatchPost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFileMembersBatchPost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2sharingListFileMembersContinuePost"></a>
-# **call2sharingListFileMembersContinuePost**
-> kotlin.String call2sharingListFileMembersContinuePost(body)
-
-list_file_members/continue
-
-[list_file_members/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_file_members&#x60; or &#x60;list_file_members/batch&#x60;, use this to paginate through all shared file members.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = SharingApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersContinuePost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFileMembersContinuePost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFileMembersContinuePost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2sharingListFileMembersPost"></a>
-# **call2sharingListFileMembersPost**
-> kotlin.String call2sharingListFileMembersPost(body)
+<a name="listFileMembers"></a>
+# **listFileMembers**
+> kotlin.String listFileMembers(body)
 
 list_file_members
 
@@ -650,13 +552,13 @@ list_file_members
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFileMembersPost(body)
+    val result : kotlin.String = apiInstance.listFileMembers(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFileMembersPost")
+    println("4xx response calling SharingApi#listFileMembers")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFileMembersPost")
+    println("5xx response calling SharingApi#listFileMembers")
     e.printStackTrace()
 }
 ```
@@ -682,9 +584,107 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListFolderMembersContinuePost"></a>
-# **call2sharingListFolderMembersContinuePost**
-> kotlin.String call2sharingListFolderMembersContinuePost(body)
+<a name="listFileMembersBatch"></a>
+# **listFileMembersBatch**
+> kotlin.String listFileMembersBatch(body)
+
+list_file_members/batch
+
+[list_file_members/batch](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members-batch)  scope: &#x60;sharing.read&#x60;  Get members of multiple files at once. The arguments to this route are more limited, and the limit on query result size per file is more strict. To customize the results more, use the individual file endpoint. Inherited users and groups are not included in the result, and permissions are not returned for this endpoint.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = SharingApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.listFileMembersBatch(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling SharingApi#listFileMembersBatch")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling SharingApi#listFileMembersBatch")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="listFileMembersContinue"></a>
+# **listFileMembersContinue**
+> kotlin.String listFileMembersContinue(body)
+
+list_file_members/continue
+
+[list_file_members/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_file_members-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_file_members&#x60; or &#x60;list_file_members/batch&#x60;, use this to paginate through all shared file members.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = SharingApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.listFileMembersContinue(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling SharingApi#listFileMembersContinue")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling SharingApi#listFileMembersContinue")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="listFolderMembersContinue"></a>
+# **listFolderMembersContinue**
+> kotlin.String listFolderMembersContinue(body)
 
 list_folder_members/continue
 
@@ -699,13 +699,13 @@ list_folder_members/continue
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFolderMembersContinuePost(body)
+    val result : kotlin.String = apiInstance.listFolderMembersContinue(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFolderMembersContinuePost")
+    println("4xx response calling SharingApi#listFolderMembersContinue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFolderMembersContinuePost")
+    println("5xx response calling SharingApi#listFolderMembersContinue")
     e.printStackTrace()
 }
 ```
@@ -731,58 +731,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListFoldersContinuePost"></a>
-# **call2sharingListFoldersContinuePost**
-> kotlin.String call2sharingListFoldersContinuePost(body)
-
-list_folders/continue
-
-[list_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_folders&#x60;, use this to paginate through all shared folders. The cursor must come from a previous call to &#x60;list_folders&#x60; or &#x60;list_folders/continue&#x60;.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = SharingApi()
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2sharingListFoldersContinuePost(body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFoldersContinuePost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFoldersContinuePost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-<a name="call2sharingListFoldersPost"></a>
-# **call2sharingListFoldersPost**
-> kotlin.String call2sharingListFoldersPost(body)
+<a name="listFolders"></a>
+# **listFolders**
+> kotlin.String listFolders(body)
 
 list_folders
 
@@ -797,13 +748,13 @@ list_folders
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListFoldersPost(body)
+    val result : kotlin.String = apiInstance.listFolders(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListFoldersPost")
+    println("4xx response calling SharingApi#listFolders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListFoldersPost")
+    println("5xx response calling SharingApi#listFolders")
     e.printStackTrace()
 }
 ```
@@ -829,13 +780,13 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListMountableFoldersContinuePost"></a>
-# **call2sharingListMountableFoldersContinuePost**
-> kotlin.String call2sharingListMountableFoldersContinuePost(body)
+<a name="listFoldersContinue"></a>
+# **listFoldersContinue**
+> kotlin.String listFoldersContinue(body)
 
-list_mountable_folders/continue
+list_folders/continue
 
-[list_mountable_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_mountable_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_mountable_folders&#x60;, use this to paginate through all mountable shared folders. The cursor must come from a previous call to &#x60;list_mountable_folders&#x60; or &#x60;list_mountable_folders/continue&#x60;.
+[list_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_folders&#x60;, use this to paginate through all shared folders. The cursor must come from a previous call to &#x60;list_folders&#x60; or &#x60;list_folders/continue&#x60;.
 
 ### Example
 ```kotlin
@@ -846,13 +797,13 @@ list_mountable_folders/continue
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersContinuePost(body)
+    val result : kotlin.String = apiInstance.listFoldersContinue(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListMountableFoldersContinuePost")
+    println("4xx response calling SharingApi#listFoldersContinue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListMountableFoldersContinuePost")
+    println("5xx response calling SharingApi#listFoldersContinue")
     e.printStackTrace()
 }
 ```
@@ -878,9 +829,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListMountableFoldersPost"></a>
-# **call2sharingListMountableFoldersPost**
-> kotlin.String call2sharingListMountableFoldersPost(body)
+<a name="listMountableFolders"></a>
+# **listMountableFolders**
+> kotlin.String listMountableFolders(body)
 
 list_mountable_folders
 
@@ -895,13 +846,13 @@ list_mountable_folders
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListMountableFoldersPost(body)
+    val result : kotlin.String = apiInstance.listMountableFolders(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListMountableFoldersPost")
+    println("4xx response calling SharingApi#listMountableFolders")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListMountableFoldersPost")
+    println("5xx response calling SharingApi#listMountableFolders")
     e.printStackTrace()
 }
 ```
@@ -927,13 +878,13 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListReceivedFilesContinuePost"></a>
-# **call2sharingListReceivedFilesContinuePost**
-> kotlin.String call2sharingListReceivedFilesContinuePost(body)
+<a name="listMountableFoldersContinue"></a>
+# **listMountableFoldersContinue**
+> kotlin.String listMountableFoldersContinue(body)
 
-list_received_files/continue
+list_mountable_folders/continue
 
-[list_received_files/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_received_files-continue)  scope: &#x60;sharing.read&#x60;  Get more results with a cursor from &#x60;list_received_files&#x60;.
+[list_mountable_folders/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_mountable_folders-continue)  scope: &#x60;sharing.read&#x60;  Once a cursor has been retrieved from &#x60;list_mountable_folders&#x60;, use this to paginate through all mountable shared folders. The cursor must come from a previous call to &#x60;list_mountable_folders&#x60; or &#x60;list_mountable_folders/continue&#x60;.
 
 ### Example
 ```kotlin
@@ -944,13 +895,13 @@ list_received_files/continue
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesContinuePost(body)
+    val result : kotlin.String = apiInstance.listMountableFoldersContinue(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListReceivedFilesContinuePost")
+    println("4xx response calling SharingApi#listMountableFoldersContinue")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListReceivedFilesContinuePost")
+    println("5xx response calling SharingApi#listMountableFoldersContinue")
     e.printStackTrace()
 }
 ```
@@ -976,9 +927,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListReceivedFilesPost"></a>
-# **call2sharingListReceivedFilesPost**
-> kotlin.String call2sharingListReceivedFilesPost(body)
+<a name="listReceivedFiles"></a>
+# **listReceivedFiles**
+> kotlin.String listReceivedFiles(body)
 
 list_received_files
 
@@ -993,13 +944,13 @@ list_received_files
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListReceivedFilesPost(body)
+    val result : kotlin.String = apiInstance.listReceivedFiles(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListReceivedFilesPost")
+    println("4xx response calling SharingApi#listReceivedFiles")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListReceivedFilesPost")
+    println("5xx response calling SharingApi#listReceivedFiles")
     e.printStackTrace()
 }
 ```
@@ -1025,9 +976,58 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingListSharedLinksPost"></a>
-# **call2sharingListSharedLinksPost**
-> kotlin.String call2sharingListSharedLinksPost(body)
+<a name="listReceivedFilesContinue"></a>
+# **listReceivedFilesContinue**
+> kotlin.String listReceivedFilesContinue(body)
+
+list_received_files/continue
+
+[list_received_files/continue](https://www.dropbox.com/developers/documentation/http/documentation#sharing-list_received_files-continue)  scope: &#x60;sharing.read&#x60;  Get more results with a cursor from &#x60;list_received_files&#x60;.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = SharingApi()
+val body : kotlin.String = body_example // kotlin.String | 
+try {
+    val result : kotlin.String = apiInstance.listReceivedFilesContinue(body)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling SharingApi#listReceivedFilesContinue")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling SharingApi#listReceivedFilesContinue")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | **kotlin.String**|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+<a name="listSharedLinks"></a>
+# **listSharedLinks**
+> kotlin.String listSharedLinks(body)
 
 list_shared_links
 
@@ -1042,13 +1042,13 @@ list_shared_links
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingListSharedLinksPost(body)
+    val result : kotlin.String = apiInstance.listSharedLinks(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingListSharedLinksPost")
+    println("4xx response calling SharingApi#listSharedLinks")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingListSharedLinksPost")
+    println("5xx response calling SharingApi#listSharedLinks")
     e.printStackTrace()
 }
 ```
@@ -1074,9 +1074,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingModifySharedLinkSettingsPost"></a>
-# **call2sharingModifySharedLinkSettingsPost**
-> kotlin.String call2sharingModifySharedLinkSettingsPost(body)
+<a name="modifySharedLinkSettings"></a>
+# **modifySharedLinkSettings**
+> kotlin.String modifySharedLinkSettings(body)
 
 modify_shared_link_settings
 
@@ -1091,13 +1091,13 @@ modify_shared_link_settings
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingModifySharedLinkSettingsPost(body)
+    val result : kotlin.String = apiInstance.modifySharedLinkSettings(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingModifySharedLinkSettingsPost")
+    println("4xx response calling SharingApi#modifySharedLinkSettings")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingModifySharedLinkSettingsPost")
+    println("5xx response calling SharingApi#modifySharedLinkSettings")
     e.printStackTrace()
 }
 ```
@@ -1123,9 +1123,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingMountFolderPost"></a>
-# **call2sharingMountFolderPost**
-> kotlin.String call2sharingMountFolderPost(body)
+<a name="mountFolder"></a>
+# **mountFolder**
+> kotlin.String mountFolder(body)
 
 mount_folder
 
@@ -1140,13 +1140,13 @@ mount_folder
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingMountFolderPost(body)
+    val result : kotlin.String = apiInstance.mountFolder(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingMountFolderPost")
+    println("4xx response calling SharingApi#mountFolder")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingMountFolderPost")
+    println("5xx response calling SharingApi#mountFolder")
     e.printStackTrace()
 }
 ```
@@ -1172,9 +1172,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingRelinquishFileMembershipPost"></a>
-# **call2sharingRelinquishFileMembershipPost**
-> call2sharingRelinquishFileMembershipPost(body)
+<a name="relinquishFileMembership"></a>
+# **relinquishFileMembership**
+> relinquishFileMembership(body)
 
 relinquish_file_membership
 
@@ -1189,12 +1189,12 @@ relinquish_file_membership
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingRelinquishFileMembershipPost(body)
+    apiInstance.relinquishFileMembership(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingRelinquishFileMembershipPost")
+    println("4xx response calling SharingApi#relinquishFileMembership")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingRelinquishFileMembershipPost")
+    println("5xx response calling SharingApi#relinquishFileMembership")
     e.printStackTrace()
 }
 ```
@@ -1220,9 +1220,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingRelinquishFolderMembershipPost"></a>
-# **call2sharingRelinquishFolderMembershipPost**
-> kotlin.String call2sharingRelinquishFolderMembershipPost(body)
+<a name="relinquishFolderMembership"></a>
+# **relinquishFolderMembership**
+> kotlin.String relinquishFolderMembership(body)
 
 relinquish_folder_membership
 
@@ -1237,13 +1237,13 @@ relinquish_folder_membership
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRelinquishFolderMembershipPost(body)
+    val result : kotlin.String = apiInstance.relinquishFolderMembership(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingRelinquishFolderMembershipPost")
+    println("4xx response calling SharingApi#relinquishFolderMembership")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingRelinquishFolderMembershipPost")
+    println("5xx response calling SharingApi#relinquishFolderMembership")
     e.printStackTrace()
 }
 ```
@@ -1269,9 +1269,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingRemoveFileMember2Post"></a>
-# **call2sharingRemoveFileMember2Post**
-> kotlin.String call2sharingRemoveFileMember2Post(body)
+<a name="removeFileMember2"></a>
+# **removeFileMember2**
+> kotlin.String removeFileMember2(body)
 
 remove_file_member_2
 
@@ -1286,13 +1286,13 @@ remove_file_member_2
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRemoveFileMember2Post(body)
+    val result : kotlin.String = apiInstance.removeFileMember2(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingRemoveFileMember2Post")
+    println("4xx response calling SharingApi#removeFileMember2")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingRemoveFileMember2Post")
+    println("5xx response calling SharingApi#removeFileMember2")
     e.printStackTrace()
 }
 ```
@@ -1318,9 +1318,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingRemoveFolderMemberPost"></a>
-# **call2sharingRemoveFolderMemberPost**
-> kotlin.String call2sharingRemoveFolderMemberPost(body)
+<a name="removeFolderMember"></a>
+# **removeFolderMember**
+> kotlin.String removeFolderMember(body)
 
 remove_folder_member
 
@@ -1335,13 +1335,13 @@ remove_folder_member
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingRemoveFolderMemberPost(body)
+    val result : kotlin.String = apiInstance.removeFolderMember(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingRemoveFolderMemberPost")
+    println("4xx response calling SharingApi#removeFolderMember")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingRemoveFolderMemberPost")
+    println("5xx response calling SharingApi#removeFolderMember")
     e.printStackTrace()
 }
 ```
@@ -1367,9 +1367,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingRevokeSharedLinkPost"></a>
-# **call2sharingRevokeSharedLinkPost**
-> call2sharingRevokeSharedLinkPost(body)
+<a name="revokeSharedLink"></a>
+# **revokeSharedLink**
+> revokeSharedLink(body)
 
 revoke_shared_link
 
@@ -1384,12 +1384,12 @@ revoke_shared_link
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingRevokeSharedLinkPost(body)
+    apiInstance.revokeSharedLink(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingRevokeSharedLinkPost")
+    println("4xx response calling SharingApi#revokeSharedLink")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingRevokeSharedLinkPost")
+    println("5xx response calling SharingApi#revokeSharedLink")
     e.printStackTrace()
 }
 ```
@@ -1415,9 +1415,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingSetAccessInheritancePost"></a>
-# **call2sharingSetAccessInheritancePost**
-> kotlin.String call2sharingSetAccessInheritancePost(body)
+<a name="setAccessInheritance"></a>
+# **setAccessInheritance**
+> kotlin.String setAccessInheritance(body)
 
 set_access_inheritance
 
@@ -1432,13 +1432,13 @@ set_access_inheritance
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingSetAccessInheritancePost(body)
+    val result : kotlin.String = apiInstance.setAccessInheritance(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingSetAccessInheritancePost")
+    println("4xx response calling SharingApi#setAccessInheritance")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingSetAccessInheritancePost")
+    println("5xx response calling SharingApi#setAccessInheritance")
     e.printStackTrace()
 }
 ```
@@ -1464,9 +1464,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingShareFolderPost"></a>
-# **call2sharingShareFolderPost**
-> kotlin.String call2sharingShareFolderPost(body)
+<a name="shareFolder"></a>
+# **shareFolder**
+> kotlin.String shareFolder(body)
 
 share_folder
 
@@ -1481,13 +1481,13 @@ share_folder
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingShareFolderPost(body)
+    val result : kotlin.String = apiInstance.shareFolder(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingShareFolderPost")
+    println("4xx response calling SharingApi#shareFolder")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingShareFolderPost")
+    println("5xx response calling SharingApi#shareFolder")
     e.printStackTrace()
 }
 ```
@@ -1513,9 +1513,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingTransferFolderPost"></a>
-# **call2sharingTransferFolderPost**
-> call2sharingTransferFolderPost(body)
+<a name="transferFolder"></a>
+# **transferFolder**
+> transferFolder(body)
 
 transfer_folder
 
@@ -1530,12 +1530,12 @@ transfer_folder
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingTransferFolderPost(body)
+    apiInstance.transferFolder(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingTransferFolderPost")
+    println("4xx response calling SharingApi#transferFolder")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingTransferFolderPost")
+    println("5xx response calling SharingApi#transferFolder")
     e.printStackTrace()
 }
 ```
@@ -1561,9 +1561,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUnmountFolderPost"></a>
-# **call2sharingUnmountFolderPost**
-> call2sharingUnmountFolderPost(body)
+<a name="unmountFolder"></a>
+# **unmountFolder**
+> unmountFolder(body)
 
 unmount_folder
 
@@ -1578,12 +1578,12 @@ unmount_folder
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingUnmountFolderPost(body)
+    apiInstance.unmountFolder(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUnmountFolderPost")
+    println("4xx response calling SharingApi#unmountFolder")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUnmountFolderPost")
+    println("5xx response calling SharingApi#unmountFolder")
     e.printStackTrace()
 }
 ```
@@ -1609,9 +1609,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUnshareFilePost"></a>
-# **call2sharingUnshareFilePost**
-> call2sharingUnshareFilePost(body)
+<a name="unshareFile"></a>
+# **unshareFile**
+> unshareFile(body)
 
 unshare_file
 
@@ -1626,12 +1626,12 @@ unshare_file
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    apiInstance.call2sharingUnshareFilePost(body)
+    apiInstance.unshareFile(body)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUnshareFilePost")
+    println("4xx response calling SharingApi#unshareFile")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUnshareFilePost")
+    println("5xx response calling SharingApi#unshareFile")
     e.printStackTrace()
 }
 ```
@@ -1657,9 +1657,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUnshareFolderPost"></a>
-# **call2sharingUnshareFolderPost**
-> kotlin.String call2sharingUnshareFolderPost(body)
+<a name="unshareFolder"></a>
+# **unshareFolder**
+> kotlin.String unshareFolder(body)
 
 unshare_folder
 
@@ -1674,13 +1674,13 @@ unshare_folder
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUnshareFolderPost(body)
+    val result : kotlin.String = apiInstance.unshareFolder(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUnshareFolderPost")
+    println("4xx response calling SharingApi#unshareFolder")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUnshareFolderPost")
+    println("5xx response calling SharingApi#unshareFolder")
     e.printStackTrace()
 }
 ```
@@ -1706,9 +1706,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUpdateFileMemberPost"></a>
-# **call2sharingUpdateFileMemberPost**
-> kotlin.String call2sharingUpdateFileMemberPost(body)
+<a name="updateFileMember"></a>
+# **updateFileMember**
+> kotlin.String updateFileMember(body)
 
 update_file_member
 
@@ -1723,13 +1723,13 @@ update_file_member
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFileMemberPost(body)
+    val result : kotlin.String = apiInstance.updateFileMember(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUpdateFileMemberPost")
+    println("4xx response calling SharingApi#updateFileMember")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUpdateFileMemberPost")
+    println("5xx response calling SharingApi#updateFileMember")
     e.printStackTrace()
 }
 ```
@@ -1755,9 +1755,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUpdateFolderMemberPost"></a>
-# **call2sharingUpdateFolderMemberPost**
-> kotlin.String call2sharingUpdateFolderMemberPost(body)
+<a name="updateFolderMember"></a>
+# **updateFolderMember**
+> kotlin.String updateFolderMember(body)
 
 update_folder_member
 
@@ -1772,13 +1772,13 @@ update_folder_member
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFolderMemberPost(body)
+    val result : kotlin.String = apiInstance.updateFolderMember(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUpdateFolderMemberPost")
+    println("4xx response calling SharingApi#updateFolderMember")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUpdateFolderMemberPost")
+    println("5xx response calling SharingApi#updateFolderMember")
     e.printStackTrace()
 }
 ```
@@ -1804,9 +1804,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2sharingUpdateFolderPolicyPost"></a>
-# **call2sharingUpdateFolderPolicyPost**
-> kotlin.String call2sharingUpdateFolderPolicyPost(body)
+<a name="updateFolderPolicy"></a>
+# **updateFolderPolicy**
+> kotlin.String updateFolderPolicy(body)
 
 update_folder_policy
 
@@ -1821,13 +1821,13 @@ update_folder_policy
 val apiInstance = SharingApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2sharingUpdateFolderPolicyPost(body)
+    val result : kotlin.String = apiInstance.updateFolderPolicy(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling SharingApi#call2sharingUpdateFolderPolicyPost")
+    println("4xx response calling SharingApi#updateFolderPolicy")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling SharingApi#call2sharingUpdateFolderPolicyPost")
+    println("5xx response calling SharingApi#updateFolderPolicy")
     e.printStackTrace()
 }
 ```

@@ -4,13 +4,13 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2authTokenFromOauth1Post**](AuthApi.md#call2authTokenFromOauth1Post) | **POST** /2/auth/token/from_oauth1 | token/from_oauth1
-[**call2authTokenRevokePost**](AuthApi.md#call2authTokenRevokePost) | **POST** /2/auth/token/revoke | token/revoke
+[**tokenFromOauth1**](AuthApi.md#tokenFromOauth1) | **POST** /2/auth/token/from_oauth1 | token/from_oauth1
+[**tokenRevoke**](AuthApi.md#tokenRevoke) | **POST** /2/auth/token/revoke | token/revoke
 
 
-<a name="call2authTokenFromOauth1Post"></a>
-# **call2authTokenFromOauth1Post**
-> kotlin.String call2authTokenFromOauth1Post(body)
+<a name="tokenFromOauth1"></a>
+# **tokenFromOauth1**
+> kotlin.String tokenFromOauth1(body)
 
 token/from_oauth1
 
@@ -25,13 +25,13 @@ token/from_oauth1
 val apiInstance = AuthApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2authTokenFromOauth1Post(body)
+    val result : kotlin.String = apiInstance.tokenFromOauth1(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AuthApi#call2authTokenFromOauth1Post")
+    println("4xx response calling AuthApi#tokenFromOauth1")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AuthApi#call2authTokenFromOauth1Post")
+    println("5xx response calling AuthApi#tokenFromOauth1")
     e.printStackTrace()
 }
 ```
@@ -57,9 +57,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2authTokenRevokePost"></a>
-# **call2authTokenRevokePost**
-> call2authTokenRevokePost()
+<a name="tokenRevoke"></a>
+# **tokenRevoke**
+> tokenRevoke()
 
 token/revoke
 
@@ -73,12 +73,12 @@ token/revoke
 
 val apiInstance = AuthApi()
 try {
-    apiInstance.call2authTokenRevokePost()
+    apiInstance.tokenRevoke()
 } catch (e: ClientException) {
-    println("4xx response calling AuthApi#call2authTokenRevokePost")
+    println("4xx response calling AuthApi#tokenRevoke")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AuthApi#call2authTokenRevokePost")
+    println("5xx response calling AuthApi#tokenRevoke")
     e.printStackTrace()
 }
 ```

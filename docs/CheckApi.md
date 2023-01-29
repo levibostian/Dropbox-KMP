@@ -4,13 +4,13 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2checkAppPost**](CheckApi.md#call2checkAppPost) | **POST** /2/check/app | app
-[**call2checkUserPost**](CheckApi.md#call2checkUserPost) | **POST** /2/check/user | user
+[**app**](CheckApi.md#app) | **POST** /2/check/app | app
+[**user**](CheckApi.md#user) | **POST** /2/check/user | user
 
 
-<a name="call2checkAppPost"></a>
-# **call2checkAppPost**
-> kotlin.String call2checkAppPost(body)
+<a name="app"></a>
+# **app**
+> kotlin.String app(body)
 
 app
 
@@ -25,13 +25,13 @@ app
 val apiInstance = CheckApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2checkAppPost(body)
+    val result : kotlin.String = apiInstance.app(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CheckApi#call2checkAppPost")
+    println("4xx response calling CheckApi#app")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CheckApi#call2checkAppPost")
+    println("5xx response calling CheckApi#app")
     e.printStackTrace()
 }
 ```
@@ -57,9 +57,9 @@ Configure bearerAuth:
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="call2checkUserPost"></a>
-# **call2checkUserPost**
-> kotlin.String call2checkUserPost(body)
+<a name="user"></a>
+# **user**
+> kotlin.String user(body)
 
 user
 
@@ -74,13 +74,13 @@ user
 val apiInstance = CheckApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2checkUserPost(body)
+    val result : kotlin.String = apiInstance.user(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling CheckApi#call2checkUserPost")
+    println("4xx response calling CheckApi#user")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling CheckApi#call2checkUserPost")
+    println("5xx response calling CheckApi#user")
     e.printStackTrace()
 }
 ```

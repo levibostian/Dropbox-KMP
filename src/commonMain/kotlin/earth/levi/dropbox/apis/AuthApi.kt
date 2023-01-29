@@ -40,7 +40,7 @@ open class AuthApi(
      * @return kotlin.String
      */
     @Suppress("UNCHECKED_CAST")
-    open suspend fun call2authTokenFromOauth1Post(body: kotlin.String? = null): HttpResponse<kotlin.String> {
+    open suspend fun tokenFromOauth1(body: kotlin.String? = null): HttpResponse<kotlin.String> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 
@@ -70,7 +70,7 @@ open class AuthApi(
      * [token/revoke](https://www.dropbox.com/developers/documentation/http/documentation#auth-token-revoke)  scope: &#x60;None&#x60;  Disables the access token used to authenticate the call.      
      * @return void
      */
-    open suspend fun call2authTokenRevokePost(): HttpResponse<Unit> {
+    open suspend fun tokenRevoke(): HttpResponse<Unit> {
 
         val localVariableAuthNames = listOf<String>("bearerAuth")
 

@@ -4,12 +4,12 @@ All URIs are relative to *https://api.dropbox.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**call2accountSetProfilePhotoPost**](AccountApi.md#call2accountSetProfilePhotoPost) | **POST** /2/account/set_profile_photo | set_profile_photo
+[**setProfilePhoto**](AccountApi.md#setProfilePhoto) | **POST** /2/account/set_profile_photo | set_profile_photo
 
 
-<a name="call2accountSetProfilePhotoPost"></a>
-# **call2accountSetProfilePhotoPost**
-> kotlin.String call2accountSetProfilePhotoPost(body)
+<a name="setProfilePhoto"></a>
+# **setProfilePhoto**
+> kotlin.String setProfilePhoto(body)
 
 set_profile_photo
 
@@ -24,13 +24,13 @@ set_profile_photo
 val apiInstance = AccountApi()
 val body : kotlin.String = body_example // kotlin.String | 
 try {
-    val result : kotlin.String = apiInstance.call2accountSetProfilePhotoPost(body)
+    val result : kotlin.String = apiInstance.setProfilePhoto(body)
     println(result)
 } catch (e: ClientException) {
-    println("4xx response calling AccountApi#call2accountSetProfilePhotoPost")
+    println("4xx response calling AccountApi#setProfilePhoto")
     e.printStackTrace()
 } catch (e: ServerException) {
-    println("5xx response calling AccountApi#call2accountSetProfilePhotoPost")
+    println("5xx response calling AccountApi#setProfilePhoto")
     e.printStackTrace()
 }
 ```
