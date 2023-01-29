@@ -28,7 +28,6 @@ Method | HTTP request | Description
 [**call2filesListFolderContinuePost**](FilesApi.md#call2filesListFolderContinuePost) | **POST** /2/files/list_folder/continue | list_folder/continue
 [**call2filesListFolderGetLatestCursorPost**](FilesApi.md#call2filesListFolderGetLatestCursorPost) | **POST** /2/files/list_folder/get_latest_cursor | list_folder/get_latest_cursor
 [**call2filesListFolderLongpollPost**](FilesApi.md#call2filesListFolderLongpollPost) | **POST** /2/files/list_folder/longpoll | list_folder/longpoll
-[**call2filesListFolderPost**](FilesApi.md#call2filesListFolderPost) | **POST** /2/files/list_folder | list_folder
 [**call2filesListRevisionsPost**](FilesApi.md#call2filesListRevisionsPost) | **POST** /2/files/list_revisions | list_revisions
 [**call2filesLockFileBatchPost**](FilesApi.md#call2filesLockFileBatchPost) | **POST** /2/files/lock_file_batch | lock_file_batch
 [**call2filesMoveBatchCheckV2Post**](FilesApi.md#call2filesMoveBatchCheckV2Post) | **POST** /2/files/move_batch/check_v2 | move_batch/check
@@ -47,6 +46,7 @@ Method | HTTP request | Description
 [**call2filesUploadSessionFinishBatchPost**](FilesApi.md#call2filesUploadSessionFinishBatchPost) | **POST** /2/files/upload_session/finish_batch | upload_session/finish_batch
 [**call2filesUploadSessionFinishPost**](FilesApi.md#call2filesUploadSessionFinishPost) | **POST** /2/files/upload_session/finish | upload_session/finish
 [**call2filesUploadSessionStartPost**](FilesApi.md#call2filesUploadSessionStartPost) | **POST** /2/files/upload_session/start | upload_session/start
+[**listFolder**](FilesApi.md#listFolder) | **POST** /2/files/list_folder | list_folder
 
 
 <a name="call2filesCopyBatchCheckV2Post"></a>
@@ -1279,57 +1279,6 @@ Configure bearerAuth:
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
-<a name="call2filesListFolderPost"></a>
-# **call2filesListFolderPost**
-> kotlin.String call2filesListFolderPost(contentType, body)
-
-list_folder
-
-[list_folder](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder)  scope: &#x60;files.metadata.read&#x60;  Starts returning the contents of a folder. If the result&#39;s &#x60;ListFolderResult.has_more&#x60; field is &#x60;true&#x60;, call &#x60;list_folder/continue&#x60; with the returned &#x60;ListFolderResult.cursor&#x60; to retrieve more entries. If you&#39;re using &#x60;ListFolderArg.recursive&#x60; set to &#x60;true&#x60; to keep a local cache of the contents of a Dropbox account, iterate through each entry in order and process them as follows to keep your local state in sync: For each &#x60;FileMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it and remove all its children. For each &#x60;FolderMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it but leave the children as they are. Check the new entry&#39;s &#x60;FolderSharingInfo.read_only&#x60; and set all its children&#39;s read-only statuses to match. For each &#x60;DeletedMetadata&#x60;, if your local state has something at the given path, remove it and all its children. If there&#39;s nothing at the given path, ignore this entry. Note: &#x60;auth.RateLimitError&#x60; may be returned if multiple &#x60;list_folder&#x60; or &#x60;list_folder/continue&#x60; calls with same parameters are made simultaneously by same API app for same user. If your app implements retry logic, please hold off the retry until the previous request finishes.
-
-### Example
-```kotlin
-// Import classes:
-//import earth.levi.dropbox.infrastructure.*
-//import earth.levi.dropbox.models.*
-
-val apiInstance = FilesApi()
-val contentType : kotlin.String = application/json // kotlin.String | 
-val body : kotlin.String = body_example // kotlin.String | 
-try {
-    val result : kotlin.String = apiInstance.call2filesListFolderPost(contentType, body)
-    println(result)
-} catch (e: ClientException) {
-    println("4xx response calling FilesApi#call2filesListFolderPost")
-    e.printStackTrace()
-} catch (e: ServerException) {
-    println("5xx response calling FilesApi#call2filesListFolderPost")
-    e.printStackTrace()
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **contentType** | **kotlin.String**|  | [optional]
- **body** | **kotlin.String**|  | [optional]
-
-### Return type
-
-**kotlin.String**
-
-### Authorization
-
-
-Configure bearerAuth:
-    ApiClient.accessToken = ""
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
 <a name="call2filesListRevisionsPost"></a>
 # **call2filesListRevisionsPost**
 > kotlin.String call2filesListRevisionsPost(contentType, body)
@@ -2262,5 +2211,54 @@ Configure bearerAuth:
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+<a name="listFolder"></a>
+# **listFolder**
+> kotlin.String listFolder(listFolderRequestModel)
+
+list_folder
+
+[list_folder](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder)  scope: &#x60;files.metadata.read&#x60;  Starts returning the contents of a folder. If the result&#39;s &#x60;ListFolderResult.has_more&#x60; field is &#x60;true&#x60;, call &#x60;list_folder/continue&#x60; with the returned &#x60;ListFolderResult.cursor&#x60; to retrieve more entries. If you&#39;re using &#x60;ListFolderArg.recursive&#x60; set to &#x60;true&#x60; to keep a local cache of the contents of a Dropbox account, iterate through each entry in order and process them as follows to keep your local state in sync: For each &#x60;FileMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it and remove all its children. For each &#x60;FolderMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it but leave the children as they are. Check the new entry&#39;s &#x60;FolderSharingInfo.read_only&#x60; and set all its children&#39;s read-only statuses to match. For each &#x60;DeletedMetadata&#x60;, if your local state has something at the given path, remove it and all its children. If there&#39;s nothing at the given path, ignore this entry. Note: &#x60;auth.RateLimitError&#x60; may be returned if multiple &#x60;list_folder&#x60; or &#x60;list_folder/continue&#x60; calls with same parameters are made simultaneously by same API app for same user. If your app implements retry logic, please hold off the retry until the previous request finishes.
+
+### Example
+```kotlin
+// Import classes:
+//import earth.levi.dropbox.infrastructure.*
+//import earth.levi.dropbox.models.*
+
+val apiInstance = FilesApi()
+val listFolderRequestModel : ListFolderRequestModel =  // ListFolderRequestModel | 
+try {
+    val result : kotlin.String = apiInstance.listFolder(listFolderRequestModel)
+    println(result)
+} catch (e: ClientException) {
+    println("4xx response calling FilesApi#listFolder")
+    e.printStackTrace()
+} catch (e: ServerException) {
+    println("5xx response calling FilesApi#listFolder")
+    e.printStackTrace()
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **listFolderRequestModel** | [**ListFolderRequestModel**](ListFolderRequestModel.md)|  | [optional]
+
+### Return type
+
+**kotlin.String**
+
+### Authorization
+
+
+Configure bearerAuth:
+    ApiClient.accessToken = ""
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 

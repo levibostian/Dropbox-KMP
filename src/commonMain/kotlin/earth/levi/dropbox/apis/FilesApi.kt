@@ -15,6 +15,7 @@
 
 package earth.levi.dropbox.apis
 
+import earth.levi.dropbox.models.ListFolderRequestModel
 
 import earth.levi.dropbox.infrastructure.*
 import io.ktor.client.HttpClientConfig
@@ -845,40 +846,6 @@ open class FilesApi(
 
 
     /**
-     * list_folder
-     * [list_folder](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder)  scope: &#x60;files.metadata.read&#x60;  Starts returning the contents of a folder. If the result&#39;s &#x60;ListFolderResult.has_more&#x60; field is &#x60;true&#x60;, call &#x60;list_folder/continue&#x60; with the returned &#x60;ListFolderResult.cursor&#x60; to retrieve more entries. If you&#39;re using &#x60;ListFolderArg.recursive&#x60; set to &#x60;true&#x60; to keep a local cache of the contents of a Dropbox account, iterate through each entry in order and process them as follows to keep your local state in sync: For each &#x60;FileMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it and remove all its children. For each &#x60;FolderMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it but leave the children as they are. Check the new entry&#39;s &#x60;FolderSharingInfo.read_only&#x60; and set all its children&#39;s read-only statuses to match. For each &#x60;DeletedMetadata&#x60;, if your local state has something at the given path, remove it and all its children. If there&#39;s nothing at the given path, ignore this entry. Note: &#x60;auth.RateLimitError&#x60; may be returned if multiple &#x60;list_folder&#x60; or &#x60;list_folder/continue&#x60; calls with same parameters are made simultaneously by same API app for same user. If your app implements retry logic, please hold off the retry until the previous request finishes.
-     * @param contentType  (optional)
-     * @param body  (optional)
-     * @return kotlin.String
-     */
-    @Suppress("UNCHECKED_CAST")
-    open suspend fun call2filesListFolderPost(contentType: kotlin.String? = null, body: kotlin.String? = null): HttpResponse<kotlin.String> {
-
-        val localVariableAuthNames = listOf<String>("bearerAuth")
-
-        val localVariableBody = body
-
-        val localVariableQuery = mutableMapOf<String, List<String>>()
-        val localVariableHeaders = mutableMapOf<String, String>()
-        contentType?.apply { localVariableHeaders["Content-Type"] = this.toString() }
-
-        val localVariableConfig = RequestConfig<kotlin.Any?>(
-            RequestMethod.POST,
-            "/2/files/list_folder",
-            query = localVariableQuery,
-            headers = localVariableHeaders
-        )
-
-        return jsonRequest(
-            localVariableConfig,
-            localVariableBody,
-            localVariableAuthNames
-        ).wrap()
-    }
-
-
-
-    /**
      * list_revisions
      * [list_revisions](https://www.dropbox.com/developers/documentation/http/documentation#files-list_revisions)  scope: &#x60;files.metadata.read&#x60;  Returns revisions for files based on a file path or a file id. The file path or file id is identified from the latest file entry at the given file path or id. This end point allows your app to query either by file path or file id by setting the mode parameter appropriately. In the &#x60;ListRevisionsMode.path&#x60; (default) mode, all revisions at the same file path as the latest file entry are returned. If revisions with the same file id are desired, then mode must be set to &#x60;ListRevisionsMode.id&#x60;. The &#x60;ListRevisionsMode.id&#x60; mode is useful to retrieve revisions for a given file across moves or renames.
      * @param contentType  (optional)
@@ -1482,6 +1449,38 @@ open class FilesApi(
             localVariableAuthNames
         ).wrap()
     }
+
+
+    /**
+     * list_folder
+     * [list_folder](https://www.dropbox.com/developers/documentation/http/documentation#files-list_folder)  scope: &#x60;files.metadata.read&#x60;  Starts returning the contents of a folder. If the result&#39;s &#x60;ListFolderResult.has_more&#x60; field is &#x60;true&#x60;, call &#x60;list_folder/continue&#x60; with the returned &#x60;ListFolderResult.cursor&#x60; to retrieve more entries. If you&#39;re using &#x60;ListFolderArg.recursive&#x60; set to &#x60;true&#x60; to keep a local cache of the contents of a Dropbox account, iterate through each entry in order and process them as follows to keep your local state in sync: For each &#x60;FileMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it and remove all its children. For each &#x60;FolderMetadata&#x60;, store the new entry at the given path in your local state. If the required parent folders don&#39;t exist yet, create them. If there&#39;s already something else at the given path, replace it but leave the children as they are. Check the new entry&#39;s &#x60;FolderSharingInfo.read_only&#x60; and set all its children&#39;s read-only statuses to match. For each &#x60;DeletedMetadata&#x60;, if your local state has something at the given path, remove it and all its children. If there&#39;s nothing at the given path, ignore this entry. Note: &#x60;auth.RateLimitError&#x60; may be returned if multiple &#x60;list_folder&#x60; or &#x60;list_folder/continue&#x60; calls with same parameters are made simultaneously by same API app for same user. If your app implements retry logic, please hold off the retry until the previous request finishes.
+     * @param listFolderRequestModel  (optional)
+     * @return kotlin.String
+     */
+    @Suppress("UNCHECKED_CAST")
+    open suspend fun listFolder(listFolderRequestModel: ListFolderRequestModel? = null): HttpResponse<kotlin.String> {
+
+        val localVariableAuthNames = listOf<String>("bearerAuth")
+
+        val localVariableBody = listFolderRequestModel
+
+        val localVariableQuery = mutableMapOf<String, List<String>>()
+        val localVariableHeaders = mutableMapOf<String, String>()
+
+        val localVariableConfig = RequestConfig<kotlin.Any?>(
+            RequestMethod.POST,
+            "/2/files/list_folder",
+            query = localVariableQuery,
+            headers = localVariableHeaders
+        )
+
+        return jsonRequest(
+            localVariableConfig,
+            localVariableBody,
+            localVariableAuthNames
+        ).wrap()
+    }
+
 
 
 }

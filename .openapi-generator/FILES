@@ -5,6 +5,7 @@ docs/ContactsApi.md
 docs/FilePropertiesApi.md
 docs/FileRequestsApi.md
 docs/FilesApi.md
+docs/ListFolderRequest.md
 docs/SharingApi.md
 docs/TeamApi.md
 docs/TeamDevicesApi.md
@@ -52,6 +53,7 @@ src/commonMain/kotlin/earth/levi/dropbox/infrastructure/OctetByteArray.kt
 src/commonMain/kotlin/earth/levi/dropbox/infrastructure/PartConfig.kt
 src/commonMain/kotlin/earth/levi/dropbox/infrastructure/RequestConfig.kt
 src/commonMain/kotlin/earth/levi/dropbox/infrastructure/RequestMethod.kt
+src/commonMain/kotlin/earth/levi/dropbox/models/ListFolderRequestModel.kt
 src/commonTest/kotlin/util/Coroutine.kt
 src/iosTest/kotlin/util/Coroutine.kt
 src/jsTest/kotlin/util/Coroutine.kt

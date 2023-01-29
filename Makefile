@@ -9,4 +9,4 @@ publishMavenLocal:
 	./gradlew publishToMavenLocal
 
 openapi-gen-client:
-	openapi-generator generate --input-spec https://gist.githubusercontent.com/levibostian/86248f2dfdb7601ec378bb77b0d45e34/raw/142e78a76b2d0193e99f9b388ca83c23d154d45d/foo.yaml --generator-name kotlin --library=multiplatform --package-name earth.levi.dropbox --model-name-suffix "Model"
+	openapi-generator generate --input-spec dropbox-openapi-spec.yml --generator-name kotlin --library=multiplatform --package-name earth.levi.dropbox --model-name-suffix "Model"
