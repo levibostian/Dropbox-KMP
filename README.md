@@ -2,7 +2,7 @@
 
 Kotlin Multiplatform (KMP) module for the Dropbox API.
 
-> Note: This project is a work in progress and is still under the concept phase. The project may rename or change focus at anytime without warning. I would not consider this project a fully featured Dropbox SDK and it may never become that. If all HTTP endpoints could be generated from an openapi spec for Dropbox, then a true replacement may be considered.
+> Note: All of the code in this project are auto-generated. This means that some functions may be very developer friendly, some may not. See [#contribute] section on how you can improve this project!
 
 # Why?
 
@@ -53,3 +53,13 @@ The platform code is automatically generated from an openapi spec. So, the docum
 * Kotlin
 * Swift
 * ~~Javascript/typescript~~ Could be provided in future.
+
+# Contribute 
+
+Contributions to this project are welcome. Glad to see you want to help! Here are some tips:
+
+* All contributors must follow the [code of conduct](code_of_conduct.md). 
+* See [development](#development) section for getting a development environment setup ready to contribute. 
+
+**The biggest area of improvement is [this issue](https://github.com/levibostian/Dropbox-KMP/issues/3).** Great task to take if you are looking to improve this project. 
+
