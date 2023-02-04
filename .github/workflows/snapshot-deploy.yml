@@ -45,8 +45,7 @@ jobs:
 
       - run: ./gradlew publishModulePublicationToMavenRepository --no-daemon
         env:
-          GRADLE_PUBLISH_USERNAME: levibostian
-          GRADLE_PUBLISH_PASSWORD: ${{ secrets.GITHUB_TOKEN }}          
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
           LIBRARY_VERSION: "${{ steps.branch-name.outputs.current_branch }}-SNAPSHOT"
           GRADLE_OPTS: -Dkotlin.incremental=false -Dorg.gradle.jvmargs="-Xmx3g -XX:MaxPermSize=2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -XX:MaxMetaspaceSize=512m"
 
