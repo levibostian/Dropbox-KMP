@@ -1,15 +1,14 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
-val kotlin_version = "1.7.21"
 val coroutines_version = "1.6.3"
 val serialization_version = "1.3.3"
 val ktor_version = "2.0.3"
 
 plugins {
     id("com.android.library").version("7.3.1")
-    kotlin("multiplatform") version kotlin_version 
-    kotlin("plugin.serialization") version kotlin_version
+    kotlin("multiplatform") version "1.7.21" // kotlin lang version
+    kotlin("plugin.serialization") version "1.7.21" // kotlin lang version
     id("maven-publish")
     // KMMBridge is gradle tools for publishing Xcode frameworks. Used for making iOS KMM module available to use
     id("co.touchlab.faktory.kmmbridge") version "0.3.4"
