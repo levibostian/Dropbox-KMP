@@ -142,6 +142,11 @@ publishing {
             val releasesRepoUrl = uri("")
             val snapshotsRepoUrl = uri("https://maven.pkg.github.com/levibostian/Dropbox-KMP")
             url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            
+            credentials {
+                username = System.getenv("MAVEN_PUBLISH_USERNAME")
+                password = System.getenv("MAVEN_PUBLISH_PASSWORD")
+            }
         }
     }
 }
