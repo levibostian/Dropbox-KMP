@@ -10,8 +10,6 @@ plugins {
     kotlin("multiplatform") version "1.7.21" // kotlin lang version
     kotlin("plugin.serialization") version "1.7.21" // kotlin lang version
     id("maven-publish")
-    // KMMBridge is gradle tools for publishing Xcode frameworks. Used for making iOS KMM module available to use
-    id("co.touchlab.faktory.kmmbridge") version "0.3.4"
 }
 
 val packageName = "earth.levi"
@@ -105,16 +103,50 @@ android {
     }
 }
 
-kmmbridge {
-    // Use maven repository for hosting compiled xcframework file.
-    // Package.swift file will point to the remote URL.
-    mavenPublishArtifacts()
-    // I want to manually set the version of the module for more control.
-    manualVersions()
-    // Update Package.swift file.
-    // I want to commit manually so I can add [skip ci] to message
-    spm(commitManually = true)
-}
+// maven-publishing configuration 
+publishing {
+    publications {
+        create<MavenPublication>("module") {
+            groupId = packageName
+            artifactId = libraryName
+            version = version 
 
-// Configures KMM bridge to automatically use github repo packages for maven repo
-addGithubPackagesRepository()
+            pom {
+                name.set("Dropbox KMP SDK")
+                description.set("Kotlin Multiplatform library for interacting with the Dropbox API")
+                url.set("https://github.com/levibostian/Dropbox-KMP/")
+                licenses {
+                    license {
+                        name.set("MIT")
+                        url.set("https://github.com/levibostian/Dropbox-KMP/blob/main/LICENSE")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("levibostian")
+                        name.set("Levi Bostian")
+                        email.set("levi@curiosityio.com")
+                    }
+                }
+                scm {
+                    connection.set("scm:git:git://github.com/levibostian/Dropbox-KMP.git")
+                    developerConnection.set("scm:git:ssh://github.com/levibostian/Dropbox-KMP.git")
+                    url.set("https://github.com/levibostian/Dropbox-KMP/")
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            // change URLs to point to your repos, e.g. http://my.org/repo
+            val releasesRepoUrl = uri("")
+            val snapshotsRepoUrl = uri("https://maven.pkg.github.com/levibostian/Dropbox-KMP")
+            url = if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl
+            
+            credentials {
+                username = System.getenv("MAVEN_PUBLISH_USERNAME")
+                password = System.getenv("MAVEN_PUBLISH_PASSWORD")
+            }
+        }
+    }
+}

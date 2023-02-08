@@ -54,6 +54,31 @@ The platform code is automatically generated from an openapi spec. So, the docum
 * Swift
 * ~~Javascript/typescript~~ Could be provided in future.
 
+# Pre-release builds 
+
+This project is setup to create snapshot builds of the software that can be installed into for testing purposes. 
+
+To install snapshot builds, follow these instructions: 
+1. In `build.gradle` file, add the maven snapshot repository:
+```groovy
+allprojects {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'https://maven.pkg.github.com/levibostian/Dropbox-KMP'
+        }
+    }
+}
+```
+
+2. Specify the snapshot version you to install: 
+
+```groovy
+dependencies {
+    implementation "earth.levi:dropbox:version-name-here-SNAPSHOT"
+}
+```
+
 # Contribute 
 
 Contributions to this project are welcome. Glad to see you want to help! Here are some tips:

@@ -1,0 +1,76 @@
+name: Deploy snapshot builds
+
+on: [pull_request]
+
+permissions: read-all
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  files-changed:
+    name: Detect what files changed to only make snapshot if source code gets edited 
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      src: ${{ steps.changes.outputs.src }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            src:
+              - 'src/**'              
+
+  publish-snapshot:
+    needs: files-changed
+    if: needs.files-changed.outputs.src == 'true' 
+    runs-on: macos-latest # because of building iOS targets 
+    permissions:
+      packages: write
+      pull-requests: write # to comment on PRs 
+    steps:
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            Updating snapshot build... this could take a few minutes...
+
+      - uses: actions/checkout@v3
+      - uses: gradle/wrapper-validation-action@v1
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 16
+          cache: 'gradle'      
+
+      - name: Get branch names to use later 
+        id: branch-name
+        uses: tj-actions/branch-names@v6      
+
+      - run: ./gradlew publishModulePublicationToMavenRepository --no-daemon
+        env:
+          MAVEN_PUBLISH_USERNAME: cirunner
+          MAVEN_PUBLISH_PASSWORD: ${{ secrets.GITHUB_TOKEN }}    
+          LIBRARY_VERSION: "${{ steps.branch-name.outputs.current_branch }}-SNAPSHOT"
+          GRADLE_OPTS: -Dkotlin.incremental=false -Dorg.gradle.jvmargs="-Xmx3g -XX:MaxPermSize=2048m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -XX:MaxMetaspaceSize=512m"
+      
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            Snapshot `${{ steps.branch-name.outputs.current_branch }}-SNAPSHOT` is available for download.             
+
+  cleanup-old-snapshots:
+    needs: files-changed
+    if: needs.files-changed.outputs.src == 'true' 
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+    steps:
+      - name: Delete old packages to reduce carbon footprint of project
+        uses: actions/delete-package-versions@v3
+        with:
+          package-name: 'earth.levi.dropbox'
+          min-versions-to-keep: 10
+
