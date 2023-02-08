@@ -29,20 +29,21 @@ jobs:
     if: needs.files-changed.outputs.src == 'true' 
     runs-on: macos-latest # because of building iOS targets 
     permissions:
-      packages: write      
+      packages: write
+      pull-requests: write # to comment on PRs 
     steps:
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            Updating snapshot build... this could take a few minutes...
+
       - uses: actions/checkout@v3
       - uses: gradle/wrapper-validation-action@v1
       - uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 16
-          cache: 'gradle'
-
-      - uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          message: |
-            Updating snapshot build... this could take a few minutes...
+          cache: 'gradle'      
 
       - name: Get branch names to use later 
         id: branch-name
