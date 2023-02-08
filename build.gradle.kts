@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 val coroutines_version = "1.6.3"
-val serialization_version = "1.3.3"
+val serialization_version = "1.4.1"
 val ktor_version = "2.0.3"
 
 plugins {
