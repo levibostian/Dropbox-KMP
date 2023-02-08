@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 val coroutines_version = "1.6.3"
 val serialization_version = "1.3.3"
-val ktor_version = "2.0.3"
+val ktor_version = "2.2.3"
 
 plugins {
     id("com.android.library").version("7.3.1")
