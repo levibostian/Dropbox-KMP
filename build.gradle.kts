@@ -7,7 +7,7 @@ val ktor_version = "2.0.3"
 
 plugins {
     id("com.android.library").version("7.3.1")
-    kotlin("multiplatform") version "1.7.21" // kotlin lang version
+    kotlin("multiplatform") version "1.8.10" // kotlin lang version
     kotlin("plugin.serialization") version "1.7.21" // kotlin lang version
     id("maven-publish")
 }
