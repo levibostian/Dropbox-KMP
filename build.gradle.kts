@@ -1,14 +1,24 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
-val coroutines_version = "1.6.3"
-val serialization_version = "1.3.3"
-val ktor_version = "2.0.3"
+// Dependency version locking. Tries to make builds more reliable to be reproducible, and allow automatic upgrades easily.
+// Learn more: https://github.com/peter-evans/gradle-auto-dependency-updates
+dependencyLocking {
+    lockAllConfigurations()
+}
+buildscript {
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
+    }
+}
+val coroutines_version = "[1.6,2.0)"
+val serialization_version = "[1.3,2.0)"
+val ktor_version = "[2.0,3.0)"
 
 plugins {
-    id("com.android.library").version("7.3.1")
-    kotlin("multiplatform") version "1.7.21" // kotlin lang version
-    kotlin("plugin.serialization") version "1.7.21" // kotlin lang version
+    id("com.android.library").version("[7.3,8.0)")
+    kotlin("multiplatform") version "[1.7,2.0)" // kotlin lang version
+    kotlin("plugin.serialization") version "[1.7,2.0)" // kotlin lang version
     id("maven-publish")
 }
 
@@ -38,7 +48,7 @@ kotlin {
             }
         }
     }
-    js {
+    js(IR) {
         browser() // include if you want to create client-side js
         nodejs()  // include if you want to create server-side js
     }
