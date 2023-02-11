@@ -71,7 +71,7 @@ jobs:
       packages: write
     steps:
       - name: Delete old packages to reduce carbon footprint of project
-        uses: actions/delete-package-versions@v3
+        uses: actions/delete-package-versions@v4
         with:
           package-name: 'earth.levi.dropbox'
           min-versions-to-keep: 10
