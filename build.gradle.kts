@@ -1,9 +1,9 @@
 import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.archivesName
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
-val coroutines_version = "1.6.3"
-val serialization_version = "1.3.3"
-val ktor_version = "2.0.3"
+val coroutines_version = "1.+"
+val serialization_version = "1.+"
+val ktor_version = "2.+"
 
 plugins {
     id("com.android.library").version("7.3.1")
@@ -23,6 +23,10 @@ repositories {
     gradlePluginPortal()
     google()
     mavenCentral()
+}
+
+dependencyLocking {
+    lockAllConfigurations()
 }
 
 kotlin {
