@@ -2,8 +2,6 @@ name: Deploy snapshot builds
 
 on: [pull_request]
 
-permissions: read-all
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -22,7 +20,9 @@ jobs:
         with:
           filters: |
             src:
-              - 'src/**'              
+              - 'src/**'
+              - '*.lockfile'
+              - '*.kts'
 
   publish-snapshot:
     needs: files-changed
@@ -74,5 +74,6 @@ jobs:
         uses: actions/delete-package-versions@v4
         with:
           package-name: 'earth.levi.dropbox'
+          package-type: maven
           min-versions-to-keep: 10
 

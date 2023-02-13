@@ -3,10 +3,7 @@ name: Update dependencies
 
 on:
   schedule:
-    - cron:  '0 1 * * 1' # https://crontab.guru/#0_1_*_*_1
-  push:
-    paths:
-      - '.github/workflows/update-dependencies.yml'
+    - cron:  '0 1 * * 1' # https://crontab.guru/#0_1_*_*_1  
 
 jobs:
   update-gradle-dependencies:
@@ -21,7 +18,6 @@ jobs:
         with:
           distribution: temurin
           java-version-file: .java-version
-
       - name: Setup Gradle and enable caching 
         uses: gradle/gradle-build-action@v2
 
